@@ -1,14 +1,14 @@
 :root{
   --main-color: #1e90ff;
   --main-text-color:black;
-  --main-header-color:#282a35;
+  --main-header-color:#fff;
   --sidebar_color:#e7e9eb;
   --logo_color:#14f7f5;
   --sidebar_hovercolor:#cccccc;
+  --bg-lesson_sub:#e7e9eb;
+  --bg-sub_code:#fff;
 }
-html *{
-  color: var(--main-text-color);
-}
+
 .blue {
   background-color: #fff4a3;
 }
