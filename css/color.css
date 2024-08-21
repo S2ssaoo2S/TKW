@@ -1,0 +1,20 @@
+:root{
+  --main-color: #1e90ff;
+  --main-text-color:black;
+  --main-header-color:#282a35;
+  --sidebar_color:#e7e9eb;
+  --logo_color:#14f7f5;
+  --sidebar_hovercolor:#cccccc;
+}
+html *{
+  color: var(--main-text-color);
+}
+.blue {
+  background-color: #fff4a3;
+}
+.light_blue{
+  
+  background-color: #96d4d4;
+  
+
+}
