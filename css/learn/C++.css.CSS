@@ -1,0 +1,17 @@
+h1{ color:aqua;
+    font-family: sans-serif, lucida sans ;
+    font-size:40px ;
+}
+div{color:rgb(176, 173, 169);
+    background-color:rgb(243, 243, 243);
+    background-position: center;
+    background-size: cover;
+}
+.mau1{
+    color:aquamarine;
+    font-weight:bolder;
+}
+.kc{
+    line-height: 1.75;
+}
+
