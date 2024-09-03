@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/C++.css.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/hoidap.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="">Giới thiệu C++</a>
+          <a href="1viet truong trinh.HTML">Viết chương trình đầu tiên</a>
+          <a href="2Cấu trúc cơ bản của một chương trình C++.HTML"> Cấu trúc cơ bản chương trình C++  </a>
+          <a href="3Lệnh, khối lệnh, từ khóa.HTML">Lệnh,khối lệnh,từ khóa</a>
+          <a href="4dung lqdxdl.HTML">Dùng lệnh liên quan tới xuất dữ liệu</a>
+          <a href="5Biến và các kiểu dữ liệu trong C++.HTML">Biến và dữ liệu trong C++</a>
+          <a href="6nhập và xuất dữ liệu.HTML">nhập và xuất dữ liệu</a>
+          <a href="7Hằng số.HTML">Hằng số</a>
+          <a href="8 pham vi cua bien.HTML">phạm vi của biến</a>
+          <a href="9cac phep toan co ban.HTML">Các phép toán cơ bản</a>
+          <a href="10toan tu tăng giam.HTML">Toán tử tăng giảm </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Dùng lệnh liên quan tới xuất dữ liệu</h1>
+          <div class="data">
+            <p>Hôm nay, chúng ta tiếp tục với khóa học lập trình C++ cho người mới bắt đầu.</p>
+            <p>Trong bài học này, chúng ta cùng nhau học cách sử dụng một số <strong>lệnh</strong> để in dữ liệu ra màn hình <strong>console</strong>, ngoài ra chúng ta còn tập cách định dạng chúng cho phù hợp, và một số thứ khác liên quan đến luồng dữ liệu output (<strong>ostream</strong>)...</p>
+            <p>Trước khi bắt đầu, chúng ta tạo một project C++ mới có tên là Bai1.3 (các bạn nhớ chọn thư mục lưu sao cho phù hợp)</p>
+            <img src="/images/C++/1.4/0 (1).png"width="700" height="381">
+            <p>Sau đó tạo file <strong>main.cpp</strong> và viết sẵn cấu trúc cơ bản một chương trình C++ trong file main.cpp</p>
+            <img src="/images/C++/1.4/1 (2).png"width="700" height="381">
+            <p>Nhấn tổ hợp phím <strong>Ctrl + Shift + B</strong> để thực hiện quá trình build project (làm thế để đảm bảo mọi thứ hoạt động bình thường trước khi bắt đầu viết code)</p>
+            <img src="/images/C++/1.4/2 (2).png"width="700" height="381">
+            <p>Mình bắt đầu với một ví dụ đơn giản, đó là in tên của mình ra màn hình console. Để làm được điều này, chúng ta sử dụng lệnh <strong>cout</strong> và chúng ta từng dùng trong project <strong>HelloWorld</strong>. </p>
+            <p><strong>cout</strong> là một đối tượng được định nghĩa trong thư viện <strong>iostream</strong>, nó điều khiển một luồng dữ liệu đầu ra của chương trình, mặc định kết nối với output stream có tên là <strong>stdout</strong>. Dữ liệu được đưa vào đối tượng file <strong>stdout</strong> này sẽ được chuyển lên màn hình (hoặc thiết bị đầu ra chuẩn nào đó).</p>
+            <p>Vì thế, muốn sử dụng lệnh <strong>cout</strong> chúng ta cần include thư viện <strong>iostream</strong> vào trước (sử dụng luôn dòng <strong>using namespace std</strong> nhé).</p>
+            <img src="/images/C++/1.4/3 (2).png"width="700" height="381">
+            <p>Để đưa một chuỗi kí tự lên màn hình, chúng ta cần đặt chuỗi kí tự đó giữa cặp dấu ngoặc kép <strong>"</strong> và <strong>"</strong></p>
+            <img src="/images/C++/1.4/4 (4).png"width="700" height="381">
+            <p>Có một toán tử đi kèm với lệnh <strong>cout</strong> là <strong>&lt;&lt;</strong>. Về mặt cú pháp, chúng ta đặt toán tử <strong>&lt;&lt;</strong> giữa lệnh <strong>cout</strong> và cái mà chúng ta muốn đưa lên màn hình (có thể là một chuỗi kí tự, một con số, một biến số...)</p>
+            <p>Chạy thử chương trình bằng cách nhấn phím <strong>F5</strong></p>
+            <img src="/images/C++/1.4/5 (1).png"width="700" height="381">
+            <p>Nhìn vào kết quả chương trình, chúng ta thấy rất khó đọc vì dòng <code>cout</code> của mình bị dính với dòng chữ <code>Press any key to continue ...</code>. Để giải quyết vấn đề này, chúng ta cần làm cách nào đó để tách dòng chữ <code>Press any key to continue ...</code>. C++ đã hỗ trợ cho chúng ta một đối tượng khác cũng thuộc thư viện <strong>iostream</strong>, đó là <strong>endl</strong>.</p>
+            <p>Các bạn sử dụng <strong>endl</strong> như trong hình bên dưới.</p>
+            <img src="/images/C++/1.4/6 (2).png"width="700" height="381">
+            <p>Nhìn vào kết quả, chúng ta thấy đã có sự khác biệt so với ban đầu.</p>
+            <p>Chúng ta còn có thể nối nhiều đoạn kí tự để in ra màn hình cùng lúc chỉ với 1 lần sử dụng lệnh <strong>cout</strong> bằng cách sử dụng nhiều lần toán tử <strong>&lt;&lt;</strong></p>
+            <img src="/images/C++/1.4/7 (1).png"width="700" height="381">
+            <p>Dòng dữ liệu chúng ta in ra vẫn chưa được đẹp mắt lắm. Hai câu "Hello friend!" và "Nice to meet you!" được truyền lần lượt theo thứ tự vào đối tượng file <strong>stdout</strong> thông qua lệnh <strong>cout</strong>, nhưng khi sử dụng nhiều lần toán tử <strong>&lt;&lt;</strong>, nó không tự động sinh ra khoảng trắng giữa các chuỗi riêng biệt, mà nó cứ nối vào nhau cho đến khi đến giới hạn số kí tự cho phép trên 1 dòng của <strong>console</strong> thì mới xuống dòng.</p>
+            <p>Vì thế, chúng ta cần điều chỉnh lại một chút. (Thêm 1 kí tự trắng sau câu đầu tiên)</p>
+            <img src="/images/C++/1.4/8 (1).png"width="700" height="381">
+            <p>Hai câu chúng ta in ra giờ đã rõ đẹp hơn phải không nào?</p>
+            <p>Qua ví dụ trên, chắc các bạn cũng phần nào hình dung được cách thức hoạt động của lệnh <strong>cout</strong>.</p>
+             <p>Ngoài việc sử dụng đối tượng <strong>cout</strong> để in các chuỗi kí tự lên màn hình, bạn còn có thể in những con số cụ thể.</p>
+             <img src="/images/C++/1.4/9.png"width="700" height="381">
+            <p>Mình vừa thêm dòng bên dưới vào chương trình.</p>
+            <pre>cout &#60&#60 "I'm " &#60&#60 24 &#60&#60 " years old." &#60&#60 endl;</pre>
+            <p>Chúng ta cùng xem dòng này hoạt động như thế nào.</p>
+            <img src="/images/C++/1.4/10 (1).png"width="700" height="381">
+            <p>Khi bạn muốn in một giá trị lên màn hình, bạn có thể làm nhiều cách khác nhau. Bạn có thể đưa số đó vào trong cặp dấu ngoặc kép để biến nó thành chuỗi kí tự.</p>
+            <pre>cout &#60&#60 "I'm 24 years old." &#60&#60 endl;</pre>
+            <p>Bạn có thể đưa nó ra ngoài cặp dấu ngoặc kép (nhớ sử dụng thêm toán tử <strong>&lt;&lt;</strong> nữa, vì kiểu chuỗi kí tự và kiểu số là hai loại kiểu dữ liệu khác nhau, nên cần tách chúng ra bằng toán tử <strong>&lt;&lt;</strong> để lệnh cout có thể hiểu được).</p>
+            <pre>cout &#60&#60 "I'm " &#60&#60 24 &#60&#60 " years old." &#60&#60 endl;</pre>
+            <p>Hoặc có một cách khác mà chúng ta sẽ dùng thường xuyên hơn trong các bài học sau, đó là đưa giá trị vào một biến số.</p>
+            <pre>int myAge = 24;
+              cout &#60&#60 "I'm " &#60&#60 myAge &#60&#60 " years old." &#60&#60 endl;</pre>
+              <p>Cả 3 cách trên đều cho ra kết quả giống nhau.</p>
+              <p>Trong ngôn ngữ lập trình C++, có một số kí tự trên bàn phím chúng ta không thể đưa trực tiếp vào cặp dấu ngoặc kép để in ra màn hình trong lệnh <strong>cout</strong> được. Chúng ta cần định dạng chúng lại một chút. Sau đây là bảng một số kí tự đặc biệt và cách để in chúng ra màn hình: </p>
+            <img src="/images/C++/1.4/11 (1).png"width="500" height="381">
+            <p>Chúng ta cùng thử dùng một vài kí tự trong bảng trên và xem kết quả.<br>Đầu tiên là sử dụng kí tự xuống dòng:</p>
+            <img src="/images/C++/1.4/12.png"width="700" height="381">
+            <p>Như các bạn thấy, không còn sử dụng đối tượng <strong>endl</strong> nữa nhưng chuỗi kí tự trên vẫn được tách thành 2 dòng bằng cách sử dụng kí tự new line <strong>"\n"</strong>.</p>
+            <p>Tiếp theo, chúng ta thêm kí tự <strong>Tab</strong> và đầu chuỗi kí tự muốn in ra:</p>
+            <img src="/images/C++/1.4/13 (1).png"width="700" height="381">
+            <p>Ta thấy dòng đầu tiên đã được đẩy vào 1 Tab so với dòng thứ 2. Các bạn có thể thử lần lượt các kí tự đặc biệt trên nếu có thời gian. Tuy nhiên, cần lưu ý rằng kí tự new line "\n" và đối tượng endl đều đóng vai trò là kí tự xuống dòng nhưng nó hoàn toàn khác nhau, mình sẽ giải thích vấn đề này sau.</p>
+              <p>Ngoài ra, các bạn còn có thể sử dụng đối tượng <strong>cout</strong> để in ra kết quả của một biểu thức toán học:</p> 
+              <img src="/images/C++/1.4/14 (1).png"width="700" height="381">
+              <p>Trong câu lệnh trên, biểu thức <strong>12 + 2 * 3</strong> được tính ra kết quả, kết quả biểu thức này được chương trình coi như một giá trị số, và nó hoàn toàn có thể đưa vào đối tượng file <strong>stdout</strong> bằng đối tượng <strong>cout</strong>.</p>
+              <p>Ngoài tính toán và cho ra kết quả số nguyên, một chương trình C++ còn có thể tính toán các biểu thức và in ra giá trị là số âm, số thực...</p>
+            <img src="/images/C++/1.4/15 (1).png"width="700" height="381">
+            <ul>
+              <li><p>Chương trình C++ không thể in ra giá trị là một phân số (trừ khi chúng ta tự định nghĩa lại), vì thế, ở biểu thức cuối cùng, máy tính không in ra được giá trị là <strong>5/10</strong> mà nó chỉ có thể in ra giá trị 0 (tại sao lại không phải là 0.5?), chúng ta sẽ tìm hiểu vấn đề này trong bài học <a href="/1-cpp-co-ban/1-5-bien-cach-khai-bao-va-su-dung-bien.md">Biến - cách khai báo và sử dụng biến</a>.</p></li>
+              <li>
+              <p>Compiler của Visual studio sẽ báo lỗi nếu nó bắt gặp biểu thức có dạng <strong>x / 0</strong>. Ví dụ:</p>
+              <pre>cout &#60&#60 5 / 0 &#60&#60 endl; //This command makes an error</pre>
+              </li>
+              </ul>
+              <h2>Sử dụng thư viện iomanip</h2>
+              <p><strong>iomanip</strong> viết tắt của cụm từ <strong>iostream manipulator</strong> là một thư viện thuộc namespace <strong>std</strong>, nó định nghĩa một số hàm giúp lập trình viên có thể định dạng output.</p>
+              <p>Trong bài này, chúng ta chỉ làm quen với một số hàm đơn giản thường xuyên được sử dụng.</p>
+              <h3>setw(int n)</h3>
+              <p><strong>setw</strong> là một hàm cho phép giới hạn độ rộng của một giá trị được xuất lên màn hình.</p>
+              <p>Cách sử dụng:</p>
+            <img src="/images/C++/1.4/16 (1).png"width="700" height="381">
+            <p>Cùng nhìn vào hình trên để xem cú pháp sử dụng và đánh giá kết quả.</p>
+            <ul>
+              <li>Đầu tiên, chúng ta include thêm thư viện <strong>iomanip</strong> vào chương trình.</li>
+              <li>Tiếp theo, gọi hàm <strong>setw(int n)</strong> với n là một số nguyên (ví dụ: setw(8)) để định dạng độ rộng cho kiểu dữ liệu số, ngay lúc này, bất kì giá trị số nào được truyền vào luồng output stream thông qua <strong>cout</strong> đều bị đối tượng <strong>cout</strong> format có độ rộng là 10 ô.</li>
+              <li>Cuối cùng thì thử truyền vài giá trị số nguyên vào để kiểm chứng thôi.</li>
+              </ul>
+              <p>Trong hình trên, mình định dạng độ rộng của các số được đưa vào <strong>cout</strong> có độ rộng là 10, mình truyền thử 2 số nguyên mà số đầu tiên chỉ có 1 chữ số, số thứ 2 thì có 10 chữ số. Kết quả cho thấy có 9 khoảng trắng thừa đứng trước số 1 ở dòng đầu tiên.</p>
+              <p>Nếu các bạn muốn định dạng khoảng trắng phía sau, chỉ cần đổi giá trị trong hàm <strong>setw</strong> thành số âm như hình bên dưới:</p>
+            <img src="/images/C++/1.4/17.png"width="700" height="381">
+            <h3>setprecision(int n)</h3>
+            <p>Cũng tương tự như hàm <strong>setw</strong>, hàm <strong>setprecision</strong> cũng nhận vào một giá trị số nguyên, nhưng mục đích của hàm này là định dạng số lượng chữ số trong phần thập phân của kiểu số thực.</p>
+            <p>Cách sử dụng:</p>
+            <img src="/images/C++/1.4/18 (1).png"width="700" height="381">
+            <ul>
+              <li><p>Đảm bảo rằng thư viện <strong>iomanip</strong> đã được include vào chương trình.</p></li>
+              <li><p>Đẩy định dạng độ chính xác <strong>setpresicion(int n)</strong> và đối tượng <strong>cout</strong> thông qua toán tử <strong>&lt;&lt;</strong>, sau thời điểm này, mọi số thực có phần thập phân sẽ được định dạng lại, với độ dài phần thập phân bằng với số nguyên mà bạn đặt trong hàm <strong>setprecision</strong>.</p></li>
+              </ul>
+              <p>Nhìn vào kết quả của đoạn chương trình trên, ta thấy rằng mặc định phần thập phân của một số thực chỉ có 6 chữ số. Sau khi định dạng lại với hàm <strong>setprecision(9)</strong> thì độ chính xác đã lên đến 9 chữ số.</p>
+              <footer>
+                <h2>Tổng kết</h2> 
+                <p>Đến đây, chúng ta đã nắm được cú pháp và cách hoạt động của đối tượng <strong>cout</strong> thuộc thư viện <strong>iostream</strong> trong <strong>namespace std</strong>. Các bạn đã biết cách: </p>
+                <ul>
+                  <li>In một dòng chữ lên màn hình console.</li>
+                  <li>In liên tiếp nhiều chuỗi kí tự trong một lần sử dụng đối tượng <strong>cout</strong>.</li>
+                  <li>In giá trị số nguyên, số thực.</li>
+                  <li>In các kí tự đặc biệt "\n", "\t", ... lên màn hình.</li>
+                  <li>In kết quả của một biểu thức.</li>
+                  <li>Một số định dạng cơ bản với số nguyên và số thực.</li>
+                  </ul>
+                  <h2>Bài tập rèn luyện</h2>
+                  <ol>
+                    <li>Viết chương trình in kết quả 4 phép tính +, -, *, / của 2 số.</li>
+                    <li>Từ chương trình đã viết được ở câu 1, thêm vào 1 dòng lệnh khiến chương trình phát ra 1 âm báo.</li>
+                    </ol>
+              </footer>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

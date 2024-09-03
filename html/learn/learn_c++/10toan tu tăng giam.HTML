@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/C++.css.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/hoidap.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="">Giới thiệu C++</a>
+          <a href="1viet truong trinh.HTML">Viết chương trình đầu tiên</a>
+          <a href="2Cấu trúc cơ bản của một chương trình C++.HTML"> Cấu trúc cơ bản chương trình C++  </a>
+          <a href="3Lệnh, khối lệnh, từ khóa.HTML">Lệnh,khối lệnh,từ khóa</a>
+          <a href="4dung lqdxdl.HTML">Dùng lệnh liên quan tới xuất dữ liệu</a>
+          <a href="5Biến và các kiểu dữ liệu trong C++.HTML">Biến và dữ liệu trong C++</a>
+          <a href="6nhập và xuất dữ liệu.HTML">nhập và xuất dữ liệu</a>
+          <a href="7Hằng số.HTML">Hằng số</a>
+          <a href="8 pham vi cua bien.HTML">phạm vi của biến</a>
+          <a href="9cac phep toan co ban.HTML">Các phép toán cơ bản</a>
+          <a href="10toan tu tăng giam.HTML">Toán tử tăng giảm </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Toán tử tăng giảm</h1>
+          <div class="data">
+            <h1>1.9 Toán tử tăng giảm</h1>
+            <h2></h2>
+            <h3>Toán tử tăng (increment operator)</h3>
+            <p>Toán tử tăng (kí hiệu: <strong>++</strong>) có thể đứng trước hoặc sau một biến (variable). Ví dụ: </p>
+            <pre>int value = 5;
+              ++value;
+              value++;</pre>
+              <p>Cả hai vị trí đứng của toán tử tăng đều có chung một mục đích: <strong>Tăng giá trị của biến lên 1 đơn vị</strong>. </p>
+              <p><em>Nhưng chúng hoàn toàn khác nhau về mặt ngữ nghĩa.</em></p>
+              <img src="/images/C++/10/3 (7).png" width="700" height="381">
+              <p>Toán tử tăng khi làm tiền tố cho một biến rất dễ hiểu. Giá trị của x sẽ được tăng lên 1 đơn vị, sau đó giá trị mới sẽ được định cho biến x.</p>
+              <p>Ví dụ:</p>
+              <pre>int x = 5; <br> int y = ++x; //giá trị của x bây giờ là 6, giá trị 6 sẽ được gán vào biến y.</p>
+                <p>Ví dụ:</p>
+                <pre>int x = 5;<br> int y = x++; //giá trị của x bây giờ là 6, giá trị 5 ban đầu của x sẽ được gán cho y</pre>
+                  <p>Mình trình bày lại cách hoạt động của đoạn code trên thêm 1 lần nữa.</p>
+                  <p>Đầu tiên, biến x được khai báo và khởi tạo giá trị ban đầu là 5. Tiếp theo, biến y được khai báo và gán cho giá trị là x++.<br>
+                     Khi gặp toán tử tăng (++) làm hậu tố của biến x, compiler tạo ra một bản sao của biến x mang theo giá trị 5 ban đầu.<br> 
+                     Bây giờ, biến x gốc được tăng giá trị lên 1 đơn vị (x sẽ bằng 6), nhưng giá trị được gán<br>
+                     cho biến y không phải là biến x ban đầu mà là bản sao của biến x (bản sao mang giá trị 5). Sau khi gán giá trị xong, bản sao của biến x bị xóa bỏ.</p>
+              <img src="/images/C++/10/5 (6).png" width="700" height="381">
+              <h3>Toán tử giảm</h3>
+              <p>Toán tử giảm (kí hiệu: <strong>--</strong>) có thể làm tiền tố (đứng trước) hoặc hậu tố (đứng sau) một biến (variable). Ví dụ:</p>
+              <pre>int value = 10;
+                --value;
+                value--;</pre>
+                <p>Mục đích khi sử dụng toán tử này là để <strong>giảm giá trị của biến đi 1 đơn vị</strong>,<br>
+                   nhưng có sự khác nhau giữa cách sử dụng tiền tố và hậu tố (tương tự toán tử tăng).</p>
+            <img src="/images/C++/10/1.9TOANTUTANGGIAM.png" width="700" height="381">
+            <p>Cũng tương tự như mình đã trình bày cho toán tử tăng (++), toán tử giảm (--) khi làm tiền tố cho biến cũng khá đơn giản. <br>
+              Giá trị biến x sẽ bị trừ đi 1 đơn vị, mọi thao tác với biến x sẽ có hiệu lực trên giá trị mới ngay lập tức.</p>
+            <p>Ví dụ:</p>
+            <pre>int x = 5;
+              int y = --x; //Giá trị của x bây giờ là 4, giá trị 4 được gán cho biến y</pre>
+              <p>Đối với toán tử giảm (--) làm hậu tố cho biến, compiler cũng tạo ra một bản sao của biến x, giảm giá trị biến x đi 1 đơn vị, gán giá trị của bản sao biến x vào biến y, sau đó loại bỏ bản sao của biến x ra khỏi chương trình.</p>
+              <pre>int x = 5;
+                int y = 5--; //Giá trị của biến x bây giờ là 4, giá trị 5 được gán cho biến y</pre>
+                <h3>Tổng kết</h3>
+                <p>Toán tử tăng, giảm là những toán tử được sử dụng khá thường xuyên trong thực tế. Các bạn cần nắm rõ bài học hôm nay trước khi đi tiếp những bài học tiếp theo.</p>
+                <p><strong>Hẹn gặp lại các bạn trong các bài học tiếp theo của khóa học lập trình C++ hướng thực hành.</strong></p>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

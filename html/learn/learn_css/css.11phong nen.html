@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/CSS.css copy.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <a href=""
+                    >Tutorial<i
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Q&A</a></li>
+                <li><a href=""></a></li>
+                <li>
+                  <a class="light-mode"
+                    ><i class="fa fa-toggle-on" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search flex">
+              <form action="get" class="search-form">
+                <input type="text" name="search" class="search-input" />
+              </form>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+            <div class="login">
+              <button class="btn-login">login</button>
+            </div>
+            <div class="register">
+              <button class="btn-register">sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="#">Trang chủ Css</a>
+          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
+          <a href="">Chèn Mã Css</a>
+          <a href=""> Cú Pháp Css  </a>
+          <a href="">Bộ chọn Css</a>
+          <a href="">Phong Chữ Css</a>
+          <a href="">Màu Sắc Css </a>
+          <a href="">Box Model Css</a>
+          <a href="">Căn Lề</a>
+          <a href="">Đường Viền Css</a>  
+          <a href="">Văn Bản Css </a>
+          <a href="">Phong Nền </a>
+          <a href="">Khoảng Đệm Css</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Phông Nền trong CSS - Học CSS Cơ Bản</h1>
+          <div class="data">
+            <p><b>Phông Nền</b></p>
+            <p>Các thuộc tính về phông nền trong CSS được sử dụng để thiết lập hiệu ứng phông nền cho phần tử HTML trên trang web.</p>
+            <p>Các thuộc tính dùng để thiết lập phông nền trong CSS gồm có:</p>
+            <ul>
+              <li>Thuộc tính&nbsp;<code>background-color</code>: Thiết lập màu nền.</li>
+              <li>Thuộc tính&nbsp;<code>background-image</code>: Thiết lập ảnh nền.</li>
+              <li>Thuộc tính&nbsp;<code>background-repeat</code>: Thiết lập kiểu hiển thị lặp lại cho ảnh nền.</li>
+              <li>Thuộc tính&nbsp;<code>background-position</code>: Thiết lập vị trí hiển thị của ảnh nền.</li>
+              <li>Thuộc tính&nbsp;<code>background-attachment</code>: Thiết lập kiểu&nbsp;<em>attache</em>&nbsp;của ảnh nền khi hiển thị.</li>
+              <li>Thuộc tính&nbsp;<code>background</code>: Thiết lập phông nền (màu nền hoặc ảnh nền, cách hiển thị lặp lại, vị trí hiển thị) tuỳ vào cú pháp sử dụng.</li>
+            </ul>
+            <h2>Thuộc tính Background-color</h2>
+          <p>Thuộc tính background-color được sử dụng để thiết lập màu nền cho phần tử HTML</p>
+          <p>Đoạn mã CSS dưới đây sử dụng thuộc tính background-color để thiết lập màu nền cho phần tử body trên trang:</p>
+          <pre>
+            body {
+              background-color: orange;
+            }
+          </pre>
+          <p>Giá trị của thuộc tính này có thể là một màu theo tên hoặc giá trị màu theo RGB hoặc HEX... như tìm hiểu ở bài học về màu trong CSS.</p>
+          <h2>Thuộc Tính background-image</h2>
+          <p>Thuộc tính background-image trong CSS được sử dụng để thiết lập ảnh nền cho phần tử HTML trên trang.</p>
+          <p>Đoạn mã CSS dưới đây sử dụng thuộc tính background-image để thiết lập màu nền cho phần tử body trên trang:</p>
+          <pre>
+            body {
+              background-image: url("https&#58 //i.imgur.com/wzPwquG.jpg");
+            }
+          </pre>
+          <p>Giá trị của thuộc tính này là một địa chỉ URL tham chiếu tới hình ảnh và được đặt bên trong url("..."). Địa chỉ URL sử dụng có thể là tuyệt đối như ở ví dụ trên hoặc tương đối</p>
+          <h2>Thuộc Tính background-repeat</h2>
+          <p>Thuộc tính background-repeat được sử dụng để thiết lập kiểu lặp lại cho ảnh nền của phần tử. Thuộc tính này chỉ nên được áp dụng khi phần tử được thiết lập ảnh nền</p>
+          <p>Đoạn code CSS dưới đây sử dụng thuộc tính background-repeat để lặp lại ảnh nền thiết lập cho phần tử body theo cả chiều ngang lẫn chiều dọc:</p>
+          <pre>
+            body {
+              background-image: url("https&#58 //i.imgur.com/yWcv2rH.gif");
+              background-repeat: repeat;
+            }
+          </pre>
+          <p>Để hiển thị lặp lại ảnh nền theo chiều ngang sử dụng giá trị repeat-x cho thuộc tính này: </p>
+            <pre>
+              body {
+                background-image: url("https&#58 //i.imgur.com/yWcv2rH.gif");
+                background-repeat: repeat-x;
+              }
+            </pre>
+          <p>Để hiển thị lặp lại ảnh nền theo chiều dọc sử dụng giá trị repeat-y cho thuộc tính này:</p>
+          <pre>
+            body {
+              background-image: url("https&#58 //i.imgur.com/yWcv2rH.gif");
+              background-repeat: repeat-y;
+            }
+          </pre>
+          <p>Với giá trị là no-repeat ảnh nền sẽ không được lặp lại, đây cũng là kiểu lặp mặc định của ảnh nền:</p>
+          <pre>
+            body {
+              background-image: url("https&#58 //i.imgur.com/yWcv2rH.gif");
+              background-repeat: no-repeat;
+            }
+          </pre>
+          <h2>Thuộc Tính background-position</h2>
+          <p>Thuộc tính background-position được sử dụng để thiết lập vị trí của ảnh nền:</p>
+          <pre>body {
+            background-image: url("https&#58 //i.imgur.com/ElCH8XF.png");
+            background-repeat: no-repeat;
+            background-position: left bottom;
+          }</pre>
+        </pre>
+        <h2>Thuộc Tính background-attachment</h2>
+        <p>Thuộc tính background-attachment được sử dụng để thiết lập kiểu trói buộc (attach) khi hiển thị của ảnh nền.</p>
+      <p>Đoạn code trong ví dụ dưới đây sẽ attach ảnh nền cố định trên trang:</p>
+        <pre>
+          body {
+            background-image: url("https&#58 //i.imgur.com/ElCH8XF.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+          }
+              </pre>
+             <h2>Thuộc Tính background </h2>
+              <p>Thuộc tính background được sử dụng để thiết lập phông nền cho phần tử HTML bao gồm màu nền hoặc ảnh nền, vị trí ảnh nền, kiểu hiển thị lặp lại... tuỳ thuộc vào cú pháp sử dụng. Nó có thể thay thế cho tất cẩ các thuộc tính background-... đề cập ở trên.</p>
+            <p>Đoạn mã CSS dưới đây sử dụng thuộc tính background để thiết lập màu nền cho phần tử body trên trang:</p>
+              <pre>
+                body {
+                  background: orange;
+                }
+              </pre>
+              <p>Đoạn mã CSS dưới đây sử dụng thuộc tính background để thiết lập ảnh nền cho phần tử body trên trang:</p>
+              <pre>
+                body {
+                  background: url("https&#58 //i.imgur.com/wzPwquG.jpg");
+                }
+              </pre>
+              <p>Đoạn mã CSS dưới đây sử dụng thuộc tính background để thiết lập ảnh nền, kiểu hiển thị lặp lại và vị trí của phông nền cho phần tử body trên trang:</p>
+              <pre>
+                body {
+                  background: url("https&#58 //i.imgur.com/wzPwquG.jpg") no-repeat left bottom;
+                }
+              </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

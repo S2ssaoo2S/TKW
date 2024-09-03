@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/CSS.css copy.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <a href=""
+                    >Tutorial<i
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Q&A</a></li>
+                <li><a href=""></a></li>
+                <li>
+                  <a class="light-mode"
+                    ><i class="fa fa-toggle-on" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search flex">
+              <form action="get" class="search-form">
+                <input type="text" name="search" class="search-input" />
+              </form>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+            <div class="login">
+              <button class="btn-login">login</button>
+            </div>
+            <div class="register">
+              <button class="btn-register">sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="#">Trang chủ Css</a>
+          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
+          <a href="">Chèn Mã Css</a>
+          <a href=""> Cú Pháp Css  </a>
+          <a href="">Bộ chọn Css</a>
+          <a href="">Phong Chữ Css</a>
+          <a href="">Màu Sắc Css </a>
+          <a href="">Box Model Css</a>
+          <a href="">Căn Lề</a>
+          <a href="">Đường Viền Css</a>  
+          <a href="">Văn Bản Css </a>
+          <a href="">Phong Nền </a>
+          <a href="">Khoảng Đệm Css</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">CSS Là Gì, Phân Biệt CSS và HTML - CSS Cơ Bản</h1>
+          <div class="data">
+            <h2>Giới Thiệu&nbsp;CSS Là Gì</h2>
+            <p>CSS (viết tắt của từ Cascading Style Sheet) là ngôn ngữ&nbsp;<em>định kiểu theo tầng</em>&nbsp;được dùng để tạo bố cục, trang trí, thiết lập màu nền, màu chữ, kích thước... cho trang web.</p>
+            <img src="/images/css/0css-la-gi.jpg"width="700" height="381">
+            <p><b>Demo Giới Thiệu về Ngôn Ngữ CSS</b></p>
+            <p>Sử dụng HTML để thêm nội dung và mô tả cho trang. Sử dụng CSS giúp chúng ta tạo ra có được một website trông bắt mắt hơn.</p>
+            <h2>CSS Là Ngôn Ngữ Định Kiểu Tầng</h2>
+            <p>CSS được gọi là ngôn ngữ&nbsp;<em>định kiểu theo tầng</em>&nbsp;vì mã CSS được áp dụng theo nguyên tắc theo tầng (hay cascading). Điều này có nghĩa là nếu một đoạn code CSS được viết để định kiểu cho một phần tử HTML nào đó thì tất cả các các phần tử bên trong nó (hay phần tử con) của nó cũng sẽ được thừa kế kiểu trang trí này.</p>
+            <pre>body {
+                background-color: #32a4e7;
+                color: #fff;
+            }</pre>
+          <p><b>CSS Là Ngôn Ngữ Định Kiểu Theo Tầng</b> </p>
+          <p>Ngoài việc thừa kế từ phần tử cha, thì các phần tử con có thể được thêm các kiểu trang trí khác hoặc viết đè các kiểu trang trí của phần tử cha.</p>
+          <p>Hãy xem ví dụ dưới đây để thấy các phần tử con&nbsp;<code>h1</code>&nbsp;và&nbsp;<code>p</code>&nbsp;thừa kế cũng như viết đè các quy luật CSS áp dụng để trang trí cho phần tử cha&nbsp;<code>body</code>&nbsp;như thế nào:</p>
+          <pre>body {
+            color: black; /* thiết lập màu chữ */
+            font-size: 14px; /* thiết lập cỡ chữ */
+        }
+        h1 {
+            color: red; /* thiết lập màu chữ mới cho các phần tử h1 */
+            font-size: 18px; /* thiết lập cỡ chữ mới cho các phần tử h1 */
+        }
+        p {
+            color: blue; /* thiết lập màu chữ mới cho các phần tử p */
+        }</pre>
+          <p>Định Kiểu Tầng CSS - Thừa Kế và Viết Đè Luật CSS Áp Dụng Cho Phần Tử Cha</p>
+          <h2>HTML và CSS</h2>
+          <p>HTML là ngôn ngữ đánh dấu với HTML từng thẻ sẽ được dùng với ý nghĩa khác nhau.</p>
+          <h2>HTML và CSS</h2>
+            <pre>
+                &#60 html &#62
+                    &#60 head &#62
+                       &#60 meta charset="utf-8" &#62
+                       &#60 title&#62Ví Dụ Giải Thích Thích Tính Kế Thừa và Viết Đè trong CSS&#60 /title &#62
+                    &#60 /head &#62
+                    &#60 body &#62
+                        &#60 h1 &#62 Tiêu Đề - Phần Tử H1&#60 /h1 &#62
+                        &#60 p &#62 Nội dung văn bản, phần tử P&#60 /p &#62
+                        &#60 div &#62 Nội dung văn bản, phần tử DIV&#60 /div &#62
+                    &#60 /body&#62
+                    &#60 html&#62
+            </pre>
+            <p>HTML được dùng để thêm nội dung và mô tả ý nghĩa của từng nội dung sử dụng các thẻ, tuy nhiên nó không quy định cách thức hiển thị các nội dung trên trang như thế nào.</p>
+            <p>Ngược lại với HTML, CSS không được sử dụng để thêm nội dung hay mô tả ý nghĩa của nội dung trên trang. CSS được sử dụng để thiết lập cách trình bày hay hiển thị của nội dung trên trang web.</p>
+            <pre>
+            body {
+                color: black; /* thiết lập màu chữ */
+                font-size: 14px; /* thiết lập cỡ chữ */
+            }
+            h1 {
+                color: red; /* thiết lập màu chữ mới cho các phần tử h1 */
+                font-size: 18px; /* thiết lập cỡ chữ mới cho các phần tử h1 */
+            }
+            p {
+                color: blue; /* thiết lập màu chữ mới cho các phần tử p */
+            }
+          </pre>
+          
+          
+          
+          &#8260&#8260
+          
+          
+          
+          
+          
+          
+          
+          
+  
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

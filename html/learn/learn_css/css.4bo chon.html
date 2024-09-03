@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/CSS.css copy.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <a href=""
+                    >Tutorial<i
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Q&A</a></li>
+                <li><a href=""></a></li>
+                <li>
+                  <a class="light-mode"
+                    ><i class="fa fa-toggle-on" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search flex">
+              <form action="get" class="search-form">
+                <input type="text" name="search" class="search-input" />
+              </form>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+            <div class="login">
+              <button class="btn-login">login</button>
+            </div>
+            <div class="register">
+              <button class="btn-register">sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="#">Trang chủ Css</a>
+          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
+          <a href="">Chèn Mã Css</a>
+          <a href=""> Cú Pháp Css  </a>
+          <a class="active" href="">Bộ chọn Css</a>
+          <a href="">Phong Chữ Css</a>
+          <a href="">Màu Sắc Css </a>
+          <a href="">Box Model Css</a>
+          <a href="">Căn Lề</a>
+          <a href="">Đường Viền Css</a>  
+          <a href="">Văn Bản Css </a>
+          <a href="">Phong Nền </a>
+          <a href="">Khoảng Đệm Css</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Bộ Chọn CSS Là Gì, Cú Pháp Các Loại Bộ Chọn CSS - CSS Cơ Bản</h1>
+          <div class="data">
+            <h2>Bộ Chọn CSS - CSS Selector</h2>
+            <p>Bộ chọn CSS được sử dụng để chọn ra phần tử HTML trên trang.</p>
+            <p>CSS cung cấp nhiều loại bộ chọn khác nhau để có thể chọn ra được bất kỳ phần tử HTML nào có trên trang. Trong phạn vi bài học này chúng ta sẽ tìm hiểu các loại bộ chọn được sử dụng phổ biến sau đây:</p>
+            <ul>
+              <li>Bộ chọn phần tử.</li>
+              <li>Bộ chọn ID.</li>
+              <li>Bộ chọn lớp.</li>
+              <li>Bộ chọn con cháu.</li>
+            </ul>
+            <h2>Bộ Chọn Phần Tử - Element Selector</h2>
+            <p>Bộ chọn phần tử trong CSS được sử dụng phổ biến, nó giúp chúng ta chọn ra một tập hợp các phần tử HTML trên trang ứng với tên cho trước.</p>
+            <p>Bộ chọn phần tử có cú pháp rất đơn giản:</p>
+          <pre>tên_phần_tử {
+            /* khai báo CSS */
+        }</pre>
+        <p>Ở đoạn code dưới đây chúng ta có một bộ chọn phần tử được sử dụng là&nbsp;<code>p</code>&nbsp;để chọn ra&nbsp;<em>tất cả</em>&nbsp;các phần tử&nbsp;<code>p</code>&nbsp;trên trang:</p> 
+          <pre>p {
+            color: red;
+        }</pre>
+        <h2>Bộ Chọn ID - ID Selector</h2> 
+        <p>Bộ chọn ID dùng để chọn ra duy nhất một phần tử HTML trên trang với thuộc tính ID khớp với giá trị cho trước.</p>
+        <p>Cú pháp bộ chọn ID trong CSS:</p>
+          <pre>#giá_trị_id {
+            /* khai báo CSS */
+        }</pre>
+        <p>Ở đoạn code dưới đây chúng ta có một bộ chọn ID để chọn ra&nbsp;<em>duy nhất một phần tử</em>&nbsp;HTML với thuộc tính ID có giá trị là&nbsp;<code>highlight</code>:</p> 
+          <pre>
+            #highlight {
+              background-color: yellow;
+          }
+          </pre>
+          <h2>Bộ Chọn Lớp - Class Selector</h2>
+          <p>Bộ chọn lớp hay class trong CSS dùng để chọn ra tất cả các phần tử HTML trên trang với thuộc tính&nbsp;<em>class</em>&nbsp;chứa một hoặc nhiều giá trị cho trước.</p>
+          <p>Cú pháp bộ chọn lớp trong CSS:</p>
+          <pre>.giá_trị_class {
+            /* khai báo CSS */
+        }</pre>
+        <p>Ở đoạn code dưới đây chúng ta có một bộ chọn ID để chọn ra&nbsp;<em>duy nhất một phần tử</em>&nbsp;HTML với thuộc tính&nbsp;<em>class</em>&nbsp;có giá trị là&nbsp;<code>highlight</code>:</p> 
+          <pre>.highlight {
+            background-color: yellow;
+        }</pre>
+        <p>Bộ chọn lớp cho phép chúng ta có thể kết hợp nhiều class cùng một lúc, ví dụ như sau:</p> 
+          <pre>
+            .highlight.red {
+              background-color: yellow;
+              color: red;
+          }
+          </pre>
+          <h2>Bộ Chọn Con Cháu - Descendant Selector</h2>
+          <p>Bộ chọn con cháu trong CSS được sử dụng để chọn ra tất cả các phần tử trên trang là con hoặc cháu của phần tử cho trước.</p>
+          <p>Cú pháp của bộ chọn con cháu trong CSS như sau:</p>
+          <pre>phần_tử_1 phần_tử_2 {
+            /* khai báo CSS */
+        }</pre>
+        <p>Trong đó:</p> 
+        <ul>
+          <li><code>phần_tử_1</code>&nbsp;là tên của phần tử cha, ông, cụ, kỵ.... (gọi ngắn là phần tử cha ông).</li>
+          <li><code>phần_tử_2</code>&nbsp;là tên của phần tử con, cháu, chắt, chút, chít... (gọi ngắn là phần tử con cháu).</li>
+        </ul>
+        <p>Ở đoạn code dưới đây chúng ta có một bộ chọn cha con để chọn ra&nbsp;<em>tất cả các phần tử</em>&nbsp;<code>p</code>&nbsp;là con hoặc cháu của phần tử&nbsp;<code>div</code>:</p>
+          <pre>div p {
+            color: red;
+          }</pre>
+          <p>Bạn cũng có thể sử dụng bất kỳ các loại bộ chọn nào cho phần tử cha ông hoặc con cháu.</p>
+          Bạn cũng có thể sử dụng bất kỳ các loại bộ chọn nào cho phần tử cha ông hoặc con cháu.
+          <p>Ví dụ dưới đây sử dụng kết hợp giữa bộ chọn&nbsp;<em>class</em>&nbsp;cho phần tử cha ông và bộ chọn phần tử cho phần tử con cháu để hình thành một bộ chọn cha con:</p>
+          <pre>
+            .red p {
+              color: red;
+            }
+          </pre>
+          <pre>.red p {
+            color: red;
+          }</pre>
+          <p>Chúng ta cũng có thể sử dụng nhiều hơn hai bộ chọn:</p>
+          <pre>.red p {
+            color: red;
+          }</pre>
+          <p>Bộ chọn cha con trong đoạn code CSS chỉ chọn ra các phần tử&nbsp;<code>p</code>&nbsp;là con hoặc cháu của phần tử&nbsp;<code>div</code>&nbsp;và phần tử&nbsp;<code>div</code>&nbsp;này cũng phải là con hoặc cháu của một phần tử&nbsp;<code>div</code>&nbsp;khác</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

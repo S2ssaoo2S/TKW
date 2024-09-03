@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/Javascript.css.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">Javascript cơ bản</h2>
+          <a href="#">Trang chủ Javascript</a>
+          <a href="js.1gioithieu.html">Giới thiệu Javascript</a>
+          <a href="js.2comment.html">Comment trong Javascript</a>
+          <a href="js.3 biến.html">Biến trong Javascript  </a>
+          <a class="Active" href="js.4 phéptoan.html">Phép Toán trong Javascript</a>
+          <a href="js.5 dữ liệu.html">Kiểu Dữ Liệu trong Javascript </a>
+          <a href="js.6ham.html">Hàm thường gặp trong Javascript</a>
+          <a href="js.7pham vi.html">Phạm Vi Của Biến trong Javascript</a>
+          <a href="js.8cau trúc.html">Cấu Trúc if,else,elseif trong Javascript</a>
+          <a href="js.9 vòng lặp.html">Vòng Lặp trong Javascript</a>
+          <a href="js.10 Break và Continue.html">Break và Continue trong Javascript </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Giới Thiệu JavaScript Là Gì</h1>
+          <div class="data">
+            <h2>Gán giá trị</h2>
+            <p>Để gán giá trị cho biến chúng ta sử dụng dấu&nbsp;<code>=</code>:</p>
+          <pre class="pre"><code>
+            var age;
+            age = 5;
+          </code></pre>
+          <h2>Toán Số Học</h2>
+          <p>Bao gồm các phép toán cộng, trừ, nhân, chia, phần dư:</p>
+          <pre class="pre"> <code>
+            var x = 100 + 50;
+            document.getElementById("text").innerHTML = x;
+            x = 100 - 50;
+            // document.getElementById("text").innerHTML = x;
+            x = 100*50
+            // document.getElementById("text").innerHTML = x;
+            x = 100/50
+            // document.getElementById("text").innerHTML = x;
+            x = 100%50 // Phần dư của phép chia 100:50
+            // document.getElementById("text").innerHTML = x;
+          </code> </pre>
+          <h2>Tăng, Giảm Giá Trị Biến 1 Đơn Vị</h2>
+          <p>Để tăng hay giảm giá trị của biến đi 1 đơn vị chúng ta có thể dùng các cách viết tắt sau:</p>
+          <pre class="pre"> <code>
+              var x = y = 100;
+              x++;
+              document.getElementById("text1").innerHTML = x;
+              y--;
+              document.getElementById("text2").innerHTML = y;
+              </code> </pre>
+              <h2>Tăng Sau</h2>
+              <p>2 cách viết&nbsp;<strong>x++</strong>&nbsp;hay&nbsp;<strong>x--</strong>&nbsp;được gọi là tăng sau (post-increment) và giảm sau (post-decrement). Sở dĩ có 2 thuật ngữ này là để phân biệt với tăng trước (pre-increment)&nbsp;<strong>++x</strong>&nbsp;và giảm trước (pre-decrement)&nbsp;<strong>--x</strong>.</p>
+              <p>Tăng trước và tăng sau về mặt bản chất không khác nhau đối với giá trị của biến được tăng, tuy nhiên chúng khác nhau ở giá trị trả về. Ví dụ:</p>
+          <pre class="pre"><code> 
+            var x = 5;
+            var a = x++;  // a là 5 trong khi x là 6
+            // a = x++ trả về giá trị của x trước và gán cho a sau đó mới tăng gía trị của x
+            document.getElementById("text1").innerHTML = a;
+            document.getElementById("text2").innerHTML = x;            
+            y = 5;
+            var b = ++y; // b là 6 và y cũng là 6
+            // b = ++y tăng giá trị của biến y và trả về giá trị sau khi tăng (6) và gán giá trị này cho biến b          
+            document.getElementById("text3").innerHTML = b;
+            document.getElementById("text4").innerHTML = y;
+           </code> </pre>
+           <h2>Tăng, Giảm Giá Trị Biến 1 Lượng Nhất Định</h2>
+           <p>Để gán giá trị cho biết đồng thời tăng (hay giảm) giá trị của biến thêm một lượng nhất định ta có thể dùng cách viết tắt sau:</p>
+          <pre class="pre"><code>
+            var x = y = 100;
+            x += 20; // 120
+            y -= 20; // 80
+          </code> </pre>
+          <p>Tương tự chúng ta cũng có thể gán giá trị cho biến sử dụng phép toán&nbsp;<code>*=</code></p>
+          <pre class="pre"><code>
+            var x = y = 20;
+            x *= 5; // 100
+            y /= 5; // 4
+          </code></pre>
+           <h2>Toán logic</h2>
+           <p>Trong javascript các phép toán logic thông thường gồm có:</p>
+           <ul>
+            <li><code>==</code>: So sánh ngang bằng về gí trị của 2 biến hoặc biến với biểu thức, hằng số...</li>
+            <li><code>===</code>: So sánh ngang bằng chặt (cả về giá trị và kiểu dữ liệu)</li>
+            <li><code>!=</code>: So sánh khác</li>
+            <li><code>&gt;=</code>: Lớn hơn hoặc bằng</li>
+            <li><code>&lt;=</code>: Nhỏ hơn hặc bằng</li>
+            <li><code>&amp;</code>: Trả về true nếu giá trị của mọi biểu thức tham gia vào phép toán đều nhận giá trị&nbsp;<code>true</code></li>
+            <li><code>||</code>: Trả về true nếu giá trị của một trong các biểu thức tham gia vào phép toán đều nhận giá trị&nbsp;<code>true</code></li>
+          </ul>
+          <p>Ví dụ:</p>
+          <pre class="pre"><code>
+            var a = 5;
+            var b = 3;
+            var c = 0;
+            var d = false;
+            document.getElementById("text1").innerHTML = (a > b); // true
+            document.getElementById("text2").innerHTML = (a == b); // false
+            document.getElementById("text3").innerHTML = (a == 5); // true
+            document.getElementById("text4").innerHTML = (a === "5"); // false
+            document.getElementById("text5").innerHTML = (a && c); // false
+            document.getElementById("text6").innerHTML = (b && d); // false
+            document.getElementById("text7").innerHTML = (c || d); // false
+            document.getElementById("text8").innerHTML = (a || c); // true
+          </code></pre>
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

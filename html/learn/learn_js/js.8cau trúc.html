@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/Javascript.css.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">Javascript cơ bản</h2>
+          <a href="#">Trang chủ Javascript</a>
+          <a href="js.1gioithieu.html">Giới thiệu Javascript</a>
+          <a href="js.2comment.html">Comment trong Javascript</a>
+          <a href="js.3 biến.html">Biến trong Javascript  </a>
+          <a href="js.4 phéptoan.html">Phép Toán trong Javascript</a>
+          <a href="js.5 dữ liệu.html">Kiểu Dữ Liệu trong Javascript </a>
+          <a href="js.6ham.html">Hàm thường gặp trong Javascript</a>
+          <a href="js.7pham vi.html">Phạm Vi Của Biến trong Javascript</a>
+          <a class="Active" href="js.8cau trúc.html">Cấu Trúc if,else,elseif trong Javascript</a>
+          <a href="js.9 vòng lặp.html">Vòng Lặp trong Javascript</a>
+          <a href="js.10 Break và Continue.html">Break và Continue trong Javascript </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Cấu Trúc Điều Khiển if, else và elseif trong Javascript </h1>
+          <div class="data">
+            <h2>Cấu Trúc Điều Khiển if, else và elseif trong Javascript </h2>
+          <p>Cấu trúc điều khiển dùng để điều khiển luồng thực thi của chương trình. Trong bài học này bạn sẽ tìm hiểu 3 cấu trúc điều khiển: if, else và elseif</p>
+          <h2>If</h2>
+          <p>Câu lệnh if bao gồm một biểu thức điều kiện và đoạn mã sẽ được thực thi khi điều kiện đó nhận giá trị là true. Ví dụ:</p>
+          <pre class="pre" > <code>
+            var score = 10;
+            if (score == 10) {
+                alert("Good job");
+            }</code> </pre>
+            <p>Lưu ý: ở đây chúng ta sử dụng toán tử so sánh == chứ không phải là gán giá trị =.</p>
+            <h2>Else</h2>
+            <p>else được sử dụng chung với if. Ngược lại với if, khi biểu thức điều kiện trong ìf nhận giá trị là false thì đoạn mã lệnh trong else sẽ được thực thi. Hãy xem ví dụ sau để hiểu rõ:</p>
+          <pre class="pre" > <code>
+            var score = 5;
+            if (score == 10) {
+                alert("Xuất sắc");
+            } else {
+                alert("Cần cố gắng");
+            }</code> </pre>
+          <h2>Elseif</h2>
+          <p>elseif được dùng để thêm biểu thức điều kiện kiểm tra khi biểu thức điều kiện trong if không trả về giá trị là true. Ví dụ:</p>
+          <pre class="pre" > <code>
+            var score = 5;
+            if (score == 10) {
+                alert("Xuất sắc");
+            } elseif (score &#60 &#53) {
+                alert("Cần cố gắng");
+            } else {
+                alert("Tốt");
+            }</code> </pre>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+  
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

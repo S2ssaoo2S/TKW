@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/CSS.css copy.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <a href=""
+                    >Tutorial<i
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Q&A</a></li>
+                <li><a href=""></a></li>
+                <li>
+                  <a class="light-mode"
+                    ><i class="fa fa-toggle-on" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search flex">
+              <form action="get" class="search-form">
+                <input type="text" name="search" class="search-input" />
+              </form>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+            <div class="login">
+              <button class="btn-login">login</button>
+            </div>
+            <div class="register">
+              <button class="btn-register">sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="#">Trang chủ Css</a>
+          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
+          <a href="">Chèn Mã Css</a>
+          <a href=""> Cú Pháp Css  </a>
+          <a href="">Bộ chọn Css</a>
+          <a href="">Phong Chữ Css</a>
+          <a href="">Màu Sắc Css </a>
+          <a href="">Box Model Css</a>
+          <a href="">Căn Lề</a>
+          <a href="">Đường Viền Css</a>  
+          <a href="">Văn Bản Css </a>
+          <a href="">Phong Nền </a>
+          <a href="">Khoảng Đệm Css</a>
+         
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Đường Viền trong CSS</h1>
+          <div class="data">
+            <h2>Thuộc Tính Border</h2>
+            <p>Thuộc tính&nbsp;<code>border</code>&nbsp;trong CSS được dùng để tạo đường viền cho phần tử. Sử dụng thuộc tính&nbsp;<code>border</code>&nbsp;chúng ta có thể gán giá trị cho một hoặc nhiều thuộc tính khác như độ rộng đường viền (border-width), kiểu đường viền (border-style) và àu sắc đường viền (border-color) của phần tử.</p>
+          <pre>
+            selector {
+              border: border-width, border-style, border-color;
+          }
+          </pre>
+            <p>Ví dụ:</p>
+            <pre>
+              p {
+                border: 2px solid #333;
+            }
+            </pre>
+          <h2>Kiểu Đường Viền</h2>
+          <p>Thuộc tính border-style được sử dụng để tạo kiểu cho đường viền.</p>
+          <pre>
+            p.dotted {border-style: dotted;}
+            p.dashed {border-style: dashed;}
+            p.solid {border-style: solid;}
+            p.double {border-style: double;}
+            p.groove {border-style: groove;}
+            p.ridge {border-style: ridge;}
+            p.inset {border-style: inset;}
+            p.outset {border-style: outset;}
+            p.none {border-style: none;}
+            p.hidden {border-style: hidden;}
+          </pre>
+          <p>Bạn cũng có thể tạo các kiểu đường viền khác nhau cho viền trên, viền phải, viền dưới, viền trái bằng cách gán đồng thời các giá trị này theo thứ tự lần lượt như vừa liệt kê.</p>
+          <pre>
+            p.mix {
+              border-style: dotted dashed solid double;
+          }
+          </pre>
+          <h2>Độ Rộng Đường Viền</h2>
+          <p>Thuộc tính border-width được sử dụng để tạo độ rộng cho đường viền. Giá trị của thuộc tính này có thể được gán sử dụng đơn vị là pixel, cm, pt (point)... Hoặc sử dụng các đơn vị đo mặc định của trình duyệt như: thin, medium hoặc thick.</p>
+          <pre>
+            p.first {
+              border-style: solid;
+              border-width: 5px;
+          }
+          
+          p.second {
+              border-style: solid;
+              border-width: medium;
+          }
+          
+          p.third {
+              border-style: solid;
+              border-width: 2px 10px 4px 20px;
+          }
+          </pre>
+          <h2>Màu Đường Viền</h2>
+          <p>Thuộc tính border-color được sử dụng để tạo màu cho đường viền. Khi gán giá trị màu cho thuộc tính này có thể dùng</p>
+          <ul>
+            <li>Màu theo tên như&nbsp;<code>black</code>,&nbsp;<code>blue</code>,&nbsp;<code>red</code>...</li>
+            <li>Màu Hex như&nbsp;<code>#000</code>,&nbsp;<code>#ccc</code>...</li>
+            <li>Màu RBG như&nbsp;<code>rgb(0, 0, 0)</code>,&nbsp;<code>rgb(255,0 , 0)</code>...</li>
+          </ul>
+          <pre>
+            p.one {
+              border-style: solid;
+              border-width: 5px;
+          }
+          
+          p.two {
+              border-style: solid;
+              border-width: medium;
+          }
+          </pre>
+          <p>Tương tự như thuộc tính border-style, bạn cũng có thể gán các giá trị khác nhau cho màu của viền trên, viền phải, viền dưới và viền trái.</p>
+          <pre>
+            p.three {
+              border-style: solid;
+              border-width: 2px 10px 4px 20px;
+          }
+          </pre>
+          <h2>Viền Riêng Lẻ</h2>
+          <p>Bạn cũng có thể sử dụng một hoặc nhiều thuộc tính sau để tạo viền riêng lẻ cho phần tử:</p>
+          <ul>
+            <li>Thuộc tính&nbsp;<code>border-top</code>: Dùng để tạo viền trên cùng cho phần tử</li>
+            <li>Thuộc tính&nbsp;<code>border-bottom</code>: Tạo viền dười cho phần tử.</li>
+            <li>Thuộc tính&nbsp;<code>border-left</code>: Tạo viền trái cho phần tử.</li>
+            <li>Thuộc tính&nbsp;<code>border-right</code>: Tạo viền phải cho phần tử.</li>
+          </ul>
+          <p>Ví dụ:</p>
+          <pre>
+            p.top {
+              border-top: 1px solid #333;
+          }
+          p.left {
+              border-left: 1px solid #ccc;
+          }
+          </pre>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

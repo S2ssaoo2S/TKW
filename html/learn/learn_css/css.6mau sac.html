@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/CSS.css copy.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <a href=""
+                    >Tutorial<i
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Q&A</a></li>
+                <li><a href=""></a></li>
+                <li>
+                  <a class="light-mode"
+                    ><i class="fa fa-toggle-on" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search flex">
+              <form action="get" class="search-form">
+                <input type="text" name="search" class="search-input" />
+              </form>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+            <div class="login">
+              <button class="btn-login">login</button>
+            </div>
+            <div class="register">
+              <button class="btn-register">sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="#">Trang chủ Css</a>
+          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
+          <a href="">Chèn Mã Css</a>
+          <a href=""> Cú Pháp Css  </a>
+          <a href="">Bộ chọn Css</a>
+          <a href="">Phong Chữ Css</a>
+          <a href="">Màu Sắc Css </a>
+          <a href="">Box Model Css</a>
+          <a href="">Căn Lề</a>
+          <a href="">Đường Viền Css</a>  
+          <a href="">Văn Bản Css </a>
+          <a href="">Phong Nền </a>
+          <a href="">Khoảng Đệm Css</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Màu Sắc trong CSS: Tên Màu, Màu RGB, Màu HEX và Màu HSL - CSS Cơ Bản</h1>
+          <div class="data">
+            <h2>Màu Sắc trong CSS: Tên Màu, Màu RGB, Màu HEX và Màu HSL</h2>
+            <p>Trong CSS có hai cách khác nhau để xác định màu sắc được sử dụng đó là:</p>
+            <ul>
+              <li>Sử dụng màu theo tên.</li>
+              <li>Sử dụng màu theo giá trị định dạng kiểu RGB, HEX hay HSL.</li>
+            </ul>
+            <h2>Màu Sắc Theo Tên</h2>
+            <p>CSS hỗ trợ 140 tên màu khác nhau. Các tên được lấy từ tiếng Anh và được viết theo kiểu chữ in thường.</p>
+            <P>Ví dụ dưới đây liệt kê một số tên màu thường được sử dụng phổ biến trong</P>
+            <img src="/images/css/4bang-ma-mau-css.jpg"width="700" height="381">
+            <h2>Màu Sắc Theo Giá Trị</h2>
+            <p>Có ba cách khác nhau khi biểu diễn một giá trị màu sắc đó là sử dụng kiểu RGB, HEX hoặc HSL. Trong bài học này chúng ta tìm hiểu hai kiểu giá trị màu được sử dụng nhiều trong CSS là màu RGB và màu HEX.</p>
+            <h3>Màu RGB</h3>
+            <p>Giá trị màu RGB được xác định dựa trên sự kết hợp của ba màu đó là màu đỏ (Red), màu xanh lá cây (Green) và màu xanh da trời (Blue).</p>
+            <p>Cú pháp giá trị màu RGB trong CSS:</p>
+          <pre>rgb(red, green, blue)</pre>
+          <p>Trong đó giá trị của các màu&nbsp;<em>red</em>,&nbsp;<em>green</em>&nbsp;và&nbsp;<em>blue</em>&nbsp;dao động từ 0 tới 255, thể hiện độ độ đậm của chúng để hình thành nên màu sắc cuối cùng (với độ đậm cao nhất là 255 và thấp nhất là 0).</p>
+          <p><b>Màu RGB trong CSS</b></p>
+          <h3>Màu HEX</h3>
+          <p>Giá trị màu HEX tương tự như RGB được hình thành từ sự kết hợp của ba màu: màu đỏ, màu xanh lá cây và , màu xanh da trời. Tuy nhiên HEX sử dụng các số trong hệ cơ số 16 cho giá trị của mỗi màu này thay vì các số từ 0 tới 255 như ở màu RGB.</p>
+          <p>Cú pháp giá trị màu HEX trong CSS:</p>
+          <pre>
+            #rrggbb
+          </pre>
+          <p>Trong đó:</p>
+          <ul>
+            <li><em>rr</em>&nbsp;là giá trị của màu đỏ biểu diễn ở cơ số 16.</li>
+            <li><em>gg</em>&nbsp;là giá trị của màu xanh lá cây biểu diễn ở cơ số 16.</li>
+            <li><em>bb</em>&nbsp;là giá trị của màu xanh da trời biểu diễn ở cơ số 16.</li>
+          <p>Trong đó:</p></ul>
+          <p>Ở cơ số 16, giá trị mỗi màu trong ba màu trên dao động từ&nbsp;<em>00</em>&nbsp;tới&nbsp;<em>FF</em>, khoảng giá trị này tương ứng với khoảng giá trị từ&nbsp;<em>0</em>&nbsp;tới&nbsp;<em>255</em>&nbsp;ở hệ cơ số thập phân sử dụng cho giá trị màu RGB.</p>
+          <p>Chuyển đổi giá trị HEX (ở hệ cơ số 10) qua giá trị ở hệ cơ số 10 (hệ thập phân):</p>
+          <ul>
+            <li>Đổi&nbsp;<em>0</em>&nbsp;từ hệ cơ số 10 qua hệ cơ số 16 sẽ là&nbsp;<em>00</em>. Cụ thể:&nbsp;<em>0</em>&nbsp;=&nbsp;<em>0 x 16^1 + 0 x 16^0</em>.</li>
+            <li>Đổi&nbsp;<em>255</em>&nbsp;từ hệ cơ số 10 qua hệ cơ số 16 sẽ là&nbsp;<em>FF</em>. Cụ thể:&nbsp;<em>255</em>&nbsp;=&nbsp;<em>15 (F) x 16^1 + 15 (F) x 16^0</em>.</li>
+          </ul><br>
+          <p><strong>Lưu ý:</strong>&nbsp;Hệ cơ số 16 bao gồm 16 số 0 tới 10 và 5 ký tự a, b, c, d, e, f. Theo đó khi chuyển đổi từ cơ số 16 qua cơ số 10 thì a, b, c, d, e, f lần lượt sẽ nhận các giá trị tương ứng là 10, 11, 12, 13, 14 và 15.</p>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

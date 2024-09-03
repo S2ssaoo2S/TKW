@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">HTML cơ bản</h2>
+          <a href="/html/learn/learn_html/1Gioit_thieu_html.html">Giới thiệu HTML</a>
+          <a href="/html/learn/learn_html/2HTML_edit.html">HTML Text Editor</a>
+          <a href="/html/learn/learn_html/3HTML_co_ban.html">Cơ bản về HTML</a>
+          <a href="/html/learn/learn_html/4HTML_the.html"> Thẻ trong HTML</a>
+          <a href="/html/learn/learn_html/5HTML Phần Tử.html">Phần tử HTML</a>
+          <a href="/html/learn/learn_html/6HTML-Thuoc-Tinh.html">Thuộc tính</a>
+          <a href="/html/learn/learn_html/7HTML-De-Muc.html">Đề Mục</a>
+          <a class="active" href="/html/learn/learn_html/8HTML-Doan-Van.html">Đoạn văn trong HTML</a>
+          <a href="/html/learn/learn_html/9HTML-Thuoc-Tinh-Style.html">Thuộc tính style </a>
+          <a href="/html/learn/learn_html/10Dinh_dang_chu.html">Định Dạng Chữ</a>
+          <a href="/html/learn/learn_html/11Trich_dan.html">Bình luận HTML</a>
+          <a href="/html/learn/learn_html/12Mau_sac.html">Màu HTML</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">HTML Đoạn Văn</h1>
+          <div class="data">
+
+            <p>
+              Để đánh dấu một đoạn văn bản thì chúng ta sử dụng
+              thẻ&nbsp;<code>&lt;p&gt;</code>&nbsp;trong HTML.
+            </p>
+
+            <h2>HTML Thẻ&nbsp;<code>&lt;p&gt;</code></h2>
+
+            <p>
+              Thẻ&nbsp;<code>&lt;p&gt;</code>&nbsp;trong HTML được sử dụng để
+              đánh dấu đoạn văn bản, ví dụ như sau:
+            </p>
+
+            <pre
+              class="pre"
+            ><code>&lt;p&gt;Câu đầu tiên của đoạn văn. Câu thứ hai của đoạn văn. Câu thứ ba...&lt;/p&gt;
+              &lt;p&gt;Đoạn văn chỉ với một câu duy nhất.&lt;/p&gt;</code></pre>
+
+            <p>
+              Tương tự như khi hiển thị các&nbsp;<a
+                href="/html/learn/learn_html/7HTML-De-Muc.html"
+                >đề mục</a
+              >&nbsp;thì khi hiển thị nội dung văn bản của phần
+              tử&nbsp;<code>p</code>, trình duyệt sẽ tự động thêm khoảng trống
+              (hay lề) phía trên và dưới phần tử. Tuỳ vào trình duyệt khác nhau
+              khoảng cách này có thể sẽ khác nhau. Với trình duyệt Chrome khoảng
+              cách này là 18px.
+            </p>
+
+            <h2>Khoảng Trắng và Xuống Dòng</h2>
+
+            <p>
+              Khi hiển thị trình duyệt sẽ tự động bỏ qua khoảng trắng và dấu
+              xuống dòng sẽ được bỏ qua.
+            </p>
+
+            <p>
+              Đoạn code sau đây sẽ không tạo ra dòng mới giữa các câu trong đoạn
+              văn:
+            </p>
+
+            <pre class="pre"><code>&lt;p&gt;
+              Câu đầu tiên của đoạn văn.
+              Câu thứ hai của đoạn văn ở dòng mởi.
+              Câu thứ ba ở dòng mởi...
+              &lt;/p&gt;</code></pre>
+
+            <p>
+              Thay vào đó để xuống dòng trong cùng một đoạn văn bản bạn cần sử
+              dụng thẻ&nbsp;<code>&lt;br&gt;</code>:
+            </p>
+
+            <pre
+              class="pre"
+            ><code>&lt;p&gt;Câu đầu tiên của đoạn văn.&lt;br&gt;Câu thứ hai của đoạn văn ở dòng mởi.&lt;br&gt;Câu thứ ba ở dòng mởi...&lt;/p&gt;</code></pre>
+
+            <p>
+              Tương tự đoạn code sau đây sẽ không tạo ra nhiều hơn một khoảng
+              trắng giữa các câu trong đoạn văn:
+            </p>
+
+            <pre class="pre"><code>&lt;p&gt;
+              Câu đầu tiên của đoạn văn.        Câu thứ hai của đoạn văn.      Câu thứ ba của đoạn văn...
+              &lt;/p&gt;</code></pre>
+
+            <p>
+              Để thêm khoảng trắng chúng ta sẽ sử dụng ký tự HTML đặc
+              biệt&nbsp;<code>&amp;nbsp;</code>. Ở
+              đây&nbsp;<code>&amp;</code>&nbsp;dùng để bắt đầu một ký tự đặc
+              biệt và&nbsp;<code>nbsp</code>&nbsp;(non breaking space) là tên
+              của ký tự đặc biệt được dùng để tạo khoảng trắng.
+            </p>
+
+            <pre
+              class="pre"
+            ><code>&lt;p&gt;Câu đầu tiên của đoạn văn.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Câu thứ hai của đoạn văn.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Câu thứ ba...&lt;/p&gt;</code></pre>
+
+            <h2>Đừng Quên Thẻ Đóng</h2>
+
+            <p>
+              Thẻ&nbsp;<code>&lt;p&gt;</code>&nbsp;được đi cặp cùng với thẻ
+              đóng&nbsp;<code>&lt;/p&gt;</code>. Trong nhiều trường hợp trình
+              duyệt vẫn có thể hiển thị nội dung đoạn văn bình thường ngay cả
+              khi không sử dụng thẻ đóng:
+            </p>
+
+            <pre class="pre"><code>&lt;p&gt;
+              Câu đầu tiên của đoạn văn.
+              &lt;p&gt;Câu thứ hai của đoạn văn ở dòng mởi.</code></pre>
+
+            <p>
+              Tuy nhiên trong một số trường hợp việc quyên thẻ đóng sẽ có thể
+              khiến việc hiển thị nội dung trang không giống như ý muốn. Do đó
+              lời khuyên khi sử dụng thẻ&nbsp;<code>&lt;p&gt;</code>&nbsp;dó là
+              bạn luôn sử dụng thẻ đóng&nbsp;<code>&lt;/p&gt;</code>&nbsp;cùng
+              với nó.
+            </p>
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer-content flex">
+                <div class="footer-info">
+                  <p>Địa chỉ: Khu dân cư, Nhà Bè, Hồ Chí Minh</p>
+                  <p>Email: tuyensinh@ou.edu.vn</p>
+                  <p>Số điện thoại: 028 3836 4748</p>
+                  <div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.056673616353!2d106.6906695!3d10.6754047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1724342311760!5m2!1svi!2s"
+                      width="350"
+                      height="150"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="footer-links flex">
+                  <div>
+                    <span class="footer_header_text">Liên kết</span>
+                    <a class="block" href="">Trang chủ</a>
+                    <a class="block" href="">Diễn đàn trao đổi</a>
+                    <a class="block" href="">About us</a>
+                  </div>
+                  <div>
+                    <span class="footer_header_text">Sản phẩm</span>
+                    <a class="block" href="">Học HTML</a>
+                    <a class="block" href="">Học CSS</a>
+                    <a class="block" href="">Học C++</a>
+                    <a class="block" href="">Học Javascript</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2024 Mycode. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

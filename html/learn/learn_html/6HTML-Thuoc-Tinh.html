@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">HTML cơ bản</h2>
+          <a href="/html/learn/learn_html/1Gioit_thieu_html.html">Giới thiệu HTML</a>
+          <a href="/html/learn/learn_html/2HTML_edit.html">HTML Text Editor</a>
+          <a href="/html/learn/learn_html/3HTML_co_ban.html">Cơ bản về HTML</a>
+          <a href="/html/learn/learn_html/4HTML_the.html"> Thẻ trong HTML</a>
+          <a href="/html/learn/learn_html/5HTML Phần Tử.html">Phần tử HTML</a>
+          <a class="active" href="/html/learn/learn_html/6HTML-Thuoc-Tinh.html">Thuộc tính</a>
+          <a href="/html/learn/learn_html/7HTML-De-Muc.html">Đề Mục</a>
+          <a href="/html/learn/learn_html/8HTML-Doan-Van.html">Đoạn văn trong HTML</a>
+          <a href="/html/learn/learn_html/9HTML-Thuoc-Tinh-Style.html">Thuộc tính style </a>
+          <a href="/html/learn/learn_html/10Dinh_dang_chu.html">Định Dạng Chữ</a>
+          <a href="/html/learn/learn_html/11Trich_dan.html">Bình luận HTML</a>
+          <a href="/html/learn/learn_html/12Mau_sac.html">Màu HTML</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Thuộc Tính HTML</h1>
+          <div class="data">
+              
+              <h2>Thuộc tính là gì?</h2>
+              
+              <p>Thuộc tính giúp cung cấp thông tin thêm cho phần tử. Mỗi phần tử HTML có thể có một hoặc nhiều thuộc tính khác nhau.</p>
+              
+              <p>Ở ví dụ dưới đây phần tử&nbsp;<code>a</code>&nbsp;có hai thuộc tính là&nbsp;<code>href</code>&nbsp;và&nbsp;<code>title</code>:</p>
+              
+              <pre class="pre"><code>&lt;a href="https://www.Mycode.vn" title="CodeHub.vn"&gt;Trang chủ Mycode.vn&lt;/a&gt;</code></pre>
+              
+              
+              <p>Thuộc tính của phần tử:</p>
+              
+              <ul>
+                <li>Giúp cung cấp thêm thông tin về phần tử.</li>
+                <li>Mỗi thuộc tính được biểu diễn theo dạng:&nbsp;<code>tên_thuộc_tính = "giá_trị_thuộc_tính"</code>. Ví dụ:&nbsp;<code>href="https://www.Mycode.vn"</code>.</li>
+                <li>Thuộc tính (đi kèm với giá trị) luôn được đặt ở thẻ mở.</li>
+                <li>Mỗi phần tử HTML có thể có một hoặc nhiều thuộc tính khác nhau. Ở ví dụ trên phần tử&nbsp;<code>a</code>&nbsp;có hai thuộc tính là&nbsp;<code>href</code>&nbsp;và&nbsp;<code>title</code>.</li>
+              </ul>
+              
+              <p>Ở phần tiếp theo dưới đây chúng ta sẽ tìm hiểu một số thuộc tính phổ biến hay sử dụng.</p>
+              
+              <h2>Thuộc Tính&nbsp;<code>href</code>&nbsp;(Phần Tử&nbsp;<code>a</code>)</h2>
+              
+              <p>Thuộc tính&nbsp;<code>href</code>&nbsp;của phần tử&nbsp;<code>a</code>&nbsp;được dùng để xác định địa chỉ của liên kết HTML:</p>
+              
+              <pre class="pre"><code>&lt;a href="https://www.Mycode.vn"&gt;Trang chủ Mycode.vn&lt;/a&gt;</code></pre>
+              
+              
+              <h2>Thuộc Tính&nbsp;<code>title</code>&nbsp;(Phần Tử&nbsp;<code>a</code>)</h2>
+              
+              <p>Thuộc tính&nbsp;<code>title</code>&nbsp;của phần tử&nbsp;<code>a</code>&nbsp;được dùng để thiết lập tiêu đề cho liên kết HTML.</p>
+              
+              <pre class="pre"><code>&lt;a href="https://www.Mycode.vn" title="CodeHub.vn"&gt;Trang chủ Mycode.vn&lt;/a&gt;</code></pre>
+              
+              
+              <p>Khi liên kết trên được hiển thị trên trình duyệt, nếu bạn rê chuột lên liên kết thì trình duyệt lúc này sẽ hiển thị một hộp thoại nhỏ với nội dung là giá trị của thuộc tính&nbsp;<code>title</code>.</p>
+              
+              <h2>Thuộc tính&nbsp;<code>src</code>&nbsp;(Phần Tử&nbsp;<code>img</code>)</h2>
+              
+              <p>Thuộc tính&nbsp;<code>src</code>&nbsp;của phần tử&nbsp;<code>img</code>&nbsp;được dùng để xác định vị trí của hình ảnh.</p>
+              
+              <pre class="pre"><code>&lt;img src="https://www.Mycode.vn/img/logo.png"&gt;</code></pre>
+              
+              
+              <p>Chúng ta có thể bỏ qua phần tên miền và giao thức (http hoặc https) nếu như địa chỉ của hình ảnh và địa chỉ của trang HTML chứa ảnh này thuộc cùng một website:</p>
+              
+              <pre class="pre"><code>&lt;img src="/img/logo.png"&gt;</code></pre>
+              
+              <p>Cách sử dụng địa chỉ như trên còn được gọi là địa chỉ tương đối và chỉ hoạt động được nếu như địa chỉ trang HTML và địa chỉ hình ảnh nằm trên cùng một website (cùng tên miền và giao thức). Ngược lại địa chỉ được gọi là tuyệt đốinếu bạn tham chiếu đầy đủ tên miền và giao thức như ví dụ trước đó.</p>
+              
+              <h2>Thuộc Tính&nbsp;<code>title</code>&nbsp;(Phần Tử&nbsp;<code>img</code>)</h2>
+              
+              <p>Thuộc tính&nbsp;<code>title</code>&nbsp;của phần tử&nbsp;<code>img</code>&nbsp;được dùng để xác định tiêu đề của hình ảnh.</p>
+              
+              <pre class="pre"><code>&lt;img src="https://www.Mycode.vn/img/logo.png" title="Logo CodeHub.vn"&gt;</code></pre>
+              
+              
+              <p>Khi ảnh trên được hiển thị trên trình duyệt, nếu bạn rê chuột lên ảnh thì trình duyệt lúc này sẽ hiển thị một hộp thoại nhỏ với nội dung là giá trị của thuộc tính&nbsp;<code>title</code>.</p>
+              
+              <h2>Thuộc Tính&nbsp;<code>alt</code>&nbsp;(Phần Tử&nbsp;<code>img</code>)</h2>
+              
+              <p>Thuộc tính&nbsp;<code>alt</code>&nbsp;của phần tử&nbsp;<code>img</code>&nbsp;dùng để mô tả tóm tắt nội dung hình ảnh và sẽ được hiển thị trong trường hợp trình duyệt không hiển thị được ảnh (ví dụ liên kết của ảnh không đúng hoặc địa chỉ ảnh không hợp lệ hoặc không tồn tại..).</p>
+              
+              <pre class="pre"><code>&lt;img src="https://www.Mycode.vn/img/logo.png" alt="Logo CodeHub.vn"&gt;</code></pre>
+              
+              
+              <p><strong>Lưu ý:</strong>&nbsp;Thuộc tính&nbsp;<code>alt</code>&nbsp;thường được đánh giá có mức độ quan trọng hơn thuộc tính&nbsp;<code>title</code>&nbsp;vì nó được sử dụng bởi các thiết bị screen reader dành cho người khiếm thị, ngoài ra cách máy tìm kiếm như Google, Bing.. cũng sử dụng thuộc tính này để xác định nội dung của hình ảnh.</p>
+              
+              <h2>Thuộc Tính&nbsp;<code>width</code>&nbsp;và&nbsp;<code>height</code>&nbsp;(Phần Tử&nbsp;<code>img</code>)</h2>
+              
+              <p>Thuộc tính&nbsp;<code>width</code>&nbsp;và&nbsp;<code>height</code>&nbsp;của phần tử&nbsp;<code>img</code>&nbsp;dùng để xác định chiều cao của hình ảnh.</p>
+              
+              <pre class="pre"><code>&lt;img src="https://www.Mycode.vn/img/logo.png" width="200px" height="200px"&gt;</code></pre>
+              
+              
+              <p>Ảnh trên sẽ có chiều rông là 200 pixel (đọc là /píc-xeo/) và chiều cao là 200 pixel. Mỗi pixel tương ứng một dấu chấm trên màn hình máy tính. Độ rộng và độ cao của pixel ứng với độ phân giải màn hình máy tính.</p>
+              
+              <p>Ngoài pixel bạn có thể sử dụng đơn vị là centimet (cm) hoặc point (pt)... với 1pt = 0.035.cm.</p>
+              
+              <p>Nếu không có đơn vị nào được đưa vào giá trị của thuộc tính&nbsp;<code>width</code>&nbsp;hoặc&nbsp;<code>height</code>&nbsp;thì đơn vị mặc định pixel sẽ được sử dụng:</p>
+              
+              <p>Ví dụ đoạn mã HTML dưới đây tương đương với ví dụ phía trước:</p>
+              
+              <pre class="pre"><code>&lt;img src="https://www.Mycode.vn/img/logo.png" width="200" height="200"&gt;</code></pre>
+              
+              <h2>Đặt Giá Trị Thuộc Tính Trong Dấu Nháy</h2>
+              
+              <p>Bạn nên đặt giá trị của thuộc tính trong cặp dấu nháy đơn hoặc nháy kép:</p>
+              
+              <pre class="pre"><code>&lt;a href='https://www.Mycode.vn'&gt;Trang chủ Mycode.vn&lt;/a&gt;</code></pre>
+              
+              <p>Hoặc:</p>
+              
+              <pre class="pre"><code>&lt;a href="https://www.Mycode.vn"&gt;Trang chủ Mycode.vn&lt;/a&gt;</code></pre>
+              
+              <p>Mặc dù điều này là không bắt buộc trong HTML và bạn có thể không sử dụng dấu nháy và bạn hoàn toàn có thể viết mã HTML như sau:</p>
+              
+              <pre class="pre"><code>&lt;a href=https://www.Mycode.vn&gt;Trang chủ Mycode.vn&lt;/a&gt;</code></pre>
+              
+              <p>Tuy nhiên bạn nên sử dụng dấu nháy vì trong một số trường hợp không sử dụng dấu nháy sẽ có thể gây ra lỗi.</p>
+              
+              <p>Ví dụ dưới đây giá trị của thuộc tính&nbsp;<code>title</code>&nbsp;sẽ không phải là&nbsp;<code>Trang Chủ</code>:</p>
+              
+              <pre class="pre"><code>&lt;a href="https://www.Mycode.vn" title=Trang Chủ&gt;Trang chủ Mycode.vn&lt;/a&gt;</code></pre>
+              
+              <p>Ngoài ra bạn cũng nên sử dụng&nbsp;<code>""</code>&nbsp;thay vì&nbsp;<code>''</code>&nbsp;vì cách này được sử dụng phổ biến. Tuy nhiên cần linh hoạt trong một số trường hợp.</p>
+              
+              <p>Ví dụ nếu trong giá trị của thuộc tính có dấu nháy kép thì bạn nên sử dụng dấu nháy đơn:</p>
+              
+              <pre class="pre"><code>&lt;a href="https://www.Mycode.vn" title='"CodeHub.vn"'&gt;Trang chủ Mycode.vn&lt;/a&gt;</code></pre>
+              
+              <p>Nếu bạn vẫn muốn sử dụng dấu nháy kép trong trường hợp trên thì bạn cần thoát ký tự đặc biệt này bằng cách đặt trước nó ký tự&nbsp;<code>\</code>&nbsp;như sau:</p>
+              
+              <pre class="pre"><code>&lt;a href="https://www.Mycode.vn" title="\"CodeHub.vn\""&gt;Trang chủ Mycode.vn&lt;/a&gt;</code></pre>
+              </div>
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer-content flex">
+                <div class="footer-info">
+                 
+                  <p>Địa chỉ: Khu dân cư, Nhà Bè, Hồ Chí Minh</p>
+                  <p>Email: tuyensinh@ou.edu.vn</p>
+                  <p>Số điện thoại: 028 3836 4748</p>
+                  <div ><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.056673616353!2d106.6906695!3d10.6754047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1724342311760!5m2!1svi!2s" width="350" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+                <div class="footer-links flex">
+                  <div>
+                    <span class="footer_header_text">Liên kết</span>
+                    <a class="block" href="">Trang chủ</a>
+                    <a class="block" href="">Diễn đàn trao đổi</a>
+                    <a class="block" href="">About us</a>
+                  </div>
+                  <div>
+                    <span class="footer_header_text">Sản phẩm</span>
+                    <a class="block" href="">Học HTML</a>
+                    <a class="block" href="">Học CSS</a>
+                    <a class="block" href="">Học C++</a>
+                    <a class="block" href="">Học Javascript</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2024 Mycode. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+ 
+</html>
+

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/C++.css.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/hoidap.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="">Giới thiệu C++</a>
+          <a href="1viet truong trinh.HTML">Viết chương trình đầu tiên</a>
+          <a href="2Cấu trúc cơ bản của một chương trình C++.HTML"> Cấu trúc cơ bản chương trình C++  </a>
+          <a href="3Lệnh, khối lệnh, từ khóa.HTML">Lệnh,khối lệnh,từ khóa</a>
+          <a href="4dung lqdxdl.HTML">Dùng lệnh liên quan tới xuất dữ liệu</a>
+          <a href="5Biến và các kiểu dữ liệu trong C++.HTML">Biến và dữ liệu trong C++</a>
+          <a href="6nhập và xuất dữ liệu.HTML">nhập và xuất dữ liệu</a>
+          <a href="7Hằng số.HTML">Hằng số</a>
+          <a href="8 pham vi cua bien.HTML">phạm vi của biến</a>
+          <a href="9cac phep toan co ban.HTML">Các phép toán cơ bản</a>
+          <a href="10toan tu tăng giam.HTML">Toán tử tăng giảm </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Lệnh,Khối Lệnh,Từ Khóa</h1>
+          <div class="data">
+            <p>Rất vui khi được gặp lại các bạn trong bài học tiếp theo trong khóa học lập trình C++ cho người mới bắt đầu. Hôm trước, chúng ta đã có cái nhìn đầu tiên về các thành phần cơ bản hình thành nên một chương trình C++.</p>
+            <p>Mình sẽ nhắc lại một chút trong bài học trước.</p>
+            <p>Cấu trúc của một chương trình C++ cơ bản:</p>
+            <pre>+ Hàm main: (bắt buộc phải có)
+
+              + Kiểu trả về của hàm main (int).
+              + Tên của hàm main (cũng là main luôn).
+              + Thân của hàm main (cặp dấu ngoặc nhọn { và }).
+              + Giá trị trả về của hàm main (return 0; //hoặc giá trị bao nhiêu cũng đc).
+            
+            
+            + Những dòng lệnh bên trong thân hàm main. (Có thể có hoặc không)
+            
+            + Những dòng comment. (Có thể có hoặc không)
+            
+            + Tích hợp thư viện và không gian tên. (Phụ thuộc vào các lệnh mà bạn sử dụng).</pre>
+            <p>Chúng ta đã biết hàm main là thứ quan trọng nhất cần phải có của một chương trình C++. Chúng ta hoàn toàn có thể khai báo hàm main xong và chạy chương trình ngay mà không bị báo lỗi.</p>
+            <img src="/images/C++/1.3/1.2.0.png" width="700" height="381">
+            <p>Như các bạn thấy, chương trình vẫn được build thành file .exe và hoàn toàn có thể chạy được (Các bạn nhấn thử phím F5). Nhưng khi cửa sổ console vừa hiện lên thì chương trình đóng lại ngay lập tức. Vì bạn không yêu cầu máy tính thực hiện công việc gì cả. Một chương trình máy tính được tạo ra để không làm gì cả thì thật là vô ích.</p>
+            <p>Để giải quyết vấn đề mà chúng ta đặt ra trên máy tính, chúng ta cần ra lệnh cho máy tính thực hiện các công việc cụ thể. Chúng ta ra lệnh cho máy tính bằng các lệnh trong ngôn ngữ lập trình. Để máy tính thực hiện công việc và cho ra kết quả, nó cần nhận lệnh từ người lập trình. Vì thế, yếu tố quan trọng chỉ đứng sau hàm <strong>main</strong> chính là <strong>những câu lệnh</strong>.</p>
+            <h3>Lệnh trong ngôn ngữ lập trình C++</h3>
+            <p>Trong C++, một lệnh là một chỉ thị riêng biệt của một chương trình. <br>Ví dụ:</p>
+            <pre>int variable = 0;
+
+              cout &#60&#60 "Print something";
+              
+              variable = variable + 10;</pre>
+              <p>Ở trên đây, chúng là có 3 dòng lệnh. 3 dòng lệnh này chỉ dẫn máy tính thực hiện 3 công việc khác nhau, nhưng trên phương diện cú pháp, nó có một đặc điểm chung rất quan trọng cần phải nhớ: <strong>dòng lệnh kết thúc bằng dấu chấm phẩy ";"</strong></p>
+              <p>Chỉ cần một dòng lệnh bị bỏ sót dấu chấm phẩy, IDE sẽ thông báo với người lập trình lỗi về cú pháp.</p>
+            <img src="/images/C++/1.3/1 (1).png" width="700" height="381">
+            <p>Thông báo lỗi này có nghĩa bạn viết thiếu dấu chấm phẩy ";" ở trước dòng thứ 6 trong chương trình.</p>
+            <img src="/images/C++/1.3/2 (1).png" width="700" height="381">
+            <p>Sau khi thêm dấu chấm phẩy vào dòng lệnh trước đó, chương trình được build bình thường.</p>
+            <p>Một điều cần lưu ý nữa là: <strong>Tại một thời điểm, chương trình chỉ có thể thực hiện được 1 dòng lệnh. Các dòng lệnh được thực hiện tuần tự từ trên xuống dưới.</strong></p>
+            <img src="/images/C++/1.3/3 (1).png" width="700" height="381">
+            <p>Như kết quả trong hình, ta có dòng chữ <strong>"Statement 1"</strong> được in ra trước dòng <strong>"Statement 2"</strong> và <strong>"Statement 3"</strong> vì dòng lệnh dùng để in ra <strong>"Statement 1"</strong> nằm phía trên các lệnh còn lại.</p>
+            <p>Ở ví dụ trên chỉ bao gồm các câu lệnh đơn giản. Chúng ta sẽ được học những lệnh có cấu trúc đặc biệt như <strong>câu lệnh có cấu trúc rẽ nhánh</strong>, <strong>câu lệnh có cấu trúc lặp</strong>... trong những bài sau.</p>
+            <h3>Khối lệnh</h3>
+            <p>Trong C++, một khối lệnh là tập hợp những câu lệnh được đặt trong cặp dấu ngoặc nhọn <strong>{</strong> và <strong>}</strong>.</p>
+            <p>Một khối lệnh có thể chứa nhiều dòng lệnh, có thể chứa một dòng lệnh hoặc không chứa dòng lệnh nào. Một khối lệnh còn có thể chứa một hoặc nhiều khối lệnh khác.</p>
+            <pre>#include &#60 iostream &#62
+              using namespace std;
+              
+              int main()	{
+              
+                int variable = 1;
+              
+                {
+                  int variable = 10;
+                  cout &#60&#60  "The variable inside this block is not concerning the variable above" &#60&#60 endl;
+                  cout &#60&#60 "We print the value of the second variable: " &#60&#60 variable &#60&#60 endl;
+                }
+              
+                cout &#60&#60 "We print the value of the first variable: " &#60&#60 variable &#60&#60 endl;
+              
+                return 0;
+              }</pre>
+              <p>Dễ thấy nhất là khối lệnh đóng vai trò <strong>thân của hàm main</strong>. Trong khối lệnh thân hàm main, chúng ta có một khối lệnh khác có chức năng in ra giá trị của biến variable thứ hai (bên trong khối lệnh con). Khối lệnh con này không gây ảnh hưởng gì với các câu lệnh bên ngoài nó.</p>
+              <p>Chúng ta cùng xem kết quả đoạn chương trình trên:</p>
+            <img src="/images/C++/1.3/4 (3).png" width="700" height="381">
+            <p>Chúng ta thấy giá trị của biến variable bên trong khối lệnh con hoàn toàn khác so với giá trị của biến variable bên ngoài. (<strong>Các bạn sẽ hiểu được biến là gì qua những bài học tiếp theo</strong>)</p>
+            <h3>Từ khóa trong C++</h3>
+            <p>Trong ngôn ngữ lập trình C++ hay bất kỳ ngôn ngữ lập trình nào khác, chúng ta đều có sẵn một số các <strong>từ khóa</strong> do người tạo ra ngôn ngữ đó định nghĩa sẵn. Mỗi từ khóa có một ý nghĩa riêng, khi chúng ta kết hợp các từ khóa và một số cú pháp đi kèm, chúng ta sẽ có được câu lệnh.</p>
+            <p>Ví dụ:</p>
+            <pre>int var</pre>
+            <p>Lệnh trên sử dụng từ khóa <strong>int</strong> để định nghĩa một biến tên <strong>var</strong> có kiểu số nguyên (<strong>integer</strong>).</p>
+            <footer>
+            <h3>Tổng kết</h3>
+            <p>Qua bài học ngày hôm nay, chúng ta hiểu rõ hơn khái niệm <strong>Lệnh và khối lệnh</strong>, để sau này khi mình thường xuyên dùng đến từ này thì các bạn sẽ tránh khỏi một số thắc mắc không cần thiết.</p></footer>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

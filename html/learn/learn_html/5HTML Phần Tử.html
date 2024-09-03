@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">HTML cơ bản</h2>
+          <a href="/html/learn/learn_html/1Gioit_thieu_html.html">Giới thiệu HTML</a>
+          <a href="/html/learn/learn_html/2HTML_edit.html">HTML Text Editor</a>
+          <a href="/html/learn/learn_html/3HTML_co_ban.html">Cơ bản về HTML</a>
+          <a href="/html/learn/learn_html/4HTML_the.html"> Thẻ trong HTML</a>
+          <a class="active" href="/html/learn/learn_html/5HTML Phần Tử.html">Phần tử HTML</a>
+          <a href="/html/learn/learn_html/6HTML-Thuoc-Tinh.html">Thuộc tính</a>
+          <a href="/html/learn/learn_html/7HTML-De-Muc.html">Đề Mục</a>
+          <a href="/html/learn/learn_html/8HTML-Doan-Van.html">Đoạn văn trong HTML</a>
+          <a href="/html/learn/learn_html/9HTML-Thuoc-Tinh-Style.html">Thuộc tính style </a>
+          <a href="/html/learn/learn_html/10Dinh_dang_chu.html">Định Dạng Chữ</a>
+          <a href="/html/learn/learn_html/11Trich_dan.html">Bình luận HTML</a>
+          <a href="/html/learn/learn_html/12Mau_sac.html">Màu HTML</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">HTML Phần Tử</h1>
+          <div class="data">
+       
+              
+              
+              <p>Phần tử HTML (hay HTML Element) bao gồm thẻ mở, thẻ đóng và toàn bộ nội dung giữa hai thẻ này.</p>
+              
+              <p>Ví dụ với đoạn mã HTML sử dụng một thẻ&nbsp;<code>&lt;p&gt;</code>&nbsp;để đánh dấu đoan văn bản như sau:</p>
+              
+              <pre><code>&lt;p&gt;Nội dung bên trong...&lt;/p&gt;</code></pre>
+              
+              <p>Lúc này phần tử&nbsp;<code>p</code>&nbsp;tương ứng sẽ gồm thẻ mở&nbsp;<code>&lt;p&gt;</code>&nbsp;thẻ đóng&nbsp;<code>&lt;/p&gt;</code>&nbsp;và nội dung văn bản nằm giữa hai thẻ này.</p>
+              
+              <p>Một trang HTML thường sẽ có rất nhiều phần tử khác nhau như phần tử&nbsp;<code>html</code>,&nbsp;<code>body</code>,&nbsp;<code>head</code>,&nbsp;<code>meta</code>,&nbsp;<code>h1</code>,&nbsp;<code>p</code>...:</p>
+              
+              <pre class="pre"><code>&lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                  &lt;head&gt;
+                      &lt;meta charset="UTF-8"&gt;
+                      &lt;title&gt;Tên Thẻ&lt;/title&gt;
+                  &lt;/head&gt;
+              &lt;body&gt;
+              &lt;h1&gt;Đề mục..&lt;/h1&gt;
+              &lt;p&gt;Đây là nội dung một đoạn văn bản thứ nhất...&lt;/p&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;</code></pre>
+              
+              
+              <h2>Phần Tử Rỗng</h2>
+              
+              <p>Một số thẻ tự đóng không có nội dung như&nbsp;<code>&lt;br&gt;</code>&nbsp;sẽ tạo ra phần tử rỗng (empty element) tương ứng.</p>
+              
+              <pre class="pre"><code>&lt;p&gt;Câu đầu tiên trong đoạn vă.&lt;br&gt; Câu thứ hai được xuống dòng mới&lt;/p&gt;
+              &lt;hr&gt;</code></pre>
+              
+              <p>Ở ví dụ trên phần tử&nbsp;<code>br</code>&nbsp;và phần tử&nbsp;<code>hr</code>&nbsp;là hai phần tử rỗng được tạo ra tương ứng từ hai thẻ tự đóng&nbsp;<code>&lt;br&gt;</code>&nbsp;và&nbsp;<code>&lt;hr&gt;</code>.</p>
+              
+              <h2>Nồng Phần Tử</h2>
+              
+              <p>Nồng phần tử (nested element) là trường hợp một phần tử chứa bên trong nó một hoặc nhiều phần tử khác.</p>
+              
+              <p>Ở ví dụ sau đây phần tử&nbsp;<code>p</code>&nbsp;chứa bên trong nó phần tử&nbsp;<code>strong</code>:</p>
+              
+              <pre><code>&lt;p&gt;Đây là một đoạn văn bản chứa &lt;strong&gt;chữ in đậm&lt;/strong&gt;&lt;/p&gt;</code></pre>
+              
+              <p>Nồng phần tử diễn ra đối với tất cả các trang HTML. Ví dụ với một cấu trúc trang HTML đơn giản như sau:</p>
+              
+              <pre class="pre"><code>&lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              &lt;head&gt;
+              ...
+              &lt;/head&gt;
+              &lt;body&gt;
+              ...
+              &lt;/body&gt;
+              &lt;/html&gt;</code></pre><div class="google-auto-placed ap_container" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-1146333979919906" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent; height: 0px;" data-ad-status="unfilled"><div id="aswift_2_host" style="border: none; height: 0px; width: 560px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"><iframe id="aswift_2" name="aswift_2" browsingtopics="true" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 560px; height: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="560" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1146333979919906&amp;output=html&amp;h=280&amp;adk=2990761510&amp;adf=3068536118&amp;pi=t.aa~a.1759532964~i.37~rp.4&amp;w=560&amp;abgtt=6&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1724439078&amp;num_ads=1&amp;rafmt=1&amp;armr=3&amp;sem=mc&amp;pwprc=4789113918&amp;ad_type=text_image&amp;format=560x280&amp;url=https%3A%2F%2Fwww.codehub.com.vn%2FHoc-HTML%2FHTML-Phan-Tu&amp;fwr=0&amp;pra=3&amp;rh=140&amp;rw=559&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=27&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTI3LjAuMjY1MS4xMDUiLG51bGwsMCxudWxsLCI2NCIsW1siTm90KUE7QnJhbmQiLCI5OS4wLjAuMCJdLFsiTWljcm9zb2Z0IEVkZ2UiLCIxMjcuMC4yNjUxLjEwNSJdLFsiQ2hyb21pdW0iLCIxMjcuMC42NTMzLjEyMCJdXSwwXQ..&amp;dt=1724439078848&amp;bpp=1&amp;bdt=743&amp;idt=1&amp;shv=r20240821&amp;mjsv=m202408200201&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D0034ea561c4b6f44%3AT%3D1724263222%3ART%3D1724439067%3AS%3DALNI_Mav12yz89r5XWcKiuvkZUEuzXwcWQ&amp;gpic=UID%3D00000ed037daa178%3AT%3D1724263222%3ART%3D1724439067%3AS%3DALNI_MZvaw0vASWhpD43bGpPw_4UHx7CdQ&amp;eo_id_str=ID%3Daa64b7aa4057d745%3AT%3D1724263222%3ART%3D1724439067%3AS%3DAA-Afjar-mEzyGZ06fs1QfIHF5hx&amp;prev_fmts=0x0%2C560x280&amp;nras=3&amp;correlator=3963788543534&amp;frm=20&amp;pv=1&amp;u_tz=420&amp;u_his=10&amp;u_h=900&amp;u_w=1600&amp;u_ah=860&amp;u_aw=1600&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=142&amp;ady=1799&amp;biw=1163&amp;bih=784&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759837%2C42532523%2C44795922%2C95334828%2C95338227%2C95340752%2C31086463%2C95335245&amp;oid=2&amp;pvsid=2809062530664859&amp;tmod=1923241960&amp;wsm=1&amp;uas=0&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.codehub.com.vn%2FHoc-HTML%2FHTML-The&amp;fc=1408&amp;brdim=0%2C0%2C0%2C0%2C1600%2C0%2C1600%2C860%2C1178%2C784&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=128&amp;bc=31&amp;bz=1.36&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;dtd=24" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CIjDzpXki4gDFfzNTAIdj4gObA" data-load-complete="true"></iframe></div></ins></div>
+              
+              <p>Điều này là bởi vì phần tử&nbsp;<code>html</code>&nbsp;chứa bên trong nó phần tử&nbsp;<code>body</code>,&nbsp;<code>head</code>... Tới lượt các phần tử&nbsp;<code>body</code>&nbsp;và&nbsp;<code>head</code>&nbsp;cũng chứa các phần tử khác bên trong chúng...</p>
+          
+           
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer-content flex">
+                <div class="footer-info">
+                 
+                  <p>Địa chỉ: Khu dân cư, Nhà Bè, Hồ Chí Minh</p>
+                  <p>Email: tuyensinh@ou.edu.vn</p>
+                  <p>Số điện thoại: 028 3836 4748</p>
+                  <div ><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.056673616353!2d106.6906695!3d10.6754047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1724342311760!5m2!1svi!2s" width="350" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+                <div class="footer-links flex">
+                  <div>
+                    <span class="footer_header_text">Liên kết</span>
+                    <a class="block" href="">Trang chủ</a>
+                    <a class="block" href="">Diễn đàn trao đổi</a>
+                    <a class="block" href="">About us</a>
+                  </div>
+                  <div>
+                    <span class="footer_header_text">Sản phẩm</span>
+                    <a class="block" href="">Học HTML</a>
+                    <a class="block" href="">Học CSS</a>
+                    <a class="block" href="">Học C++</a>
+                    <a class="block" href="">Học Javascript</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2024 Mycode. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+ 
+</html>
+

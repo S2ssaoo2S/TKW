@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">HTML cơ bản</h2>
+          <a href="/html/learn/learn_html/1Gioit_thieu_html.html">Giới thiệu HTML</a>
+          <a class="active" href="/html/learn/learn_html/2HTML_edit.html">HTML Text Editor</a>
+          <a href="/html/learn/learn_html/3HTML_co_ban.html">Cơ bản về HTML</a>
+          <a href="/html/learn/learn_html/4HTML_the.html"> Thẻ trong HTML</a>
+          <a href="/html/learn/learn_html/5HTML Phần Tử.html">Phần tử HTML</a>
+          <a href="/html/learn/learn_html/6HTML-Thuoc-Tinh.html">Thuộc tính</a>
+          <a href="/html/learn/learn_html/7HTML-De-Muc.html">Đề Mục</a>
+          <a href="/html/learn/learn_html/8HTML-Doan-Van.html">Đoạn văn trong HTML</a>
+          <a href="/html/learn/learn_html/9HTML-Thuoc-Tinh-Style.html">Thuộc tính style </a>
+          <a href="/html/learn/learn_html/10Dinh_dang_chu.html">Định Dạng Chữ</a>
+          <a href="/html/learn/learn_html/11Trich_dan.html">Bình luận HTML</a>
+          <a href="/html/learn/learn_html/12Mau_sac.html">Màu HTML</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="nextprev">
+          <a class="left" href="#">❮Previous</a>
+          <a class="right" href="#">Next  ❯</a>
+          </div>
+        <div class="content-1">
+          <h1 class="content_header">HTML Text Editor</h1>
+          <div class="data">
+            <h2>Trình soạn thảo văn bản HTML</h2>
+            <p>Bạn có thể chạy và chỉnh sửa mã HTML trực tiếp trên trang ở các đoạn code ví dụ được cung cấp sẵn trong mỗi bài học.</p>
+            <p>Tuy nhiên bạn cũng có thể tạo một trang HTML trên máy tính của chính mình sử dụng chương trình Text Editor.</p>
+            <p>Text editor là chương trình phần mềm sử dụng để hiệu chỉnh văn bản thuần tuý (plain text) và thích hợp trong việc chỉnh sửa mã code (bao gồm mã HTML).</p>
+            <p><strong>Lưu ý:</strong>&nbsp;Văn bản thuần tuý là dạng văn bản không sử dụng bất cứ định dạng nào như in đậm, in nghiêng, tạo màu, thêm phông chữ... Ngược lại với văn bản thuần tuý là văn bản đã được định dạng (formatted text hay rich text). Các phần mềm text processor (khác với text editor) như Microsoft Word dùng để hiệu chỉnh loại văn bản này. Chúng ta không sử dụng văn bản đã được định dạng để tạo ra mã code nói chung và mã HTML nói riêng.</p>
+          
+            <p>Hiện tại có nhiều phần mềm text editor khác nhau, tuy nhiên với mục đích học HTML thì bạn được kiến nghị sử dụng NotePad (Windows) hoặc TextEdit (Mac OSX).</p>
+            <h2>NotePad (Windows)</h2>
+            <p>Trên hệ điều hành Windows cung cấp sẵn text editor có tên là NotePad mà bạn có thể sử dụng để tạo và chỉnh sửa mã HTML.</p>
+            <p>Để mở NotePad:</p>
+            <ul>
+              <li>Với Windows 8 hoặc mới hơn: Gõ phím&nbsp;<kbd>Windows</kbd>&nbsp;và nhập vào&nbsp;<strong>Notepad</strong>&nbsp;trong ô tìm kiếm. Click vào icon chương trình Notepad trong kết quả hiển thị để khởi động chương trình.</li>
+              <li>Với Windows 7 hoặc cũ hơn: Click chọn&nbsp;<strong>Start</strong>&nbsp;&gt; chọn&nbsp;<strong>Programs</strong>&nbsp;&gt; chọn&nbsp;<strong>Accessories</strong>&nbsp;&gt; chọn&nbsp;<strong>Notepad</strong>.</li>
+            </ul>
+            <h2>TextEdit (Mac OSX)</h2>
+            <p>Để mở TextEdit bạn khởi động chương trình quản lý file và tập tin&nbsp;<strong>Finder</strong>&nbsp;&gt; đi đến thư mục&nbsp;<strong>Applications</strong>&nbsp;&gt; nhấp đúp vào&nbsp;<strong>TextEdit</strong>&nbsp;trong thư mục.</p>
+            <p>Do Text Edit cũng cho phép chúng ta tạo văn bản rich text nên bạn cần thiết lập để TextEdit lưu văn bản dưới dạng plain text. Ở thanh menu bạn chọn&nbsp;<strong>Preference</strong>&nbsp;&gt; nhấp chọn tab&nbsp;<strong>New Document</strong>&nbsp;&gt; ở mục&nbsp;<strong>Format</strong>&nbsp;chọn&nbsp;<strong>Plain Text</strong>&nbsp;&gt; nhấp chọn tab&nbsp;<strong>Open and Save</strong>&nbsp;&gt; ở mục&nbsp;<strong>When Saving a File</strong>&nbsp;bỏ chọn&nbsp;<strong>Add ".txt" extention to plain text files</strong>.</p>
+            <h2>Tạo Tập Tin HTML</h2>
+            <p>Sau khi mở chương trình text editor trên máy bạn tạo một tập tin mới (phím tắt&nbsp;<kbd>control</kbd>&nbsp;+&nbsp;<kbd>N</kbd>&nbsp;với NotePad hoặc&nbsp;<kbd>command</kbd>&nbsp;+&nbsp;<kbd>N</kbd>&nbsp;với TextEdit)</p>
+            <p>Sao chép và dán đoạn văn bản sau vào phần nội dung của tập tin mới:</p>
+        <p>Sao chép và dán đoạn văn bản sau vào phần nội dung của tập tin mới:</p>
+        <pre class="pre"><code>&lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+              &lt;head&gt;
+                  &lt;meta charset="UTF-8"&gt;
+                  &lt;title&gt;Tiêu đề trang&lt;/title&gt;
+              &lt;/head&gt;
+          &lt;body&gt;
+              &lt;h1&gt;Đây là một đề mục.&lt;/h1&gt;
+              &lt;p&gt;Đây là một dòng văn bản thông thường.&lt;/p&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;</code></pre>
+          <h2>Lưu Tập Tin HTML</h2>
+          <p>Tập tin html được lưu với phần mở rộng là&nbsp;<code>.html</code>&nbsp;hoặc&nbsp;<code>.htm</code>&nbsp;(ít phổ biến hơn).</p>
+          <p>Bạn lưu tập tin mớ tạo ở trên với tên&nbsp;<code>index.html</code>, bạn cần lưu ý chọn encoding là&nbsp;<strong>UTF-8</strong>&nbsp;và phần mở rộng là&nbsp;<code>.html</code>.</p>
+          <br>
+          <p>Phần mở rộng của các tập tin có thể sẽ bị ẩn đi khi bạn mở thư mục chứa chúng, do đó bạn cần chắc chắn rằng tập tin có phần mở rộng là&nbsp;<code>.html</code>&nbsp;thay vì&nbsp;<code>.html.txt</code>.</p>
+          <h2>Hiển Thị Trang HTML</h2>
+          <p>Trong khi text editor được dùng để hiệu chỉnh code HTML, để hiển thị nội dung trang HTMl thì chúng ta cần sử dụng một phần mềm khác là trình duyệt web hay web browser.</p>
+          <p>Bạn có thể xem một trang HTML từ một tập tin HTML cho trước theo một số cách khác nhau ví dụ như:</p>
+          <ul class="data_ul">
+            <li>Nhấp đúp lên biểu tượng của tập tin hoặc</li>
+            <li>Chuột phải lên tập tin và chọn&nbsp;<strong>Open with</strong>&nbsp;&gt; chọn một trong các browser có trên máy.</li>
+          </ul>
+          <p>Lúc này bạn sẽ thấy trình duyệt hiển thị nội dung trang HTML thay vì source code có trong text editor.</p>
+        
+        
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer-content flex">
+                <div class="footer-info">
+                 
+                  <p>Địa chỉ: Khu dân cư, Nhà Bè, Hồ Chí Minh</p>
+                  <p>Email: tuyensinh@ou.edu.vn</p>
+                  <p>Số điện thoại: 028 3836 4748</p>
+                  <div ><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.056673616353!2d106.6906695!3d10.6754047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1724342311760!5m2!1svi!2s" width="350" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+                <div class="footer-links flex">
+                  <div>
+                    <span class="footer_header_text">Liên kết</span>
+                    <a class="block" href="">Trang chủ</a>
+                    <a class="block" href="">Diễn đàn trao đổi</a>
+                    <a class="block" href="">About us</a>
+                  </div>
+                  <div>
+                    <span class="footer_header_text">Sản phẩm</span>
+                    <a class="block" href="">Học HTML</a>
+                    <a class="block" href="">Học CSS</a>
+                    <a class="block" href="">Học C++</a>
+                    <a class="block" href="">Học Javascript</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2024 Mycode. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+ 
+</html>
+

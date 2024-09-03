@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/C++.css.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/hoidap.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="">Giới thiệu C++</a>
+          <a href="1viet truong trinh.HTML">Viết chương trình đầu tiên</a>
+          <a class="active" href="2Cấu trúc cơ bản của một chương trình C++.HTML"> Cấu trúc cơ bản chương trình C++  </a>
+          <a href="3Lệnh, khối lệnh, từ khóa.HTML">Lệnh,khối lệnh,từ khóa</a>
+          <a href="4dung lqdxdl.HTML">Dùng lệnh liên quan tới xuất dữ liệu</a>
+          <a href="5Biến và các kiểu dữ liệu trong C++.HTML">Biến và dữ liệu trong C++</a>
+          <a href="6nhập và xuất dữ liệu.HTML">nhập và xuất dữ liệu</a>
+          <a href="7Hằng số.HTML">Hằng số</a>
+          <a href="8 pham vi cua bien.HTML">phạm vi của biến</a>
+          <a href="9cac phep toan co ban.HTML">Các phép toán cơ bản</a>
+          <a href="10toan tu tăng giam.HTML">Toán tử tăng giảm </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Cấu Trúc Cơ Bản Của Một Chương Trình C++</h1>
+          <div class="data">
+            <p>Chào mừng các bạn đến với bài học tiếp theo trong khóa học lập trình C++ hướng thực hành.</p>
+            <p>Trong bài trước, <a href="//daynhauhoc.com/t/tong-hop-khoa-hoc-lap-trinh-c-danh-cho-nguoi-moi-bat-dau/29429">Viết chương trình C++ đầu tiên</a>, chúng ta đã cùng nhau tạo 1 project có tên <strong>HelloWorld</strong>. Các bạn lưu ý rằng khi làm việc với Visual studio 2015 thì chúng ta làm việc trên 1 project chứ không làm việc với file mã nguồn đơn lẻ. Project <strong>HelloWorld</strong> hiện tại chỉ có một file có tên là <strong>main.cpp</strong>. Kết quả khi thực thi project này (bằng cách nhấn phím F5 để Debug) thì chúng ta được như hình bên dưới:</p>
+            <img src="/images/C++/1.2/0.png" width="700" height="391">
+            <p>Kết quả là một dòng chữ <strong>Hello World</strong> xuất hiện trên console.</p>
+            <p>Khi các bạn Debug trên Visual studio 2015, có thể Visual studio sẽ download một số file PDB về làm tốn thời gian. Các bạn có thể tắt việc tự động download các file đó bằng cách làm theo các bước sau:</p>
+            <p>Đưa chuột vào phần DEBUG trên Menu bar -&gt; chọn Options and Settings...</p>
+            <img src="/images/C++/1.2/1.png" width="700" height="391">
+            <p>Chọn Symbols và bỏ dấu tick trong Symbol file (.pdb) locations đi</p>
+            <img src="/images/C++/1.2/2.png" width="700" height="391">
+            <p>Bây giờ chúng ta nhìn lại mã nguồn trong file main.cpp và mình sẽ phân tích chức năng của từng dòng code.</p>
+            <pre class="pre"><code>/* HelloWorld program - written by Tran Vo Ngoc Lan */
+
+              #include &#60 iostream &#62
+              using namespace std;
+              
+              int main()	{
+                // We write some code inside main function.
+              
+                cout &#60&#60 "Hello World." &#60&#60 endl; // The "Hello World" string will be appear on screen.
+              
+                system("pause"); // Pause the program to see the result.
+                return 0; 
+              }
+            </code></pre>
+              <li>
+                <strong>Dòng 6</strong>: </li>
+              <pre>int main()</pre>
+            <img src="/images/C++/1.2/3.png" width="700" height="391">
+            <p>Visual studio thông báo một lỗi nghiêm trọng LNK1561, và nó còn đưa thêm hướng dẫn để lập trình viên có thể tự sửa lỗi có nghĩa là điểm khởi đầu cần được định nghĩa.</p>
+            <p>Chúng ta quay lại với đoạn mã nguồn có thể chạy được như lúc đầu bằng cách sửa lại tên hàm là <br> <code>int main()</code>.</p>
+            <ul><li>
+              <strong>Dòng 7</strong>:</li></ul>
+              <pre>// We write some code inside main function.</pre>
+              <p>Đây không phải là một dòng lệnh. Đây là một dòng comment, mục đích của comment trong code là để ghi chú lại những gì mình đang làm. Việc ghi chú này cần được thực hiện thường xuyên đối với những người mới học lập trình. Ghi chú giúp bạn ít bị rối và khó hiểu khi nhìn lại những đoạn code cũ và những người làm việc cùng nhóm với bạn cũng sẽ hiểu được bạn đang muốn làm gì.</p>
+              <img src="/images/C++/1.2/4 (2).png" width="700" height="391">
+              <p><strong>Một dòng comment bắt đầu với 2 dấu gạch chéo //</strong>.</p>
+              <p>Bây giờ bạn thử tự viết cho mình vài dòng comment đi nào. Comment bạn có thể đặt ở bất kỳ vị trí nào trong mã nguồn (ngoại trừ chèn comment làm ảnh hưởng đến dòng lệnh) mà không bị báo lỗi. Vì khi biên dịch, compiler nhìn thấy dòng comment thì nó sẽ bỏ qua và không làm gì cả.</p>
+              <ul><li>
+                <strong>Dòng 9</strong>:</li></ul>
+                <pre>cout cout &#60&#60 "Hello World." &#60&#60 endl; // The "Hello World" string will be appear on screen. "Hello World." cout &#60&#60 "Hello World." &#60&#60 endl; // The "Hello World" string will be appear on screen. endl; // The "Hello World" string will be appear on screen.</pre>
+                <p>Đây là một dòng lệnh và đi kèm sau đó là một dòng comment. Dòng lệnh này chính là thứ đã viết lên console dòng <strong>Hello World</strong> mà bạn đã thấy trong kết quả của chương trình.</p>
+                <p><strong>Một dòng lệnh phải được kết thúc bằng dấu chấm phẩy ";"</strong></p>
+                <p>Lệnh <strong>cout</strong> có tác dụng viết lên console tất cả những gì nằm trong cặp dấu ngoặc kép <strong>" "</strong>. Như các bạn thấy, chúng ta đặt 2 từ <strong>Hello</strong> và <strong>World</strong> bên trong cặp ngoặc kép nên nó đã được in ra màn hình console.</p>
+                <ul><li>
+                  <strong>Dòng 11</strong>:</li></ul>
+                  <pre>system("pause"); // Pause the program to see the result.</pre>
+                  <p>Tiếp tục là một dòng lệnh và đi kèm một dòng comment ở phía sau.<br>Mục đích của dòng lệnh này là để dừng chương trình và xem kết quả trên màn hình console. Các bạn có thể xóa dòng này đi và chạy lại chương trình bằng cách nhấn phím F5 để kiểm chứng kết quả. Lúc này màn hình console hiện lên và tắt ngay lập tức.</p>
+                  <ul><li>
+                    <strong>Dòng 12</strong>:</li></ul>
+                    <pre>return 0</pre>
+                    <p>Là giá trị trả về của hàm main. Hàm main của chúng ta có từ khóa <strong>int</strong> đứng trước, có nghĩa là kiểu trả về của hàm main sẽ là một giá trị có kiểu <strong>int</strong> (integer - số nguyên). Giá trị trả về này do lập trình viên tự quy định. Kết quả hàm main sẽ hiển thị trong cửa sổ <strong>Output</strong> bên trong IDE sau khi bạn tắt chương trình HelloWorld đang chạy đi.</p>
+            <img src="/images/C++/1.2/5.png" width="700" height="391">
+            <p>Thông thường, dòng này sẽ đặt cuối cùng trong phạm vi cặp ngoặc nhọn { } phía sau hàm main. Các bạn có thể thay bằng một con số bất kì sao cho bạn có thể hiểu được rằng, khi chương trình kết thúc, nếu <strong>Output</strong> xuất hiện con số mà bạn đã chọn, điều đó có nghĩa chương trình của bạn hoạt động một cách bình thường.</p>
+            <ul><li>
+              <strong>Dòng 3 và 4</strong>:</li></ul>
+              <pre>#include &#60 iostream &#62 </pre>
+              <p></p>using namespace std</pre>
+              <p>Đây là những dòng lệnh đặc biệt. Để có thể sử dụng dòng lệnh số 9 trong chương trình thì chúng ta cần có dòng lệnh số 3 và số 4 này. Mục đích của 2 dòng lệnh này là thêm thư viện có tên <strong>iostream</strong> và không gian tên <strong>std</strong> để tích hợp vào chương trình. Hay nói cách khác, vì lệnh <strong>cout</strong> được định nghĩa bên trong thư viện có tên <strong>iostream</strong> và bên trong không gian tên <strong>std</strong> nên chúng ta cần tích hợp 2 thứ đó vào chương trình. Đến đây các bạn sẽ thắc mắc là <strong>"Làm thế nào biết được dòng lệnh nào đã được định nghĩa bên trong thư viện nào?"</strong></p>
+              <p>Qua quá trình thực hành trong khóa học này, mình sẽ cùng các bạn sử dụng một số chức năng bên trong một số thư viện chuẩn do ngôn ngữ C++ đã định nghĩa sẵn và các bạn sẽ quen với việc tìm và sử dụng chức năng nào trong thư viện nào.</p>
+              <p><em>Đây cũng là một đặc trưng của ngôn ngữ lập trình bậc cao. Chúng ta sử dụng lại những gì đã được định nghĩa sẵn giúp công việc lập trình của chúng ta dễ dàng hơn.</em></p>
+              <p>Các bạn lưu ý là không nên include cả đống thư viện chưa cần dùng đến nhé. Cần dùng lệnh gì đã được định nghĩa sẵn mới cần include vào. Tất nhiên khi thêm nhiều thư viện vào chương trình thì IDE sẽ không báo lỗi vì compiler biết thư viện nào được dùng, <del>nhưng chương trình của chúng ta sau khi build ra sẽ nặng hơn</del>. Nếu các bạn sử dụng những lệnh được định nghĩa trong thư viện mà không include nó vào thì IDE sẽ báo lỗi ngay.<br>Ví dụ mình bỏ dòng <code>#include &lt;iostream&gt;</code> đi, IDE sẽ báo lỗi như hình bên dưới: </p>
+            <img src="/images/C++/1.2/6 (1).png" width="700" height="391">
+            <p>Như các bạn thấy, cả lệnh <strong>cout</strong>, <strong>system("")</strong>, và <strong>endl</strong> đều được định nghĩa bên trong thư viện <strong>iostream</strong> nên khi xóa thư viện đó đi, chương trình gạch chân màu đỏ các từ đó, đồng thời thông báo lỗi trong cửa sổ <strong>Output</strong>.</p>
+            <h3>Tổng kết</h3>
+            <p>Trong bài học hôm nay, chúng ta đã biết thêm một số điểm đáng chú ý khi làm việc với chương trình C++:</p>
+            <ul>
+              <li><p>Một dòng comment sẽ đứng sau 2 dấu gạch chéo //.</p></li>
+              <li><p>Một đoạn comment sẽ nằm giữa cặp /* và */.</p></li>
+              <li><p>Một dòng lệnh phải được kết thúc bằng dấu chấm phẩy <strong>";"</strong></p></li>
+              <li>
+              <p>Cấu trúc của một chương trình C++ cơ bản:</p>
+              <ul>
+              <li>
+              <p>Hàm main: (bắt buộc phải có)</p>
+              <ul>
+              <li>Kiểu trả về của hàm main (int).</li>
+              <li>Tên của hàm main (cũng là main luôn).</li>
+              <li>Thân của hàm main (cặp dấu ngoặc nhọn { và }).</li>
+              <li>Giá trị trả về của hàm main (return 0; //hoặc giá trị bao nhiêu cũng đc).</li>
+              </ul>
+              </li>
+              <li><p>Những dòng lệnh bên trong thân hàm main. (Có thể có hoặc không)</p></li>
+              <li><p>Những dòng comment. (Có thể có hoặc không)</p></li>
+              <li><p>Tích hợp thư viện và không gian tên. (Phụ thuộc vào các lệnh mà bạn sử dụng).</p></li>
+              </ul>
+              </li>
+              </ul>
+              <h3>Bài tập cơ bản</h3>
+              <ol>
+                <li><p>Trong chương trình C++ HelloWorld đầu tiên, ở dòng 1 là đoạn comment chứa thông tin về tên Project và tên người viết chương trình. Các bạn đã viết cùng mình mà hình như vẫn chưa có tên của các bạn đấy. Sửa lại comment đó đi nào!</p></li>
+                <li><p>Thay vì in ra dòng chữ Hello World, thay vì in ra dòng <strong>Hello World</strong>, hãy thử in ra cái gì đó thú vị hơn xem nào! (Tên của bạn thì sao?)</p></li>
+                <li><p>Hãy comment theo cách của bạn!x</p></li>
+                </ol>
+                <hr>
+                <p><strong>Hẹn gặp lại các bạn trong bài học tiếp theo trong khóa học lập trình C++ cho người mới bắt đầu.</strong></p>
+                <p>Mọi ý kiến đóng góp hoặc thắc mắc có thể đặt câu hỏi trực tiếp tại diễn đàn </p>
+
+
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

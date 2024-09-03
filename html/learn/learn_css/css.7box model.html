@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/CSS.css copy.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <a href=""
+                    >Tutorial<i
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Q&A</a></li>
+                <li><a href=""></a></li>
+                <li>
+                  <a class="light-mode"
+                    ><i class="fa fa-toggle-on" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search flex">
+              <form action="get" class="search-form">
+                <input type="text" name="search" class="search-input" />
+              </form>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+            <div class="login">
+              <button class="btn-login">login</button>
+            </div>
+            <div class="register">
+              <button class="btn-register">sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="#">Trang chủ Css</a>
+          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
+          <a href="">Chèn Mã Css</a>
+          <a href=""> Cú Pháp Css  </a>
+          <a href="">Bộ chọn Css</a>
+          <a href="">Phong Chữ Css</a>
+          <a href="">Màu Sắc Css </a>
+          <a href="">Box Model Css</a>
+          <a href="">Căn Lề</a>
+          <a href="">Đường Viền Css</a>  
+          <a href="">Văn Bản Css </a>
+          <a href="">Phong Nền </a>
+          <a href="">Khoảng Đệm Css</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">CSS Box Model - CSS Cơ Bản</h1>
+          <div class="data">
+            <h2>Box Model Là Gì</h2>
+            <p>Mỗi phần tử HTML của trang web được mô phỏng (model) giống như một chiếc hộp hình chữ nhật được hình thành từ bốn thành phần:</p>
+            <ul>
+              <li>Nội dung phần tử.</li>
+              <li>Vùng Đệm (hay khoảng đệm).</li>
+              <li>Vùng viền.</li>
+              <li>Lề.</li>
+            </ul>
+            <p></p>
+          <img src="/images/css/5box-model-css.jpg"width="700" height="381">
+          <p>Thuật ngữ&nbsp;<strong>box model</strong>&nbsp;(mô hình hộp hoặc hộp mô phỏng) được dùng để chỉ phương pháp sử dụng các hộp để mô phỏng các phần tử HTML trên trang web.</p>
+          <h2>Nội Dung Phần Tử</h2>
+          <p>Nội dung phần tử có thể là vă bản, hình ảnh,hoặc kết hợp cả văn bản và hình ảnh.... và là phần trong cùng của&nbsp;<strong>box model</strong>.
+            <h2>Nội Dung Phần Tử</h2></p>
+            <p>Diện tích của nội dung phần tử phụ thuộc giá trị của các thuộc tính chiều rộng (<code>width</code>) và chiều cao (<code>height</code>) của phần tử:</p>
+          <Pre>.square {
+            width: 150px; 
+            height: 150px;
+            border: 1px solid red;
+          }</Pre>
+          <p>Giá trị mặc định của cả hai thuộc tính&nbsp;<code>width</code>&nbsp;và&nbsp;<code>height</code>&nbsp;là&nbsp;<code>auto</code>&nbsp;và trình duyệt sẽ tự động tính toán để hiển thị nội dung thực tế bên trong một cách phù hợp.</p>
+          <p>Với các phần tử như&nbsp;<code>h1</code>,&nbsp;<code>p</code>,&nbsp;<code>div</code>... thì mặc định chiều ngang của chúng sẽ luôn chiếm 100% chiều ngang của phần tử cha:</p>
+          <pre>h1, p, div {
+            border: 1px solid red;
+          }</pre>
+          <p>Với các phần tử như&nbsp;<code>a</code>,&nbsp;<code>img</code>,&nbsp;<code>span</code>&nbsp;thì mặc định chiều ngang và chiều dọc của chúng sẽ chiếm kích thước vừa đủ, phù hợp để hiển thị nội dung bên trong phần tử:</p>
+          <pre>a, img, span {
+            border: 1px solid green;
+          }</pre>
+          <p>Các phần tử như&nbsp;<code>h1</code>,&nbsp;<code>p</code>,&nbsp;<code>div</code>&nbsp;thuộc kiểu hiển thị khối (block display) trong khi các phần tử như&nbsp;<code>a</code>,&nbsp;<code>img</code>&nbsp;<code>span</code>&nbsp;thuộc kiểu hiển thị trong dòng (inline display). Chúng ta sẽ tìm hiểu về các kiểu hiển thị của phần tử HTML trong CSS ở các bài học tiếp theo.</p>
+          <h2>Vùng Đệm</h2>
+          <p>Vùng đệm (hay khoảng đệm) của một box model là phần diện tích bao ngoài nội dung phần tử và được thiết lập thông qua các thuộc tính&nbsp;<em>padding</em>&nbsp;trong CSS:</p>
+          <pre>
+            p {
+              padding: 30px 20px 20px 30px;
+          }
+          </pre>
+          <p>Chi tiết về các thuộc tính&nbsp;<code>padding</code>&nbsp;để thiết lập vùng đệm sẽ được đề cập ở bài học tiếp theo.</p>
+          <h2>Vùng Viền</h2>
+          <p>Vùng viền là phần diện tích bao quanh vùng đệm và được thiết lập thông qua các thuộc tính&nbsp;<em>border</em>&nbsp;trong CSS:</p>
+          <pre>
+            p {
+              border: 1px solid red;
+          }
+          </pre>
+          <p>Chi tiết về các thuộc tính&nbsp;<code>border</code>&nbsp;để thiết lập vùng đệm sẽ được đề cập ở bài học tiếp theo.</p> 
+          <h2>Lề</h2>
+          <p>Lề của một box model là phần diện tích bao ngoài vùng viền và được thiết lập thông qua các thuộc tính&nbsp;<em>margin</em>&nbsp;trong CSS:</p>
+          <pre>
+            p {
+              margin: 30px 20px 20px 30px;
+          }
+          </pre>
+          <p>Chi tiết về các thuộc tính&nbsp;<code>margin</code>&nbsp;để căn chỉnh lề sẽ được đề cập ở bài học tiếp theo.</p>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

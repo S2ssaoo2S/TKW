@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/C++.css.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/hoidap.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="">Giới thiệu C++</a>
+          <a href="1viet truong trinh.HTML">Viết chương trình đầu tiên</a>
+          <a href="2Cấu trúc cơ bản của một chương trình C++.HTML"> Cấu trúc cơ bản chương trình C++  </a>
+          <a href="3Lệnh, khối lệnh, từ khóa.HTML">Lệnh,khối lệnh,từ khóa</a>
+          <a href="4dung lqdxdl.HTML">Dùng lệnh liên quan tới xuất dữ liệu</a>
+          <a href="5Biến và các kiểu dữ liệu trong C++.HTML">Biến và dữ liệu trong C++</a>
+          <a href="6nhập và xuất dữ liệu.HTML">nhập và xuất dữ liệu</a>
+          <a href="7Hằng số.HTML">Hằng số</a>
+          <a href="8 pham vi cua bien.HTML">phạm vi của biến</a>
+          <a href="9cac phep toan co ban.HTML">Các phép toán cơ bản</a>
+          <a href="10toan tu tăng giam.HTML">Toán tử tăng giảm </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Nhập Và Xuất Dữ Liệu</h1>
+          <div class="data">
+            <h4>Rất vui khi nhận được sự theo dõi của các bạn trong khóa học hướng dẫn lập trình C++ hướng thực hành.</h4>
+            <p>Sau khi học xong bài <a href="//daynhauhoc.com/t/bien-va-cac-kieu-du-lieu-trong-c/29935">Biến và các kiểu dữ liệu</a>, các bạn đã có thể tự mình giải một số bài toán cơ bản trên máy tính. Lấy một ví dụ cơ bản như sau:</p>
+            <p><em>Viết chương trình tính tổng giá trị hai số nguyên.</em></p>
+            <p>Mình tin rằng tất cả chúng ta ai cũng viết được một chương trình như thế này:</p>
+            <img src="/images/C++/1.6/0 (3).png"width="700" height="381">
+            <p>Các bạn có thể bắt gặp một cách khai báo biến hơi lạ.</p>
+            <p></p>
+            <pre>int number1 = 4, number2 = 5;</pre>
+            <p>Đây là cách khai báo các biến có cùng kiểu dữ liệu trên cùng một dòng đồng thời khởi tạo giá trị ban đầu cho mỗi biến. <strong>Khi khai báo nhiều biến trên cùng 1 dòng, mỗi biến được khai báo sẽ cách nhau bằng 1 dấu phẩy.</strong> Điều này hoàn toàn được cho phép trong C++.</p>
+            <p>Sau đó, chúng ta có sử dụng một lần đối tượng <strong>cout</strong> để in kết quả phép cộng ra màn hình:</p>
+            <p></p>
+            <pre>cout &#60&#60 number1 &#60&#60 " + " &#60&#60 number2 &#60&#60 " = " &#60&#60 number1 + number2 &#60&#60 endl;</pre>
+            <p>Để các bạn khỏi bị rối khi nhìn thấy dòng lệnh <strong>cout</strong> phức tạp, các bạn theo dõi hình bên dưới để rõ hơn:</p>
+            <img src="/images/C++/1.6/1 (4).png"width="700" height="381">
+            <p></p>
+            <p>Sau khi chạy chương trình, chúng ta đã có được kết quả phép tính cộng ở trên màn hình. Bây giờ mình đặt ra trường hợp, mình muốn tính tổng của hai số nguyên có giá trị khác. Các bạn sẽ làm gì để giúp mình giải quyết vấn đề này? Có phải các bạn đang nghĩ tới việc tắt chương trình đang chạy đi, vào file <strong>main.cpp</strong>, thay hai số 4 và 5 thành hai con số khác, biên dịch và chạy lại chương trình một lần nữa?</p>
+            <p>Đó cũng là một cách giải quyết vấn đề mà vẫn cho kết quả đúng, nhưng có lẽ mình tự tính nhẩm trong đầu còn nhanh hơn.</p>
+            <p>Vì thế, ngôn ngữ C++ đã hổ trợ cho chúng ta một cách để đưa giá trị vào biến trực tiếp ngay khi chương trình đang chạy. Điều này giúp chúng ta linh động hơn khi cần thay đổi giá trị tính toán mà không cần phải build lại chương trình sau khi đã cho ra <strong>file execute</strong>.</p>
+            <p>Việc <strong>Input data</strong> như trên có thể thực hiện bằng nhiều cách khác nhau:</p>
+            <ul>
+              <li>Lấy dữ liệu từ <strong>File</strong>.</li>
+              <li>Sinh dữ liệu ngẫu nhiên.</li>
+              <li>Nhận dữ liệu từ thiết bị khác gửi đến.</li>
+              <li>Nhập dữ liệu từ thiết bị nhập chuẩn. (Trong C++, thiết bị nhập dữ liệu chuẩn là bàn phím)</li>
+              </ul>
+              <p><strong>Ở mức cơ bản này, chúng ta sẽ làm quen với cách nhập dữ liệu thông qua thiết bị nhập chuẩn (Standard Input) của C++.</strong></p>
+              <h2>Standard Input</h2><p>Để đưa dữ liệu vào biến, chúng ta sử dụng đối tượng <strong>cin</strong> được định nghĩa bên trong thư viện <strong>iostream</strong> thuộc namespace <strong>std</strong>.</p>
+              <p>Cú pháp sử dụng đối tượng <strong>cin</strong> như sau:</p>
+              <p></p>
+              <pre>cin >> &#60 tên biến &#62</pre>
+              <p>Các bạn lưu ý là tên biến phải được khai báo trước khi sử dụng đối tượng <strong>cin</strong> để đưa giá trị vào biến đó. Ta sử dụng toán tử <strong>&gt;&gt;</strong> ngược chiều với toán tử được sử dụng cho từ khóa <strong>cout</strong>.</p>
+              <h4>Cách hoạt động đối tượng cin</h4>
+              <p>Ngược lại với đối tượng <strong>cout</strong> (<strong>cout</strong> đưa dữ liệu vào file <strong>stdout</strong> để xuất giá trị ra thiết bị xuất chuẩn), đối tượng <strong>cin</strong> lấy dữ liệu từ đối tượng file <strong>stdin</strong> để đẩy vào vùng nhớ của biến (variable).</p>
+            <img src="/images/C++/1.6/2 (4).png"width="700" height="381">
+            <p>Khi biên dịch chương trình, nếu compiler bắt gặp dòng lệnh có sử dụng đối tượng <strong>cin</strong>, chương trình sẽ dừng lại để đợi người dùng nhập dữ liệu từ bàn phím (đến khi người dùng nhấn phím Enter), sau đó, dữ liệu vừa được nhập sẽ chuyển vào file <strong>stdin</strong>, đối tượng <strong>cin</strong> sẽ lấy giá trị đầu tiên <strong>phù hợp với kiểu dữ liệu</strong> để đưa vào biến thông qua toán tử <strong>&gt;&gt;</strong>.</p>
+            <p>Các bạn cùng mình chạy thử đoạn chương trình bên dưới để xem kết quả thực tế:</p>
+            <img src="/images/C++/1.6/3 (4).png"width="700" height="381">
+            <p>Chúng ta chạy thử chương trình trên, đầu tiên chúng ta thấy:</p>
+            <img src="/images/C++/1.6/4 (6).png"width="700" height="381">
+            <p>Sau khi chương trình thực thi dòng lệnh có sử dụng đối tượng <strong>cout</strong> đầu tiên, chương trình bắt gặp dòng lệnh có sử dụng đối tượng <strong>cin</strong>, ngay lúc này, chương trình dừng lại và đợi bạn nhập giá trị vào từ bàn phím.</p>
+            <img src="/images/C++/1.6/5 (3).png"width="700" height="381">
+            <p>Tiếp theo mình thử nhập vào giá trị <strong>123</strong>, giá trị này cũng nằm trong giới hạn của kiểu số nguyên (<strong>int</strong>) nên hoàn toàn phù hợp với biến <strong>value</strong>. Ngay sau khi mình nhấn phím Enter, biến <strong>value</strong> nhận giá trị <strong>123</strong> và in ra trên màn hình.</p>
+            <p>Bây giờ, khi chúng ta muốn thay đổi giá trị khác cho biến <strong>value</strong>, chúng ta không cần phải gán lại giá trị mới trong mã nguồn nữa, chúng ta chỉ cần chạy lại chương trình và nhập giá trị mới từ bàn phím.</p>
+            <img src="/images/C++/1.6/6 (4).png"width="700" height="381">
+          <p>Mình vừa cố tình nhập một lúc 5 giá trị, mỗi giá trị cách nhau bởi một kí tự khoảng trắng. Và kết quả cho chúng ta thấy chỉ có giá trị đầu tiên mà chúng ta đưa vào được đẩy vào bên trong biến <strong>value</strong>.</p>
+          <p>Mình sẽ thử nhập một giá trị khác kiểu dữ liệu so với kiểu dữ liệu mà biến <strong>value</strong> được khai báo để xem kết quả:</p>
+            <img src="/images/C++/1.6/7 (3).png"width="700" height="381">
+            <p>Giá trị được nhập từ bàn phím là <strong>3.14</strong> là một giá trị thuộc kiểu số thực, nhưng kiểu dữ liệu chúng ta khai báo biến <strong>value</strong> là <strong>int</strong>, nên biến <strong>value</strong> chỉ chứa được phần nguyên của giá trị nhập vào, phần thập phân đã bị loại bỏ.</p>
+            <p>Cuối cùng, mình thử nhập giá trị không phải là kiểu số như bên dưới:</p>
+            <img src="/images/C++/1.6/8 (3).png"width="700" height="381">
+            <p>Chuỗi kí tự <strong>hello</strong> không phù hợp với kiểu số nguyên, nên biến <strong>value</strong> đã nhận giá trị sai.</p>
+            <p>Vì thế, các bạn cần nhập dữ liệu tương ứng với kiểu dữ liệu mà bạn đã khai báo cho biến.</p>
+            <h4>Nhập giá trị cho nhiều biến</h4>
+            <p>Chúng ta cùng xem lại hình ảnh về cách hoạt động của đối tượng <strong>cin</strong>:</p>
+          <img src="/images/C++/1.6/9 (2).png"width="700" height="381">
+          <p>Chúng ta có thể nhập một lúc nhiều giá trị khác nhau để đưa vào file <strong>stdin</strong>. Ngay khi một giá trị được đưa vào biến thông qua đối tượng <strong>cin</strong>, giá trị đó sẽ bị xóa ra khỏi file <strong>stdin</strong> lần lượt từ trái sang phải.</p>
+          <p>Chúng ta có thể tận dụng đặc điểm này để nhập dữ liệu cùng một lúc cho nhiều biến mà không cần viết nhiều dòng lệnh sử dụng đối tượng <strong>cin</strong>.</p>
+          <img src="/images/C++/1.6/10 (3).png"width="700" height="381">
+          <p>Trong chương trình trên, mình khai báo 3 biến có cùng kiểu dữ liệu số nguyên là <strong>day</strong>, <strong>month</strong> và <strong>year</strong> để lưu trữ ngày, tháng, năm hiện tại. Và mình chỉ sử dụng 1 dòng lệnh để nhập giá trị cho cả 3 biến trên:</p>
+          <p></p>
+          <pre>cin >> day >> month >> year;</pre>
+          <p>Đối tượng <strong>cin</strong> trên sẽ truy xuất đến file <strong>stdin</strong> và lấy giá trị đã được nhập vào từ trái sang phải để đưa vào theo tứ tự <strong>day</strong> đến <strong>month</strong> và cuối cùng là <strong>year</strong>.</p>
+          <p>Chúng ta cùng chạy chương trình để xem kết quả:</p>
+          <img src="/images/C++/1.6/11 (3).png"width="700" height="381">
+          <p>Các bạn hoàn toàn có thể nhập 3 giá trị trên 3 dòng khác nhau, lệnh <strong>cin</strong> vẫn khiến chương trình dừng cho đến khi nhận đủ 3 giá trị cho 3 biến day, month và year.</p>
+          <img src="/images/C++/1.6/12 (2).png"width="700" height="381">
+          <p>Đối tượng <strong>cout</strong> sẽ tìm đến ô nhớ mà tên biến đang nắm giữ, lấy giá trị bên trong biến đó ra và đẩy giá trị đó vào file <strong>stdout</strong>.</p>
+          <p>Đối tượng <strong>cout</strong> có thể nhận giá trị thuộc mọi kiểu dữ liệu được định nghĩa sẵn trong ngôn ngữ C++. Chúng ta không những sử dụng những dữ liệu được định nghĩa sẵn trong C++ mà còn tự định nghĩa những kiểu dữ liệu mới cho riêng mình. Các bạn sẽ được học phần này trong các bài học kế tiếp trong khóa học này.</p>
+          <h2>Tổng kết</h2>
+          <p>Trong bài học này, các bạn đã được học về:</p>
+          <ul>
+            <li>Cách đưa giá trị vào một biến trong khi chương trình đang chạy bằng <strong>Stardard Input</strong> trong C++.</li>
+            <li>Cú pháp và một số cách hoạt động của đối tượng <strong>cin</strong>.</li>
+            <li>Ôn lại một chút về <strong>Stardard output</strong> trong C++.</li>
+            </ul>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

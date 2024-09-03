@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/CSS.css copy.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <a href=""
+                    >Tutorial<i
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Q&A</a></li>
+                <li><a href=""></a></li>
+                <li>
+                  <a class="light-mode"
+                    ><i class="fa fa-toggle-on" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search flex">
+              <form action="get" class="search-form">
+                <input type="text" name="search" class="search-input" />
+              </form>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+            <div class="login">
+              <button class="btn-login">login</button>
+            </div>
+            <div class="register">
+              <button class="btn-register">sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="#">Trang chủ Css</a>
+          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
+          <a href="">Chèn Mã Css</a>
+          <a href=""> Cú Pháp Css  </a>
+          <a href="">Bộ chọn Css</a>
+          <a href="">Phong Chữ Css</a>
+          <a href="">Màu Sắc Css </a>
+          <a href="">Box Model Css</a>
+          <a href="">Căn Lề</a>
+          <a href="">Đường Viền Css</a>  
+          <a href="">Văn Bản Css </a>
+          <a href="">Phong Nền </a>
+          <a href="">Khoảng Đệm Css</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">CSS Là Gì, Phân Biệt CSS và HTML - CSS Cơ Bản</h1>
+          <div class="data">
+            <p><b>Văn Bản</b></p>
+            <ul>
+              <li>Thuộc tính&nbsp;<code>color</code>: Quy định màu sắc của văn bản.</li>
+              <li>Thuộc tính&nbsp;<code>text-alignment</code>: Quy định kiểu canh ngang cho văn bản.</li>
+              <li>Thuộc tính&nbsp;<code>text-decoration</code>: Quy định kiểu trang trí như gạch dưới, gạch trên hay gạch ngang cho văn bản.</li>
+              <li>Thuộc tính&nbsp;<code>text-transform</code>: Quy định kiểu chữ in hoa hay in thường cho văn bản.</li>
+              <li>Thuộc tính&nbsp;<code>text-indent</code>: Quy định thụt đầu dòng cho văn bản.</li>
+              <li>Thuộc tính&nbsp;<code>line-height</code>: Quy định độ cao của ký tự  văn bản.</li>
+              <li>Thuộc tính&nbsp;<code>letter-spacing</code>: Quy định khoảng cách hay độ giãn nở cách giữa các ký tự trong văn bản.</li>
+              <li>Thuộc tính&nbsp;<code>word-spacing</code>: Quy định khoảng cách hay độ giãn nở cách giữa các từ trong văn bản.</li>
+            </ul>
+            <h2>Màu Văn Bản</h2>
+          <p>Để quy định màu sắc cho văn bản của phần tử HTML trên trang, chúng ta sử dụng thuộc tính color trong CSS. Giá trị của thuộc tính này có thể là màu theo tên hoặc màu theo giá trị như đề cập ở bài học về màu sắc trong CSS.</p>
+          <p>ví dụ :</p>
+            <pre>
+              body {
+                color: #000;
+              }
+              .red {
+                  color: rgb(255, 0, 0);
+              }
+              .green {
+                  color: #00ff00;
+              }
+              .yellow {
+                color: yellow;
+              }
+            </pre>
+            <h2>Canh Ngang Văn Bản</h2>
+          <p>Để canh ngang văn bản của phần tử HTML trên trang, chúng ta sử dụng thuộc tính text-align trong CSS. Thuộc tính này có thể nhận 1 trong bốn giá trị là left, right, center hoặc justify.</p>
+          <pre>
+            .left {
+              text-align: left;
+          }
+          .right {
+              text-align: right;
+          }
+          .center {
+              text-align: center;
+          }
+          .justify {
+              text-align: justify;
+          }
+          </pre>
+          <h2>Trang Trí Văn Bản</h2>
+          <p>Để trang trí cho văn bản của phần tử HTML trên trang chúng ta sử dụng thuộc tính text-decoration trong CSS. Thuộc tính này có thể nhận một trong các giá trị underline, line-through, overline và none.</p>
+          <pre>
+            .none {
+              text-decoration: none;
+          }
+          .overline {
+              text-decoration: overline;
+          }
+          .line-through {
+              text-decoration: line-through;
+          }
+          .underline {
+              text-decoration: underline;
+          }
+          </pre>
+          <p>Giá trị mặc định của thuộc tính text-decoration là none.</p>
+          <h2>Chuyển Đổi Văn Bản</h2>
+          <p>Để chuyển đổi hiển thị cho các ký tự trong văn bản sang của phần tử HTML trên trang sang dạng in hoa hoặc in thường chúng ta sử dụng thuộc tính text-transform.</p>
+          <pre>
+            .uppercase {
+              text-transform: uppercase;
+          }
+          .lowercase {
+              text-transform: lowercase;
+          }
+          .capitalize {
+              text-transform: capitalize;
+          }
+          </pre>
+          <p>Giá trị mặc định của thuộc tính text-decoration là none.</p>
+          <h2>Lùi Đầu Dòng</h2>
+          <p>Để lùi đầu dòng cho văn bản của phần tử HTML trên trang, chúng ta sử dụng thuộc tính text-indent trong CSS</p>
+            <pre>
+              p.text-indent-50 {
+                text-indent: 50px;
+            }
+            </pre>
+            <p>Giá trị mặc định của thuộc tính text-indent là 0 hay 0px</p>        
+          <p>Lưu ý: Khi áp dụng thuộc tính text-indent cho một phần tử nào đó thì chỉ dòng đầu tiên trong văn bản của phần tử này được lùi đầu dòng, các dòng tiếp theo nếu có sẽ hiển thị như mặc định</p>
+          <h2>Chiều Cao Văn Bản</h2>
+          <p>Để quy định chiều cao cho văn bản của phần tử HTML trên trang, chúng ta sử dụng thuộc tính line-height</p>
+          <pre>
+            body {
+              font-size: 14px;
+            }
+            .text-short {
+              line-height: 10px;
+            }
+            .text-tall {
+              line-height: 20px;
+            }
+          </pre>
+          <p>Khi không quy định đơn vị cho giá trị của thuộc tính này, CSS sẽ sử dụng đơn vị tương đối là em:</p>
+          <pre>
+            body {
+              font-size: 14px;
+            }
+            .text-short {
+              line-height: 0.5;
+            }
+            .text-tall {
+              line-height: 2;
+            }
+          </pre>
+          <p>Giá trị mặc định của thuộc tính line-height là normal</p>
+          <h2>Khoảng Cách Giữa Các Ký Tự</h2>
+          <p>Để quy định khoảng cách giữa các ký tự với nhau trong văn bả của phần tử HTML trên trang, chúng ta sử dụng thuộc tính letter-space.</p>
+          <pre>
+            .normal-letter-spacing {
+              letter-spacing: normal;
+          }
+          .narrow-letter-spacing {
+              letter-spacing: -1px;
+          }
+          .wide-letter-spacing {
+              letter-spacing: 3px;
+          }
+          </pre>
+          <p>Giá trị mặc định của thuộc tính line-spacing là normal.</p>
+          <h2>Khoảng Cách Giữa Các Từ</h2>
+          <p>Để quy định khoảng cách giữa các từ trong văn bản của phần tử HTML trên trang, chúng ta sử dụng thuộc tính word-spacing</p>
+          <pre>
+            .normal-word-spacing {
+    word-spacing: normal;
+}
+.narrow-word-spacing {
+    word-spacing: -5px;
+}
+.wide-word-spacing {
+    word-spacing: 5px;
+}
+          </pre>
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

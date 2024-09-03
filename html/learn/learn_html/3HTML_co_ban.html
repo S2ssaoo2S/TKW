@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">HTML cơ bản</h2>
+          <a href="/html/learn/learn_html/1Gioit_thieu_html.html">Giới thiệu HTML</a>
+          <a href="/html/learn/learn_html/2HTML_edit.html">HTML Text Editor</a>
+          <a class="active" href="/html/learn/learn_html/3HTML_co_ban.html">Cơ bản về HTML</a>
+          <a href="/html/learn/learn_html/4HTML_the.html"> Thẻ trong HTML</a>
+          <a href="/html/learn/learn_html/5HTML Phần Tử.html">Phần tử HTML</a>
+          <a href="/html/learn/learn_html/6HTML-Thuoc-Tinh.html">Thuộc tính</a>
+          <a href="/html/learn/learn_html/7HTML-De-Muc.html">Đề Mục</a>
+          <a href="/html/learn/learn_html/8HTML-Doan-Van.html">Đoạn văn trong HTML</a>
+          <a href="/html/learn/learn_html/9HTML-Thuoc-Tinh-Style.html">Thuộc tính style </a>
+          <a href="/html/learn/learn_html/10Dinh_dang_chu.html">Định Dạng Chữ</a>
+          <a href="/html/learn/learn_html/11Trich_dan.html">Bình luận HTML</a>
+          <a href="/html/learn/learn_html/12Mau_sac.html">Màu HTML</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="nextprev">
+          <a class="left" href="#">❮Previous</a>
+          <a class="right" href="#">Next  ❯</a>
+          </div>
+        <div class="content-1">
+          <h1 class="content_header">HTML Cơ Bản</h1>
+          <div class="data">
+            <div >
+              
+              <p>Trong bài học bạn sẽ được tìm hiểu về cấu trúc trang HTML và lướt qua một số thẻ phổ biến trong HTML. Đừng lo nếu như bạn chưa thể hiểu rõ về công dụng của các thẻ vì chúng ta sẽ tìm hiểu kỹ hơn ở các bài học tiếp theo.</p>
+              
+              <h2>HTML Document</h2>
+              
+              <p>Một HTML document hay trang HTML phải luôn bắt đầu bằng khai báo <strong>DOCTYPE</strong>. Nếu dùng HTML phiên bản 5 (là phiên bản mới nhất tính tại thời điểm bài viết này được công bố) thì khai báo này sẽ như sau:</p>
+              
+              <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+              
+              <p>Toàn bộ nội dung của một trang HTML sẽ được đặt trong cặp thẻ <code>&lt;html&gt;&lt;/html&gt;</code> và cặp thẻ này đi theo sau khai báo <code>DOCTYPE</code>:</p>
+              
+              <pre class="pre"><code>&lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              ...
+              &lt;/html&gt;</code></pre>
+              
+              <p>Cặp thẻ <code>&lt;head&gt;&lt;/head&gt;</code> thường theo sau thẻ mở <code>&lt;html&gt;</code> và chứa các thông tin bổ sung (meta data) về trang HTML như tiêu đề trang bộ ký tự (liên quan tới ngôn ngữ) của trang, link tham chiếu các tập tin CSS và JavaScript sử dụng trên trang... Các thông tin meta data thường sẽ không xuất hiện ở phần nội dung trang khi hiển thị trên trình duyệt:</p>
+              
+              <pre class="pre"><code>&lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              &lt;head&gt;
+              ...
+              &lt;/head&gt;
+              &lt;/html&gt;</code></pre>
+              
+              <p>Phần nội dung được hiển thị trên trang sẽ nằm trong cặp thẻ <code>&lt;body&gt;&lt;/body&gt;</code>:</p>
+              
+              <pre class="pre"><code>&lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                  &lt;head&gt;
+                  ...
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                  ...
+                  &lt;/body&gt;
+              &lt;/html&gt;</code></pre>
+              
+              <p>Một ví dụ đầy đủ về cấu trúc trong HTML như sau:</p>
+              
+              <pre class="pre"><code>&lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                  &lt;head&gt;
+                      &lt;meta charset="utf-8"&gt;
+                      &lt;title&gt;Trang HTML Đầu Tiên&lt;/title&gt;
+                  &lt;/head&gt;
+              &lt;body&gt;
+              &lt;h1&gt;Xin Chào Thế Giới!&lt;/h1&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;</code></pre>
+              
+             
+              
+              <h2>HTML Meta Data</h2>
+              
+              <p>Thẻ meta dùng để thêm thông tin bổ sung (meta data) cho trang HTML. Ví dụ như để quy định bộ ký tự sử dụng là UTF-8:</p>
+              
+              <pre><code>&lt;meta charset="utf-8"&gt;</code></pre>
+              
+              <p>Thẻ <code>&lt;meta&gt;</code> là thẻ tự đóng. Trình duyệt hoặc các bộ máy tính kiếm search engine như Google sẽ cần sử dụng thông tin này để có thể phân tích, hiển thị nội dung trên trang một cách hợp lý nhất.</p>
+              
+              <h2>HTML Tiêu Đề Trang</h2>
+              
+              <p>Thẻ tiêu đề được đặt trong cặp thẻ <code>&lt;head&gt;&lt;/head&gt;</code> và dùng để tạo tiêu đề cho trang.</p>
+              
+              <pre><code>&lt;title&gt;Trang HTML Đầu Tiên&lt;/title&gt;</code></pre>
+              
+              <p>Tiêu đề trang không hiển thị ở phần nội dung trang mà được hiển thị ở thanh tab của trình duyệt.</p>
+              
+              <h2>HTML Đề Mục</h2>
+              
+              <p>Các thẻ đề mục dùng để tạo đề mục cho nội dung của trang. HTML có 6 loại thẻ đề mục khác nhau từ <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code> cho tới <code>&lt;h6&gt;</code> với thứ tự quan trọng của đề mục giảm dần. Ví dụ thẻ <code>&lt;h1&gt;</code> dùng đánh dấu đề mục có mức độ quan trọng cao và <code>&lt;h6&gt;</code> với đề mục ít quan trọng hơn.</p>
+              
+              <pre><code>&lt;h1&gt;Thẻ đề mục 1&lt;/h1&gt;
+              &lt;h2&gt;Thẻ đề mục 2&lt;/h2&gt;
+              &lt;h3&gt;Thẻ đề mục 3&lt;/h3&gt;</code></pre>
+              
+              
+              <h2>HTML Đoạn Văn</h2>
+              
+              <p>Đoạn văn bản trong HTML được đánh dấu bởi thẻ <code>&lt;p&gt;</code>:</p>
+              
+              <pre><code>&lt;p&gt;Đoạn văn đầu tiên...&lt;/p&gt;
+              &lt;p&gt;Đoạn văn thứ hai...&lt;/p&gt;</code></pre>
+              
+              
+              <h2>HTML Link Liên Kết</h2>
+              
+              <p>Thẻ <code>&lt;a&gt;</code> được dùng để tạo link liên kết trong HTML:</p>
+              
+              <pre><code>&lt;a href="https://www.Mycode.vn" title="Mycode.vn"&gt;Mycode.vn&lt;/a&gt;</code></pre>
+              
+              
+              <p>Địa chỉ của link liên kết được xác định bởi giá trị của thuộc tính <code>href</code> có trong thẻ mở <code>&lt;a&gt;</code>. Chúng ta sẽ tìm hiểu về thuộc tính ở các bài học tiếp theo.</p>
+              
+              <h2>HTML Ảnh</h2>
+              
+              <p>Thẻ <code>&lt;img&gt;</code> được dùng để đánh dấu hình ảnh trên trang:</p>
+              
+              <pre><code>&lt;img src="https://www.Mycode.vn/logo.jpg" alt="Logo Mycode.vn" width="100" height="100"&gt;</code></pre>
+              
+              
+              <p>Địa chỉ của ảnh được xác định bởi thuộc tính <code>src</code>. Các thuộc tính khác như <code>alt</code> (alternative text), <code>width</code> và <code>height</code> cung cấp thêm các thông tin về ảnh. Đừng lo chúng ta sẽ tìm hiểu về các thuộc tính này ở các bài học tiếp theo.</p>
+              
+              <h2>HTML Nút Bấm</h2>
+              
+              <p>Thẻ <code>&lt;button&gt;</code> được dùng để tạo một nút bấm trên trang:</p>
+              
+              <pre><code>&lt;button&gt;Click vào đây&lt;/button&gt;</code></pre>
+              
+              
+              <h2>HTML Danh Sách</h2>
+              
+              <p>Các thẻ <code>&lt;ul&gt;</code> và <code>&lt;ol&gt;</code> được dùng để tạo một danh sách:</p>
+              
+              <pre><code>&lt;ul&gt;
+                &lt;li&gt;Cà phê&lt;/li&gt;
+                &lt;li&gt;Trà&lt;/li&gt;
+                &lt;li&gt;Nước ngọt&lt;/li&gt;
+                &lt;li&gt;Bia&lt;/li&gt;
+                &lt;li&gt;Rượu&lt;/li&gt;
+              &lt;/ul&gt;</code></pre>
+              
+              
+              <p>Chúng ta sẽ tìm hiểu về các thẻ này ở các bài học tiếp theo!</p>
+              </div>
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer-content flex">
+                <div class="footer-info">
+                 
+                  <p>Địa chỉ: Khu dân cư, Nhà Bè, Hồ Chí Minh</p>
+                  <p>Email: tuyensinh@ou.edu.vn</p>
+                  <p>Số điện thoại: 028 3836 4748</p>
+                  <div ><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.056673616353!2d106.6906695!3d10.6754047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1724342311760!5m2!1svi!2s" width="350" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+                <div class="footer-links flex">
+                  <div>
+                    <span class="footer_header_text">Liên kết</span>
+                    <a class="block" href="">Trang chủ</a>
+                    <a class="block" href="">Diễn đàn trao đổi</a>
+                    <a class="block" href="">About us</a>
+                  </div>
+                  <div>
+                    <span class="footer_header_text">Sản phẩm</span>
+                    <a class="block" href="">Học HTML</a>
+                    <a class="block" href="">Học CSS</a>
+                    <a class="block" href="">Học C++</a>
+                    <a class="block" href="">Học Javascript</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2024 Mycode. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+ 
+</html>
+

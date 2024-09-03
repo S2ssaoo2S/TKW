@@ -1,8 +1,4 @@
-code {
-  font-size: 87.5%;
-  color: #e83e8c !important;
-  word-break: break-word;
-}
+
 .body{
   width: 100%;
   height: 100%;
@@ -17,6 +13,8 @@ z-index: 1;
   padding-top: 50px;
   width: 100%;
   background-color: var(--sidebar_color);
+ 
+
   height: 100vh;
 }
 .sidebar-content{
@@ -24,8 +22,11 @@ z-index: 1;
 }
 .sidebar a{
   padding: 10px;
+ border-bottom: #fff solid 1px;
   display: block;
   text-decoration: none;
+  color: var(--main-text-color) !important;
+
 
 }
 .sidebar a:hover{
@@ -38,20 +39,26 @@ z-index: 1;
   padding-top: 60px;
   width: 80%;
   height: 100%;
-  background-color:#fff ;
+  background-color: var(--bg-data);
   text-align: left;
 }
 .content ul{
   padding-left: 20px;
+  
 }
 .content-1{
-  margin: 20px;
+  margin: 20px 20px 0 20px ;
+  background-color: var(--sidebar_color);
+
   box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 22%);
 
 }
+
 .content_header{
   padding-left: 20px;
   font-size: 2rem;
+  color: var(--main-text-color) !important;
+
 
 
 }
@@ -61,11 +68,13 @@ z-index: 1;
   width: 90%;
   height: 100%;
   margin: 20px;
-  background-color: #f1f2f2;
+  background-color: var(--bg-data);
 }
-.data_ul{
-  list-style: disc;
+.data p,li,strong,h2{
+  margin-bottom: 16px;
+  color: var(--main-text-color) !important;
 }
+
 .pre{
   
     display: block;
@@ -80,9 +89,7 @@ z-index: 1;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.pre>code{
-  color: #333 !important ;
-}
+
 kbd {
   padding: 0.2rem 0.4rem !important;
   font-size: 87.5%;
@@ -91,3 +98,17 @@ kbd {
   border-radius: 0.2rem;
 }
 
+code {
+  font-size: 87.5%;
+  color: var(--main-color) !important;
+  word-break: break-word;
+}
+.pre >code{
+  color: #56701e !important;
+}
+.see_color{
+  max-width: 25%;
+}
+.active{
+  background-color: #1e90ff;
+}

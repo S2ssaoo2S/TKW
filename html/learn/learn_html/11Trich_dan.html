@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">HTML cơ bản</h2>
+          <a href="/html/learn/learn_html/1Gioit_thieu_html.html">Giới thiệu HTML</a>
+          <a href="/html/learn/learn_html/2HTML_edit.html">HTML Text Editor</a>
+          <a href="/html/learn/learn_html/3HTML_co_ban.html">Cơ bản về HTML</a>
+          <a href="/html/learn/learn_html/4HTML_the.html"> Thẻ trong HTML</a>
+          <a href="/html/learn/learn_html/5HTML Phần Tử.html">Phần tử HTML</a>
+          <a href="/html/learn/learn_html/6HTML-Thuoc-Tinh.html">Thuộc tính</a>
+          <a href="/html/learn/learn_html/7HTML-De-Muc.html">Đề Mục</a>
+          <a href="/html/learn/learn_html/8HTML-Doan-Van.html">Đoạn văn trong HTML</a>
+          <a href="/html/learn/learn_html/9HTML-Thuoc-Tinh-Style.html">Thuộc tính style </a>
+          <a href="/html/learn/learn_html/10Dinh_dang_chu.html">Định Dạng Chữ</a>
+          <a class="active" href="/html/learn/learn_html/11Trich_dan.html">Bình luận HTML</a>
+          <a href="/html/learn/learn_html/12Mau_sac.html">Màu HTML</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">HTML Comment</h1>
+          <div class="data">
+            <p>
+              Comment được dùng để tạo các chú thích trong source code HTML. Khi
+              hiển thị trang web trên trình duyệt thì nội dung comment sẽ không
+              được hiển thị.
+            </p>
+
+            <h2>Tạo Comment trong HTML</h2>
+
+            <p>
+              Để tạo comment trong HTML chúng ta sử dụng thẻ comment với cú pháp
+              sau:
+            </p>
+
+            <pre
+              class="pre"
+            ><code>&lt;!-- Nội dung chú thích... --&gt;</code></pre>
+
+            <p>
+              Lưu ý dấu chấm than&nbsp;<code>!</code>&nbsp;xuất hiện ở phần thẻ
+              mở mà không có trong thẻ đóng.
+            </p>
+
+            <pre
+              class="pre"
+            ><code>&lt;!-- Đây là một chú thích và sẽ không được hiển thị bởi trình duyệt--&gt;
+              &lt;p&gt;Đây là một đoạn văn bản.&lt;/p&gt;</code></pre>
+
+            <h2>Sử Dụng Comment trong HTML</h2>
+
+            <p>
+              Mục đích chính của comment là để tạo chú thích cho một số đoạn mã
+              HTML trong source code mà có cấu trúc phức tạp. Trường hợp mã lệnh
+              HTML của bạn đơn giản bạn không nên tạo quá nhiều comment vì điều
+              này sẽ phản tác dụng.
+            </p>
+
+            <p>
+              Ngoài ra comment còn được sử dụng để vô hiệu hoá hiển thị của một
+              hoặc nhiều phần tử HTML trong source code:
+            </p>
+
+            <pre
+              class="pre"
+            ><code>&lt;!--&lt;img src="https://www.Mycode.vn/img/logo.png" alt="Logo CodeHub.vn" width=100 height=100&gt;--&gt;</code></pre>
+
+            <p>
+              Khi mở trang web trên trình duyệt thì phần
+              tử&nbsp;<code>img</code>&nbsp;ở trên sẽ không được hiển thị.
+            </p>
+
+            <p>
+              Cách làm này sẽ rất có ích khi bạn chỉ tạm thời muốn không hiển
+              thị phần tử&nbsp;<code>img</code>&nbsp;nhưng trong tương lai sẽ sử
+              dụng lại. So với việc xoá các phần tử này ra khỏi source code thì
+              comment sẽ giúp bạn không phải nhập lại code của các phần tử HTML
+              khi cần dùng lại chúng.
+            </p>
+
+            <h2>Hiển Thị Comment</h2>
+
+            <p>
+              Mặc dù khi hiển thị trang trên trình duyệt thì nội dung của
+              comment sẽ không được, tuy nhiên nếu chúng ta&nbsp;<strong
+                >view source</strong
+              >&nbsp;để xem mã nguồn của trang thì comment vẫn sẽ xuất hiện.
+            </p>
+
+            <p>
+              Để view source bạn của trang HTML trên trình duyệt bạn bấm chuột
+              phải và chọn&nbsp;<strong>View Source</strong
+              >&nbsp;hoặc&nbsp;<strong>View Source Page</strong>. Ngoài ra bạn
+              có thể sử dụng phím
+              tắt&nbsp;<kbd>control</kbd>&nbsp;+&nbsp;<kbd>U</kbd>&nbsp;trên
+              Windows và Linux
+              hoặc&nbsp;<kbd>command</kbd>&nbsp;+&nbsp;<kbd>option</kbd>&nbsp;+&nbsp;<kbd>U</kbd>&nbsp;trên
+              Mac OS X.
+            </p>
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer-content flex">
+                <div class="footer-info">
+                  <p>Địa chỉ: Khu dân cư, Nhà Bè, Hồ Chí Minh</p>
+                  <p>Email: tuyensinh@ou.edu.vn</p>
+                  <p>Số điện thoại: 028 3836 4748</p>
+                  <div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.056673616353!2d106.6906695!3d10.6754047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1724342311760!5m2!1svi!2s"
+                      width="350"
+                      height="150"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="footer-links flex">
+                  <div>
+                    <span class="footer_header_text">Liên kết</span>
+                    <a class="block" href="">Trang chủ</a>
+                    <a class="block" href="">Diễn đàn trao đổi</a>
+                    <a class="block" href="">About us</a>
+                  </div>
+                  <div>
+                    <span class="footer_header_text">Sản phẩm</span>
+                    <a class="block" href="">Học HTML</a>
+                    <a class="block" href="">Học CSS</a>
+                    <a class="block" href="">Học C++</a>
+                    <a class="block" href="">Học Javascript</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2024 Mycode. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

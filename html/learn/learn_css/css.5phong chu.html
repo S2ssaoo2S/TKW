@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/CSS.css copy.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <a href=""
+                    >Tutorial<i
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Q&A</a></li>
+                <li><a href=""></a></li>
+                <li>
+                  <a class="light-mode"
+                    ><i class="fa fa-toggle-on" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search flex">
+              <form action="get" class="search-form">
+                <input type="text" name="search" class="search-input" />
+              </form>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+            <div class="login">
+              <button class="btn-login">login</button>
+            </div>
+            <div class="register">
+              <button class="btn-register">sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="#">Trang chủ Css</a>
+          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
+          <a href="">Chèn Mã Css</a>
+          <a href=""> Cú Pháp Css  </a>
+          <a href="">Bộ chọn Css</a>
+          <a href="">Phong Chữ Css</a>
+          <a href="">Màu Sắc Css </a>
+          <a href="">Box Model Css</a>
+          <a href="">Căn Lề</a>
+          <a href="">Đường Viền Css</a>  
+          <a href="">Văn Bản Css </a>
+          <a href="">Phong Nền </a>
+          <a href="">Khoảng Đệm Css</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Phông Chữ trong CSS - Học CSS Cơ Bản</h1>
+          <div class="data">
+            <p><b>Phong Chữ</b></p>
+            <p>CSS cung cấp các thuộc tính liên quan đến phông giúp chúng ta có thể dễ dàng thiết lập họ phông chữ, kích thước phông chữ, độ đậm của phông chữ và kiểu phông chữ sử dụng trên trang web.</p>
+            <h2>Họ Phông - Font Family</h2>
+            <p>Họ phông (hay font family) trong CSS bao gồm một nhóm các phông chữ liên quan với nhau.</p>
+            <p>Ví dụ họ phông chữ Arial bao gồm các phông chữ như: Arial Regular Arial Italic (chữ in nghiêng), Arial Narrow (chữ với khoảng cách hẹp), Arial Bold (chữ in đậm), Arial Black (chữ nét to) và Arial Bold Italic (chữ in đậm và in nghiêng).</p>
+            <img src="/images/css/1ho-font-aria.jpg"width="600" height="481">
+            <p>Trong CSS, chúng ta họ phông được phân thành hai loại chính:</p>
+            <ul>
+              <li>Họ phông theo tên cụ thể (font family name). Ví dụ:&nbsp;<em>Arial</em>,&nbsp;<em>Verdana</em>,&nbsp;<em>Times New Roman</em>,&nbsp;<em>Georgia</em>....</li>
+              <li>Họ chung (generic family). Loại này chỉ gồm 3 họ là&nbsp;<em>serif</em>,&nbsp;<em>sans-serif</em>&nbsp;và&nbsp;<em>monospace</em>. Mỗi họ trong loại này bao gồm một hoặc nhiều họ phông cụ thể ở trên. Ví dụ họ sans-serif bao gồm các hộ cụ thể như Arial, Verdana, Helvetica...</li>
+            </ul>
+            <img src="/images/css/2Generic-Family-Names.jpg"width="600" height="481">
+            <p>Hình dưới đây minh hoạ sự khác biệt giữa các ký tự thuộc họ serif và họ sans-serif.</p>
+            <img src="/images/css/0css-la-gi.jpg"width="700" height="381">
+            <h2>Thuộc tính&nbsp;<code>font-family</code></h2>
+            <p>Thuộc tính&nbsp;<code>font-family</code>&nbsp;dùng để thiết lập họ phông chữ cho các phần tử trên trang web.</p>
+            <pre>
+              body {
+                font-family: Arial;
+            }
+            </pre>
+            <p>Khi quy định phông chữ cho phần tử trên trang web chúng ta nên chọn nhiều hơn một họ phông chữ và thường đi kèm theo một họ chung (generic family). Khi đó nếu như họ phông đầu tiên không được cài đặt trên thiết bị hiển thị trang web thì các phông chữ kế tiếp sẽ được sử dụng.</p>
+          <pre>
+            body {
+              font-family:  Arial, Helvetica, sans-serif ;
+          }
+          </pre>
+          <p>Trong trường hợp như trên nếu một ký tự nào đó không tồn tại trong phông đầu tiên (Arial) thì phông chữ theo sau nó là Helvetica sẽ được áp dụng. Trong trường hợp mà ngay cả phông thứ 2 cũng không có sẵn thì thì bất kỳ họ phông nào thuộc họ chung&nbsp;<code>sans-serif</code>&nbsp;đang được cài trên thiết bị sẽ được sử dụng.</p>
+          <p>Với các họ phông với tên gồm nhiều hơn một từ như&nbsp;<em>Times New Roman</em>&nbsp;thì chúng ta sẽ cần phải đặt tên họ phông này vào bên trong cặp dấu nháy.</p>
+          <h2>Cỡ Chữ</h2>
+          <p>Sử dụng thuộc tính&nbsp;<code>font-size</code>&nbsp;để quy định kích thước phông chữ.</p>
+          <pre>
+            body {
+              font-size: 14px;
+          }
+          </pre>
+          <p>Giá trị của thuộc tính&nbsp;<code>font-size</code>&nbsp;có thể sử dụng loại đơn vị tuyệt đối như&nbsp;<code>px</code>&nbsp;(thường dùng),&nbsp;<code>pt</code>&nbsp;hoặc&nbsp;<code>cm</code>... hoặc đơn vị tương đối như&nbsp;<code>%</code>,&nbsp;<code>em</code>,&nbsp;<code>rem</code>...</p>
+          <pre>
+            body {
+              font-size: 14px;
+          }
+          .large {
+            font-size: 1.5em;
+          }
+          .extra-large {
+            font-size: 2em;
+          }
+          </pre>
+          <p>Kích Thước Phông Chữ Theo Đơn Vị "EM"</p>
+          <p>Với các đơn vị tương đối thì trình duyệt cũng sẽ quy đổi sang đơn vị tuyệt đối khi hiển thị.</p>
+          <h2>Độ Đậm Nhạt</h2>
+          <p>Sử dụng thuộc tính&nbsp;<code>font-weight</code>&nbsp;để quy định độ đậm nhạt của chữ. Nó có thể nhận các giá trị như:&nbsp;<code>bold</code>,&nbsp;<code>normal</code>,&nbsp;<code>bolder</code>&nbsp;hoặc&nbsp;<code>lighter</code>. Ví dụ:</p>
+          <pre>
+            .bold {
+              font-weight: bold;
+          }
+          .normal {
+              font-weight: normal;
+          }
+          </pre>
+          <p>Độ Đậm Của Phông Chữ trong CSS</p>
+          <p>Giá trị của thuộc tính&nbsp;<code>font-weight</code>&nbsp;có thể nhận giá trị là số thay vì chữ như trên:</p>
+          <pre>
+            .bold {
+              font-weight: 700;
+          }
+          .normal {
+              font-weight: 400;
+          }
+          </pre>
+          <h2>Kiểu Chữ</h2>
+          <p>Sử dụng thuộc tính&nbsp;<code>font-style</code>&nbsp;để quy định kiểu chữ in nghiêng, in thường hay in đậm... cho phông chữ.</p>
+          <pre>
+            body {
+              font-style: italic;
+          }
+          </pre>
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,17 +1,29 @@
-h1{ color:aqua;
-    font-family: sans-serif, lucida sans ;
-    font-size:40px ;
-}
-div{color:rgb(176, 173, 169);
-    background-color:rgb(243, 243, 243);
-    background-position: center;
-    background-size: cover;
-}
-.mau1{
-    color:aquamarine;
-    font-weight:bolder;
-}
-.kc{
-    line-height: 1.75;
+.content_header{
+    font-weight: 555;
+    color: #091865ef;
+    margin-bottom: .6em;
+    padding-bottom: .6em;
+    border-bottom: 1px solid #eee;
+    font-size: 40px;
+    font-size: 2.5rem;
+    background: linear-gradient(skyblue,#87CEEB) ;
+    background-repeat: no-repeat;
 }
 
+.data img{
+    margin: 0 16px;
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: #fff;
+}
+.data clearfix {
+    font-size: 1.3195em;
+    margin-top: 0.5em;
+}
+.data pre{
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border-radius: 3px;}

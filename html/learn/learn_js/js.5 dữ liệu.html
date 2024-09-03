@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/Javascript.css.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">Javascript cơ bản</h2>
+          <a href="#">Trang chủ Javascript</a>
+          <a href="js.1gioithieu.html">Giới thiệu Javascript</a>
+          <a href="js.2comment.html">Comment trong Javascript</a>
+          <a href="js.3 biến.html">Biến trong Javascript  </a>
+          <a href="js.4 phéptoan.html">Phép Toán trong Javascript</a>
+          <a class="Active" href="js.5 dữ liệu.html">Kiểu Dữ Liệu trong Javascript </a>
+          <a href="js.6ham.html">Hàm thường gặp trong Javascript</a>
+          <a href="js.7pham vi.html">Phạm Vi Của Biến trong Javascript</a>
+          <a href="js.8cau trúc.html">Cấu Trúc if,else,elseif trong Javascript</a>
+          <a href="js.9 vòng lặp.html">Vòng Lặp trong Javascript</a>
+          <a href="js.10 Break và Continue.html">Break và Continue trong Javascript </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Các Kiểu Dữ Liệu trong Javascript</h1>
+          <div class="data">
+            <h2>Kiểu Chuỗi</h2>
+            <p>Chuỗi bao gồm nhiều ký tự và được đặt trong dấu ngoặc đơn hoặc ngoặc kép. Ví dụ:</p>
+            <pre class="pre" > <code> 
+              var myString1 = 'Hello';
+              var myString2 = "Goodbye";
+            </code> </pre>
+          <p>Nếu chuỗi ký tự được đặt trong ngoặc đơn và chuỗi bao gồm ngoặc đơn thì bạn cần phải đặt ký tự \ trước ngoặc để escape (thoát) nó, ví dụ:</p>
+            <pre class="pre" > <code> 
+              var mySingleQuote = 'I\'m John';
+            </code> </pre>
+          <p>Tương tự với ngoặc kép:</p>
+            <pre class="pre" > <code> 
+              var myDoubleQuote = "Hello \" double quotes";
+            </code> </pre>
+            <h2>Nối Chuổi</h2>
+          <p>Để nối chuỗi với nhau chúng ta sử dụng phép toán cộng +:</p>
+            <pre class="pre" > <code> 
+              var firstname = 'John';
+              var lastname = 'Doe';
+              var fullname = firstname + ' ' + lastname;
+              console.log(fullname);
+            </code> </pre>
+          <h2>Kiểu Số</h2>
+          <p>Kiểu số dùng để biểu diễn số tự nhiên và số thực dấu phảy động (floating number).<br>
+            Ví dụ:</p>
+            <pre class="pre" > <code> 
+              var a = 5;
+              console.log(typeof a);
+              var b = 5.55;
+              console.log(typeof b);
+            </code> </pre>
+            <p>Khi thực hiện phép toán cộng (<code>+</code>) trên một số với một chuỗi kết quả nhận được sẽ là một chuỗi. Ví dụ:</p>
+            <pre class="pre" > <code> 
+              var a = 3;
+              var b = '5';
+              var c = a + b;
+              console.log(c);
+              console.log(typeof c);
+            </code> </pre>
+          <h2> Mảng </h2>
+          <p>Mảng rất thuận tiên khi chúng ta cần lưu nhiều dữ liệu (kiểu dữ liệu). Ở ví dụ dưới chúng ta có một mảng lưu trữ 4 giá trị:</p>
+          <pre class="pre" > <code> 
+            var arr = [1, 5, 7, 'nine'];</code> </pre>
+          <p>Trong ví dụ trên các giá trị 1, 5, 7 và 'nine' là các phần tử trong mảng. Để truy cập phần tử trong mảng ta sử dụng index (số thứ tự) của phần tử đó. Index trong mảng bắt đầu là 0 sau đõ mỗi phần tử sau sẽ có index tằng 1 đơn vị. Ví dụ:</p>
+             <pre class="pre" > <code> 
+              var arr = [1, 5, 7, 'nine'];
+              console.log(arr[0]);
+              console.log(arr[2]);</code> </pre>
+           <p>Để đếm số lượng phần tử trong mảng (hay còn gọi là độ dài của mảng), chúng ta sử dụng hàm length.</p>
+            <pre class="pre" > <code> 
+              var arr = [1, 5, 7, 'nine'];
+              console.log(arr.length);</code> </pre>
+              <p>Để thêm phần tử vào cuối mảng chúng ta sử dụng cú pháp sau:</p>
+            <pre class="pre" > <code> 
+              var arr = [1, 5, 7, 'nine'];
+              arr.push('123');
+              console.log(arr);</code> </pre>
+          <p>Để loại bỏ phần tử cuối cùng ra khỏi mảng chúng ta sử dụng cú pháp sau:</p>
+            <pre class="pre" > <code> 
+              var arr = [1, 5, 7, 'nine'];
+              arr.pop();
+              console.log(arr);</code> </pre>
+              <p>Tương tự với push và pop chúng ta có unshift và shift để thêm phần tử vào đầu mảng hoặc xóa bỏ phần tử ở đầu mảng.</p>
+              <h2>Kiểu Boolean</h2>
+              <p>Kiểu này chỉ nhận 2 giá trị là true hoặc false. Nó được dùng phổ biến trong các phép toán về logic hoặc trong cấu trúc điều kiện mà bạn sẽ được tìm hiểu trong phần tới.</p>
+            <pre class="pre" > <code> 
+              var a = 1;
+              console.log(a > 2);
+              console.log(a > 0);</code> </pre>
+          <h2>Nan</h2>
+          <p>NaN (not a number) kiểu này xuất hiện khi chúng ta thực hiện một phép toán không hợp lệ, ví dụ:</p>
+            <pre class="pre" > <code> 
+              var a = 5;
+              var b = 'string';
+              var c = a * b;
+              console.log(c); </code> </pre>
+          <h2>undefied</h2>
+          <p>Kiểu này xuất hiện khi chúng ta truy cập một biến chưa được khai báo:</p>
+            <pre class="pre" > <code> 
+              console.log(typeof xyz); </code> </pre>
+          <h2>Object</h2>
+          <p>Javascript là ngôn ngữ hướng đối tượng và hâu hết mọi thứ trong Javascript đều là object. Ngay cả mảng cũng là một object.</p>
+            <pre class="pre" > <code> 
+              var arr = [1, 5, 7, 'nine'];
+              console.log(typeof arr);</code> </pre>
+          <p>Để tạo một đối tượng chúng ta sử dụng cú pháp đơn giản như sau:</p>
+            <pre class="pre" > <code> 
+              var me = {name: 'John Doe', age: 24};
+              console.log(typeof me);</code> </pre>
+          <h2>Thuộc Tính</h2>
+          <p>ở đây biến me là một object với 2 thuộc tính (property) là name và age. Để truy cập property của object chúng ta sử dụng dấu . (dot syntax):</p>
+            <pre class="pre" > <code> 
+              var me = {name: 'John Doe', age: 24};
+              console.log(me.name);
+              console.log(me.age);</code> </pre>
+          <p>Bạn cũng có thể thêm thuộc tính vào object trên:</p>
+            <pre class="pre" > <code> 
+              var me = {name: 'John Doe', age: 24};
+              me.email = 'johndoe@example.net';
+              console.log(me); </code> </pre>
+          <h2>Method</h2>
+          <p>Method của object giống như một hàm, tuy nhiên hàm này chỉ tồn tại trong phạm vi của object đó.</p>
+            <pre class="pre" > <code> 
+              var me = {
+                name: 'John Doe',
+                age: 24,
+                say: function () {
+                    alert('Hi, my name is: ' + this.name);
+                }
+            }; </code> </pre>
+            <p>Ở đây say là method của me. Method được gọi giống như gọi hàm:</p>
+            <pre class="pre" > <code> 
+              me.say();
+            </code> </pre>
+            <p>Trong ví dụ trên chúng ta sử dụng từ khóa this. this được sử dụng bên trong method của object để gọi chính object đó. Do đó, bên trong method say thay vì sử dụng me.name chúng ta sử dụng this.name.</p>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

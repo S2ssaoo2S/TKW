@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.HOIDAP{
+  background-color: #f5f9f9;
+  min-height: 600px;
+}
+.container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 800px;
+  padding: 0 20px;
+  background-color: aliceblue;
+
+}
+
+.container h1,input{
+
+    margin-top: 16px;
+}
+.avatar-img{
+  height: 50px;
+  width: 50px;
+}
+.question {
+  background-color:#f5f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.question >p{
+  margin-top: 6px;
+} 
+.question_name{
+  color: #0f6cbf;
+  text-decoration: none;
+  background-color: transparent;
+}
+.header{
+  position: relative !important;
+}
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.submitbutton{
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.header-diendan{
+  background-color: var(--bg-lesson_sub);
+  display: block;
+  text-align: center;
+  margin-top: 16px auto;
+  padding: 16px;
+  width: 100%;
+  font-size: 2rem;
+}
+.box_botss{
+  width: 100%;
+  background-color: aqua;
+  float: left;
+  line-height: 15px;
+  margin-bottom: 5px;
+}
+
+.name{
+  color: #1e5b7e;
+  width: 100%;
+  line-height: 1;
+}
+.topic_name{
+  padding: 10px;
+  
+}
+.topic_name div:nth-child(3){
+  margin: 0 auto;
+}
+.topic_name div:nth-child(2){
+  padding-right: 10px;
+  width: 30%;
+}
+.topic_name div:nth-child(2) div{
+  padding-right: 10px;
+  width: 100%;
+}
+.inp_question{
+  width: 60%;
+  padding: 0 80px 80px 0;
+}
+.delete{
+
+  background-color: #333;
+} 
+.answer_question{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  background-color: aliceblue;
+  text-align: left;
+  margin: 0 auto;
+}
+.answer-list{
+  margin-top: 50px;
+  display: block;
+  height: 50%;
+  width: 100%;
+}
+.answer{
+  width: 60%;
+  background-color: aliceblue;
+  text-align: left;
+  
+}
+.answer p{
+  padding: 16px 0;
+  background-color: #fff;
+}
+.answer_text{
+  padding: 5px 4px;
+  background-color: #f6f3f3;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #333;
+  vertical-align: top;
+}
+.question_text{
+  float: left;
+  width: 100%;
+  color: #1e5b7e;
+  font-weight: 700;
+  font-size-adjust: none;
+  font-style: normal;
+  font-variant: normal;
+  line-height: normal;
+}
+.not-logged-in p{
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #1e5b7e;
+  display: block;
+}

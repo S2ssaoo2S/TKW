@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/CSS.css copy.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <a href=""
+                    >Tutorial<i
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Q&A</a></li>
+                <li><a href=""></a></li>
+                <li>
+                  <a class="light-mode"
+                    ><i class="fa fa-toggle-on" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search flex">
+              <form action="get" class="search-form">
+                <input type="text" name="search" class="search-input" />
+              </form>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+            <div class="login">
+              <button class="btn-login">login</button>
+            </div>
+            <div class="register">
+              <button class="btn-register">sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <a href="#">Trang chủ Css</a>
+          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
+          <a href="">Chèn Mã Css</a>
+          <a href=""> Cú Pháp Css  </a>
+          <a href="">Bộ chọn Css</a>
+          <a href="">Phong Chữ Css</a>
+          <a href="">Màu Sắc Css </a>
+          <a href="">Box Model Css</a>
+          <a href="">Căn Lề</a>
+          <a href="">Đường Viền Css</a>  
+          <a href="">Văn Bản Css </a>
+          <a href="">Phong Nền </a>
+          <a href="">Khoảng Đệm Css</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Căn Lề trong CSS - CSS Cơ Bản</h1>
+          <div class="data">
+            <p><b>Căn Lề trong Css</b></p>
+            <p>Lề của phần tử là phần diện tích bao quanh bên ngoài đường viền phần tử. Trong CSS để căn lề cho phần tử chúng ta sử dụng các thuộc tính&nbsp;<code>margin</code>.</p>
+          <pre>
+            p {
+              margin: 50px 20px 50px 20px;
+          }
+          </pre>
+          <p>Khai báo trong đoạn mã CSS trên đây sử dụng thuộc tính margin để căn lề cho phần tử p với lề bên trên và dưới là 50px, lề bê phải và trái là 20px</p>
+          <h2>Căn Lề Từng Bên</h2>
+          <p>Bạn có thể căn lề từng bên cho phần tử sử dụng các thuộc tính sau:</p>
+          <ul>
+            <li>Thuộc tính&nbsp;<code>margin-top</code>: Căn lề bên trên cho phần tử.</li>
+            <li>Thuộc tính&nbsp;<code>margin-right</code>: Căn lề bên phải cho phần tử.</li>
+            <li>Thuộc tính&nbsp;<code>margin-bottom</code>: Căn lề bên dưới cho phần tử.</li>
+            <li>Thuộc tính&nbsp;<code>margin-left</code>: Căn lề bên trái cho phần tử.</li>
+          </ul>
+          <p>Ví dụ:</p>
+          <pre>
+            p {
+              margin-top: 50px;
+              margin-right: 20px;
+              margin-bottom: 50px;
+              margin-left: 20px;
+          }
+          </pre>
+          <h2>Thuộc Tính Margin Tốc Ký - Margin Shorthand Property</h2>
+          <p>Thuộc tính tốc ký hay shorthand property trong CSS được sử dụng để giúp  lập trình viên rút ngắn số lượng code phải viết qua đó giảm dung lượng file CSS và giúp trang web được tải nhanh hơn.</p>
+          <p>Thuộc tính margin là một thuộc tính tốc ký trong CSS, nó có tác dụng gộp các thuộc tính canh lề từng bên và theo thứ tự sau:</p>
+          <ul>
+            <li>Thuộc tính&nbsp;<code>margin-top</code>.</li>
+            <li>Thuộc tính&nbsp;<code>margin-right</code>.</li>
+            <li>Thuộc tính&nbsp;<code>margin-bottom</code>.</li>
+            <li>Thuộc tính&nbsp;<code>margin-left</code>.</li>
+          </ul>
+          <p>Giá trị của thuộc tính margin tốc ký bao gồm từ một cho tới bốn giá trị khác nhau ngăn cách bởi khoảng trắng.</p>
+          <p>Thuộc tính margin tốc ký với đầy đủ bốn giá trị</p>
+          <pre>
+            p {
+              margin: 5px 10px 15px 20px;
+          }
+          </pre>
+          <p>Với đoạn code CSS như trên thì lề của các bên sẽ được căn như sau:</p>
+          <ul>
+            <li>Lề trên: 5px.</li>
+            <li>Lề phải và trái: 10px.</li>
+            <li>Lề dưới: 15px.</li>
+          </ul>
+            <p>Thuộc tính margin tốc ký với hai giá trị</p> 
+            <pre>p {
+              margin: 5px 10px;
+            }</pre>          
+            <p>Với đoạn code CSS như trên thì lề của các bên sẽ được căn như sau:</p>
+            <ul>
+              <li>Lề trên và dưới: 5px.</li>
+              <li>Lề phải và trái: 10px.</li>
+            </ul>
+          <p>Thuộc tính margin tốc ký với duy nhất giá trị:</p>
+          <pre>
+            p {
+              margin: 5px;
+            }
+          </pre>
+          <p>Lúc này phần tử p sẽ được thiết lập lề ở cả bốn bên là 5px.</p>
+          <p>Giá trị mặc định của các thuộc tính margin là 0, tuy nhiên khi hiển thị trang trình duyệt cũng sẽ thiết lập lề cho mỗi phần tử với giá trị tuỳ vào loại phần tử.</p>
+          <h2>Căn Lề Tự Động</h2>
+          <p>Căn lề tự động được áp dụng khi giá trị của thuộc tính margin là auto:</p>
+            <pre>h1 {
+              margin-left: auto;
+              margin-right: auto;
+              width: 100px;
+              border: 1px solid red;
+          }</pre>
+          <p>Đối với những phần tử khối (block) hoặc nội dòng - khối (inline-block) như phần tử h1, p, div... thì khi căn lề tự động cho lề trái và lề phải thì phần tử sẽ được căn giữa đều hai bên.</p>
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

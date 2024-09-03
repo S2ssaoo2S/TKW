@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">HTML cơ bản</h2>
+          <a href="/html/learn/learn_html/1Gioit_thieu_html.html">Giới thiệu HTML</a>
+          <a href="/html/learn/learn_html/2HTML_edit.html">HTML Text Editor</a>
+          <a href="/html/learn/learn_html/3HTML_co_ban.html">Cơ bản về HTML</a>
+          <a href="/html/learn/learn_html/4HTML_the.html"> Thẻ trong HTML</a>
+          <a href="/html/learn/learn_html/5HTML Phần Tử.html">Phần tử HTML</a>
+          <a href="/html/learn/learn_html/6HTML-Thuoc-Tinh.html">Thuộc tính</a>
+          <a class="active" href="/html/learn/learn_html/7HTML-De-Muc.html">Đề Mục</a>
+          <a href="/html/learn/learn_html/8HTML-Doan-Van.html">Đoạn văn trong HTML</a>
+          <a href="/html/learn/learn_html/9HTML-Thuoc-Tinh-Style.html">Thuộc tính style </a>
+          <a href="/html/learn/learn_html/10Dinh_dang_chu.html">Định Dạng Chữ</a>
+          <a href="/html/learn/learn_html/11Trich_dan.html">Bình luận HTML</a>
+          <a href="/html/learn/learn_html/12Mau_sac.html">Màu HTML</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">HTML Đề Mục</h1>
+          <div class="data">
+            <div
+              class="entry-content single-page"
+              style="height: auto !important"
+            >
+              <h2>Thẻ Đề Mục HTML</h2>
+
+              <p>
+                Trong HTML có tất cả sáu thẻ đề mục
+                từ&nbsp;<code>&lt;h1&gt;</code>&nbsp;cho
+                tới&nbsp;<code>&lt;h6&gt;</code>. Chúng ta thường sử dụng
+                thẻ&nbsp;<code>&lt;h1&gt;</code>&nbsp;đánh dấu các đề mục quan
+                trọng nhất và các thẻ còn lại
+                từ&nbsp;<code>&lt;h2&gt;</code>&nbsp;tới&nbsp;<code>&lt;h6&gt;</code>&nbsp;cho
+                các đề mục ít quan trọng hơn.
+              </p>
+
+              <pre class="pre"><code>&lt;h1&gt;Đề mục số 1&lt;/h1&gt;
+              &lt;h2&gt;Đề mục số 2&lt;/h2&gt;
+              &lt;h3&gt;Đề mục số 3&lt;/h3&gt;
+              &lt;h4&gt;Đề mục số 4&lt;/h4&gt;
+              &lt;h5&gt;Đề mục số 5&lt;/h5&gt;
+              &lt;h6&gt;Đề mục số 6&lt;/h6&gt;</code></pre>
+
+              <p>
+                Trình duyệt sẽ tự động thiết lập kích thước phông chữ và khoảng
+                cách cho từng loại đề mục. Ví dụ trên trình duyệt Chrome, đề mục
+                tạo ra với thẻ&nbsp;<code>&lt;h1&gt;</code>&nbsp;có kích thước
+                phông chữ lớn nhất 37px và thường cách các phần tử phía trước và
+                phía sau 21.44px. Kích thước và khoảng cách trên dưới của đề mục
+                có thể khác nhau với các trình duyệt khác nhau.
+              </p>
+
+              <h2>Ý Nghĩa Của Đề Mục</h2>
+
+              <p>
+                Đề mục không chỉ có ý nghĩa giúp người dùng hiểu được nội dung
+                tóm tắt của phần nội dung theo sau mà còn được các công cụ tìm
+                kiếm như Google, Yahoo hay Bing... sử dụng để phân tích nội
+                dung, cấu trúc website cũng như đánh giá và so sánh các trang
+                web khác nhau có nội dung viết về cùng một chủ đề. Do đó việc sử
+                dụng các thẻ đề mục hợp lý là rất quan trọng.
+              </p>
+
+              <p>
+                Thông thường thẻ&nbsp;<code>&lt;h1&gt;</code>&nbsp;được sử dụng
+                cho các đề mục lớn và thẻ&nbsp;<code>&lt;h2&gt;</code>&nbsp;cho
+                các đề mục
+                nhỏ,&nbsp;<code>&lt;h3&gt;</code>,&nbsp;<code>&lt;h4&gt;</code>...
+                cho các đề mục nhỏ hơn nữa.
+              </p>
+
+              <h2>Kích Thước Phông Chữ</h2>
+
+              <p>
+                Như đã đề cập ở trên, trình duyệt sẽ tự động thiết lập kích
+                thước phông chữ của đề mục. Tuy nhiên để chắc chắn đề mục của
+                trang hiển thị với cùng một kích thước trên các trình duyệt khác
+                nhau thì bạn có thể thiết lập kích phông chữ cho đề mục.
+              </p>
+
+              <p>
+                Đề quy định kích thước cho đề mục chúng ta có thể sử
+                dụng&nbsp;&nbsp;như sau:
+              </p>
+
+              <pre
+                class="pre"
+              ><code>&lt;h1 style="font-size:60px;"&gt;Đề mục số 1&lt;/h1&gt;</code></pre>
+
+              <p>
+                Thuộc tính&nbsp;<code>style</code>&nbsp;được dùng để quy định
+                kiểu cách hiển thị của phần tử. Giá trị của thuộc tính này được
+                viết theo cú pháp&nbsp;<strong
+                  >property_name: property_value</strong
+                >. Trong đó&nbsp;<strong>property_name</strong>&nbsp;là tên ứng
+                với một kiểu hiển thị nhất định mà bạn muốn quy định
+                và&nbsp;<strong>property_value</strong>&nbsp;ứng với giá trị của
+                kiểu hiển thị đó. Một số kiểu hiển thị có thể kể đến như kích
+                thước phông, màu sắc, kiểu in (in đậm, in nghiêng hay in
+                thường)...ứng
+                với&nbsp;<strong>property_name</strong>&nbsp;là&nbsp;<code>font-size</code>,&nbsp;<code>color</code>,&nbsp;<code>font-style</code>...
+              </p>
+
+              <p>Ví dụ:</p>
+
+              <pre
+                class="pre"
+              ><code>&lt;h1 style="font-size:60px; font-style: italic; color: blue;"&gt;Đề mục số 1&lt;/h1&gt;</code></pre>
+
+              <p>
+                Thông thường tất cả các thẻ đề mục đều được in đậm, tuy nhiên
+                bạn hoàn toàn có thể thay đổi điều này nếu như không muốn đề mục
+                in đậm:
+              </p>
+
+              <pre
+                class="pre"
+              ><code>&lt;h1 style="font-style: normal;"&gt;Đề mục số 1&lt;/h1&gt;</code></pre>
+
+              <p>
+                <strong>Lưu ý:</strong>&nbsp;Không sử dụng thẻ đề mục chỉ với
+                mục đích in đậm chữ trong văn bản.
+              </p>
+
+              <p>
+                Nếu muốn in dậm chữ trong văn bản bạn có thể sử dụng
+                thẻ&nbsp;<code>&lt;strong&gt;</code>&nbsp;hoặc sử dụng thuộc
+                tính&nbsp;<code>style="font-size: bold;"</code>:
+              </p>
+
+              <pre
+                class="pre"
+              ><code>&lt;p&gt;Đoạn văn có chứa chữ được &lt;strong&gt;in đậm&lt;/strong&gt;&lt;/p&gt;
+              &lt;p&gt;Đoạn văn có chứa chữ được &lt;span style="font-size: bold;"&gt;in đậm&lt;/span&gt;&lt;/p&gt;</code></pre>
+
+              <p>
+                Thẻ&nbsp;<code>&lt;span&gt;</code>&nbsp;là loại thẻ được sử dụng
+                cho một phần nội dung trong một đoạn văn bản nằm bên trong
+                thẻ&nbsp;<code>&lt;p&gt;</code>&nbsp;và thường được dùng khi bạn
+                muốn áp dụng một kiểu hiển thị khác biệt cho phần nội dung này.
+              </p>
+
+              <p>
+                Bạn cũng lưu ý không nên sử dụng
+                thẻ&nbsp;<code>&lt;p&gt;</code>&nbsp;bên trong một
+                thẻ&nbsp;<code>&lt;p&gt;</code>&nbsp;khác mặc dù điều này không
+                gây ra lỗi khi hiển thị trang web trên trình duyệt, tuy nhiên về
+                mặt ý nghĩa trình bày văn bản thì cách sử dụng này là không hợp
+                lý.
+              </p>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer-content flex">
+                <div class="footer-info">
+                  <p>Địa chỉ: Khu dân cư, Nhà Bè, Hồ Chí Minh</p>
+                  <p>Email: tuyensinh@ou.edu.vn</p>
+                  <p>Số điện thoại: 028 3836 4748</p>
+                  <div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.056673616353!2d106.6906695!3d10.6754047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1724342311760!5m2!1svi!2s"
+                      width="350"
+                      height="150"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="footer-links flex">
+                  <div>
+                    <span class="footer_header_text">Liên kết</span>
+                    <a class="block" href="">Trang chủ</a>
+                    <a class="block" href="">Diễn đàn trao đổi</a>
+                    <a class="block" href="">About us</a>
+                  </div>
+                  <div>
+                    <span class="footer_header_text">Sản phẩm</span>
+                    <a class="block" href="">Học HTML</a>
+                    <a class="block" href="">Học CSS</a>
+                    <a class="block" href="">Học C++</a>
+                    <a class="block" href="">Học Javascript</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2024 Mycode. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

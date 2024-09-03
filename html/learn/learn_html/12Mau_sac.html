@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">HTML cơ bản</h2>
+          <a href="/html/learn/learn_html/1Gioit_thieu_html.html">Giới thiệu HTML</a>
+          <a href="/html/learn/learn_html/2HTML_edit.html">HTML Text Editor</a>
+          <a href="/html/learn/learn_html/3HTML_co_ban.html">Cơ bản về HTML</a>
+          <a href="/html/learn/learn_html/4HTML_the.html"> Thẻ trong HTML</a>
+          <a href="/html/learn/learn_html/5HTML Phần Tử.html">Phần tử HTML</a>
+          <a href="/html/learn/learn_html/6HTML-Thuoc-Tinh.html">Thuộc tính</a>
+          <a href="/html/learn/learn_html/7HTML-De-Muc.html">Đề Mục</a>
+          <a href="/html/learn/learn_html/8HTML-Doan-Van.html">Đoạn văn trong HTML</a>
+          <a href="/html/learn/learn_html/9HTML-Thuoc-Tinh-Style.html">Thuộc tính style </a>
+          <a href="/html/learn/learn_html/10Dinh_dang_chu.html">Định Dạng Chữ</a>
+          <a href="/html/learn/learn_html/11Trich_dan.html">Bình luận HTML</a>
+          <a class="active" href="/html/learn/learn_html/12Mau_sac.html">Màu HTML</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Màu chữ trong HTML</h1>
+          <div class="data">
+              
+              
+              <p>Màu sắc trong HTML được biểu diễn theo hai cách khác nhau:</p>
+              
+              <ul>
+                <li>Sử dụng màu theo tên: red, black, blue, orange...</li>
+                <li>Sử dụng màu theo giá trị kiểu RGB (red-green-blue), HEX hoặc HSL</li>
+              </ul>
+              
+              <h2>Màu Theo Tên</h2>
+              
+              <p>Với cách này chúng ta sẽ sử dụng tên tiếng anh của màu muốn sử dụng:</p>
+              
+              <div   style="color:white; line-height:80px">
+              <div >
+              <div class="see_color" style="background-color:yellow; color:#333333">Yellow</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:orange">Orange</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:blue">Blue</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:green">Green</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:gray">Gray</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:brown">Brown</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:red">Red</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:lightgray; color:#333333">LightGray</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:violet">Violet</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:purple">Purple</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:pink; color:#333333">Pink</div>
+              </div>
+              
+              <div >
+              <div class="see_color" style="background-color:tomato; color:#ffffff">Tomato</div>
+              </div>
+              </div>
+              
+              <h2>Màu Nền</h2>
+              
+              <p>Sử dụng thuộc tính <code>style</code> với đặc tính <code>background-color</code> để thiết lập màu nều cho phần tử:</p>
+              
+              <div style="background-color:lightgray; font-size:22px; margin-bottom:10px; margin-top:15px; padding:15px 10px; text-align:center">Xin Chào HTML</div>
+              
+              <div style="background-color:tomato; color:white; font-size:18x; margin-bottom:15px; padding:15px 10px">HTML là viết tắt của cụm từ Hyper Text Markup Language, dịch sang tiếng Việt là ngôn ngữ đánh dấu siêu văn bản.</div>
+              
+              <pre>
+              &nbsp;</pre>
+              
+              <h1><code>Xin Chào HTML</code></h1>
+              
+              <p><code>HTML là viết tắt của cụm từ Hyper Text Markup Language.</code></p>
+              
+              <h2>Màu Chữ</h2>
+              
+              <p>Sử dụng thuộc tính <code>style</code> với đặc tính <code>color</code> để thiết lập màu chữ:</p>
+              
+              <div style="color:red; font-size:24px; margin-top:15px">Xin Chào HTML</div>
+              
+              <div style="color:blue; font-size:18px">HTML là viết tắt của cụm từ Hyper Text Markup Language.</div>
+              
+              <div style="color:green; font-size:18px; margin-bottom:15px">Dịch sang tiếng Việt là ngôn ngữ đánh dấu siêu văn bản.</div>
+              
+              <pre>
+              &nbsp;</pre>
+              
+              <h1><code>Xin Chào HTML</code></h1>
+              
+              <p><code>HTML là viết tắt của cụm từ Hyper Text Markup Language.</code></p>
+              
+              <p><code>Dịch sang tiếng Việt là ngôn ngữ đánh dấu siêu văn bản.</code></p>
+              
+              <h2>Màu Nền</h2>
+              
+              <p>Sử dụng thuộc tính <code>style</code> với đặc tính <code>border</code> để thiết lập màu chữ:</p>
+              
+              <div style="border:2px solid tomato; font-size:22px; margin-bottom:15px; margin-left:15px; margin-right:15px; margin-top:15px; padding:15px 10px">Xin Chào HTML</div>
+              
+              <div style="border:2px dotted blue; font-size:22px; margin-bottom:15px; margin-left:15px; margin-right:15px; margin-top:15px; padding:15px 10px">Xin Chào HTML</div>
+              
+              <div style="border:2px dotted green; font-size:22px; margin-bottom:15px; margin-left:15px; margin-right:15px; margin-top:15px; padding:15px 10px">Xin Chào HTML</div>
+              
+              <pre>
+              &nbsp;</pre>
+              
+              <h1><code>Xin Chào HTML</code></h1>
+              
+              <p><code>HTML là viết tắt của cụm từ Hyper Text Markup Language.</code></p>
+              
+              <p><code>Dịch sang tiếng Việt là ngôn ngữ đánh dấu siêu văn bản.</code></p>
+              
+              <h2>Màu Theo Giá Trị</h2>
+              
+              <p>Trong HTML, chúng ta có thể sử dụng giá trị màu theo kiểu RGB, HEX hặc HSLA:</p>
+              
+              <p>Với cùng tên màu <code>red</code> (màu đỏ) sẽ tương đương với các màu sau:</p>
+              
+              <ul>
+                <li>Theo kiểu RGB: <code>rgb(255, 0, 0)</code></li>
+                <li>Theo kiểu HEX: <code>#ff0000</code></li>
+                <li>Theo kiểu HSL: <code>hsl(100%, 0, 0)</code></li>
+              </ul>
+              
+              <div style="background-color:#ff0000; color:white; font-size:22px; margin-bottom:10px; margin-top:15px; padding:15px 10px">rgb(255, 0, 0)</div>
+              
+              <div style="background-color:#ff0000; color:white; font-size:22px; margin-bottom:10px; padding:15px 10px">#ff0000</div>
+              
+              <div style="background-color:hsl(0, 100%, 50%); color:white; font-size:22px; margin-bottom:10px; padding:15px 10px">hsl(0, 100%, 50%)</div>
+              
+              <pre>
+              &nbsp;
+        
+          </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer-content flex">
+                <div class="footer-info">
+                  <p>Địa chỉ: Khu dân cư, Nhà Bè, Hồ Chí Minh</p>
+                  <p>Email: tuyensinh@ou.edu.vn</p>
+                  <p>Số điện thoại: 028 3836 4748</p>
+                  <div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.056673616353!2d106.6906695!3d10.6754047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1724342311760!5m2!1svi!2s"
+                      width="350"
+                      height="150"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="footer-links flex">
+                  <div>
+                    <span class="footer_header_text">Liên kết</span>
+                    <a class="block" href="">Trang chủ</a>
+                    <a class="block" href="">Diễn đàn trao đổi</a>
+                    <a class="block" href="">About us</a>
+                  </div>
+                  <div>
+                    <span class="footer_header_text">Sản phẩm</span>
+                    <a class="block" href="">Học HTML</a>
+                    <a class="block" href="">Học CSS</a>
+                    <a class="block" href="">Học C++</a>
+                    <a class="block" href="">Học Javascript</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2024 Mycode. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

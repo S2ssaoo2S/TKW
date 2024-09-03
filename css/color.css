@@ -7,14 +7,16 @@
   --sidebar_hovercolor:#cccccc;
   --bg-lesson_sub:#e7e9eb;
   --bg-sub_code:#fff;
+  --bg-data:#fff;
+ 
+
 }
 
 .blue {
   background-color: #fff4a3;
 }
-.light_blue{
-  
+.light_blue{  
   background-color: #96d4d4;
-  
 
 }
+

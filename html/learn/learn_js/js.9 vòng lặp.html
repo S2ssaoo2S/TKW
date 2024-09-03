@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyCode</title>
+    <link rel="stylesheet" href="/css/learn/learn.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/color.css" />
+    <link rel="stylesheet" href="/css/component.css" />
+    <link rel="stylesheet" href="/css/learn/Javascript.css.CSS">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link rel="icon" href="/images/2.jpg" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="header-wrapper flex">
+          <div class="logo">
+            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+          </div>
+          <div class="header-middle flex">
+            <div class="header-menu">
+              <ul class="flex">
+                <li class="tutorial">
+                  <span  href=""
+                    >Tutorial<i 
+                      class="fa fa-chevron-down"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <ul class="tutorial-menu">
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C++</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li>
+                  <div class="light-mode"
+                    ><i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
+                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="wrapper-login flex">
+           <div class="da_dang_nhap flex"> 
+        
+            <div ><a class="user-name" class=""></a></div>
+            <div>
+              <img id="avatar" class="avatar" src="" alt="">
+              <div id="user-info" class="user-info">
+                <p id="name"></p>
+                <p id="username"></p>
+                <button id="logout-btn">Đăng xuất</button>
+              </div>
+              </div>
+          </div>
+         <div class="chua_dang_nhap flex">
+          <div class="login">
+            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
+          </div>
+          <div class="register">
+            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
+          </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="body flex">
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <h2 class="sidebar-content">Javascript cơ bản</h2>
+          <a href="#">Trang chủ Javascript</a>
+          <a href="js.1gioithieu.html">Giới thiệu Javascript</a>
+          <a href="js.2comment.html">Comment trong Javascript</a>
+          <a href="js.3 biến.html">Biến trong Javascript  </a>
+          <a href="js.4 phéptoan.html">Phép Toán trong Javascript</a>
+          <a href="js.5 dữ liệu.html">Kiểu Dữ Liệu trong Javascript </a>
+          <a href="js.6ham.html">Hàm thường gặp trong Javascript</a>
+          <a href="js.7pham vi.html">Phạm Vi Của Biến trong Javascript</a>
+          <a href="js.8cau trúc.html">Cấu Trúc if,else,elseif trong Javascript</a>
+          <a class="Active" href="js.9 vòng lặp.html">Vòng Lặp trong Javascript</a>
+          <a href="js.10 Break và Continue.html">Break và Continue trong Javascript </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-1">
+          <h1 class="content_header">Vòng Lặp trong Javascriptì</h1>
+          <div class="data">
+            <h2>Vòng Lặp</h2>
+            <p>Vòng lặp được sử dụng nhằm thực hiện một (một số) nhiệm vụ lặp đi lặp lại nhiếu lần. Trong phần này chúng ta sẽ tìm hiểu các vòng lặp được sử dụng trong Javascript.</p>
+          <h2>For</h2>
+          <p>Vòng lặp for có cấu trúc như sau:</p>
+          <pre class="pre" > <code>
+            for (biểu thức 1; biểu thức 2; biểu thức 3) {
+              // Mã code
+          }</code> </pre>
+          <p>Trong đó:</p>
+          <ul>
+            <li><em>biểu thức 1</em>: là câu lệnh được thực thi một lần khi vòng lặp bắt đầu</li>
+            <li><em>biểu thức 2</em>: đây là biểu thức điều kiện, nếu trả về là&nbsp;<code>true</code>&nbsp;thì vòng lặp sẽ tiếp tục chạy, ngược lại vòng lặp sẽ kết thúc</li>
+            <li><em>biểu thức 3</em>: biểu thức này được thực hiện mỗi một lần vòng lặp được thực thi</li>
+          </ul>
+          <p>Hãy xem một ví dụ minh họa để hiểu rõ hơn:</p>
+             <pre class="pre" > <code>
+              for (i = 0; i &#60 10; i++) { 
+                console.log('Xin chào');
+            }</code> </pre>
+            <h2>For in</h2>
+            <p>Vòng lặp for in được dùng với object giúp dễ dàng lặp qua các phần tử của object. Ví dụ:</p>
+            <pre class="pre" > <code>
+              var person = {firstname:"John", lastname:"Doe", age:25}; 
+
+              var text = "";
+              var x;
+              for (x in person) {
+                  console.log('Index có giá trị: ' + x
+                   + ', phần tử có giá trị: ' + person[x]);
+              }</code> </pre>
+              <h2>While</h2>
+              <p>Vòng lặp while có cấu trúc khá đơn giản như sau:</p>
+            <pre class="pre" > <code>
+              while (biểu thức điều kiện) {
+                Mã lệnh
+            }</code> </pre>
+            <p>Trong đó, nếu biểu thức điều kiện trả về giá trị true thì vòng lặp sẽ tiếp tục chạy, ngược lại vòng lặp sẽ chấm dứt.</p>
+            <pre class="pre" > <code>
+              var i = 1;
+              while (i &#60 10) {
+                  console.log("Số thứ: " + i);
+                  i++;
+              }</code> </pre>
+              <h2>Do While</h2>
+              <p>Vòng lặp do while là một biến thể của while, sự khác biệt là với do while là vòng lặp luôn được thực thi ít nhất một lần (lần đầu tiên) và mã lệnh của vòng lặp được đặt trong cấu trúc do như sau:</p>
+            <pre class="pre" > <code>
+              do {
+                // mã lệnh
+            }
+            while (condition);</code> </pre>
+            <p>Ví dụ:</p>
+            <pre class="pre" > <code>
+              var i = 1;
+              do {
+                  console.log("Số thứ: " + i);
+                  i++;
+              }
+              while (i &#60 10);</code> </pre>
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+  
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
