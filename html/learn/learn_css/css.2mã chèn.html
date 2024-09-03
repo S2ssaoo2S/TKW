@@ -71,20 +71,20 @@
     <div class="body flex">
       <div class="sidebar">
         <div class="sidebar-menu">
-          <h2 class="sidebar-content">C++ cơ bản</h2>
+          <h2 class="sidebar-content">Css cơ bản</h2>
           <a href="#">Trang chủ Css</a>
           <a href="css1.GT.html">Giới thiệu Css</a>
           <a class="active" href="css.2mã chèn.html">Chèn Mã Css</a>
-          <a href="3"> Cú Pháp Css  </a>
-          <a href="">Bộ chọn Css</a>
-          <a href="">Phong Chữ Css</a>
-          <a href="">Màu Sắc Css </a>
-          <a href="">Box Model Css</a>
-          <a href="">Căn Lề</a>
-          <a href="">Đường Viền Css</a>  
-          <a href="">Văn Bản Css </a>
-          <a href="">Phong Nền </a>
-          <a href="">Khoảng Đệm Css</a>
+          <a href="css.3cu phap.html"> Cú Pháp Css  </a>
+          <a href="css.4bo chon.html">Bộ chọn Css</a>
+          <a href="css.5phong chu.html">Phong Chữ Css</a>
+          <a href="css.6mau sac.html">Màu Sắc Css </a>
+          <a href="css.7box model.html">Box Model Css</a>
+          <a href="css.8can le.html">Căn Lề</a>
+          <a href="css.9duong vien.html">Đường Viền Css</a>  
+          <a href="css.10van ban.html">Văn Bản Css </a>
+          <a href="css.11phong nen.html">Phong Nền </a>
+          <a href="css.12khoang dem.html">Khoảng Đệm Css</a>
         </div>
       </div>
       <div class="content">
@@ -101,14 +101,14 @@
             <h2>Chèn Mã CSS Nội Dòng - Inline CSS</h2>
             <p>Chèn CSS nội dòng hay inline CSS là cách chèn mã CSS vào bên trong thẻ mở HTML thông qua thuộc tính&nbsp;<code>style</code>.</p>
             <p>Ví dụ:</p>
-          <pre> &#60 p style="font-style: italic;">Mã CSS sẽ được chèn vào bên trong thẻ mở HTML.&#60/p>
- &#60 p style="text-decoration: underline; color: red;">Mã CSS nội dòng chỉ áp dụng cho phần tử tương ứng mà mã CSS được thêm vào.&#60/p></pre>
+          <pre class="pre"><code> &#60 p style="font-style: italic;">Mã CSS sẽ được chèn vào bên trong thẻ mở HTML.&#60/p>
+               &#60 p style="text-decoration: underline; color: red;">Mã CSS nội dòng chỉ áp dụng cho phần tử tương ứng mà mã CSS được thêm vào.&#60/p></code></pre>
             <p><b>Chèn Mã CSS Nội Dòng - Inline CSS</b></p>
             <p>Với cách chèn nội dòng thì mã CSS được chèn vào chỉ áp dụng cho phần tử duy nhất ứng với thẻ mở chứa mã CSS.</p>
             <h2>Chèn Mã CSS Nội Bộ - Internal CSS</h2>
             <p>Chèn CSS nội bộ hay internal CSS là cách chèn mã CSS vào trang bằng cách đặt chúng vào bên trong cặp thẻ&nbsp;<code>&lt;style&gt;&lt;/style&gt;</code>.</p>
             <p>Ví dụ:</p>
-          <pre>
+          <pre class="pre"><code>
             &#60 style type="text/css">
               body {
                   background-color: #fafafa;
@@ -119,50 +119,30 @@
                   text-decoration: underline;
               }
               &#60 /style>
-          </pre>
+          </code></pre>
           <p>Với kiểu chèn mã CSS nội bộ thì cùng một đoạn mã CSS có thể được áp dụng cho nhiều phần tử trên trang:</p>
-          <pre>
+          <pre class="pre"><code>
             &#60 style type="text/css">
             h1 {
                 font-size: 25px;
                 text-decoration: underline;
             }
             &#60 /style>
-            </pre>
+            </code></pre>
             <p>Ở ví dụ trên, cùng một đoạn code CSS nhưng có thể được áp dụng cho tất cả các phần tử&nbsp;<code>h1</code>&nbsp;trên trang.</p>
             <h2>Tham Chiếu Đến Tập Tin CSS Bên Ngoài - External CSS</h2>
             <p>Tham chiếu đến một tập tin CSS bên ngoài hay external CSS được thực hiện nhở sử dụng thẻ&nbsp;<code>&lt;link&gt;</code>. Cú pháp của kiểu chèn mã CSS tham chiếu như sau:</p>
-          <pre>&#60 link href="..." rel="stylesheet" type="text/css"></pre>
+          <pre class="pre"><code>&#60 link href="..." rel="stylesheet" type="text/css"></code></pre>
           <p>Trong đó giá trị của thuộc tính href ;là địa chỉ URL của tập tin CSS mà chúng ta muốn tham chiếu tới. Địa chỉ URL này có thể là địa chỉ tuyệt đối hoặc địa chỉ tương đối.</p>
           <p>Ví dụ:</p>
-          <pre>&#60 head>
+          <pre class="pre"><code>&#60 head>
             &#60 link href="./style.css" rel="stylesheet" type="text/css">
           &#60 /head>
-      </pre>
+        </code></pre>
           <p>Chèn CSS Theo Cách Tham Chiếu Đến Tập Tin Bên Ngoài - External CSS</p>
           <p>Trong trường hợp chèn CSS theo cách này thì thông thường chúng ta sẽ đặt thẻ&nbsp;<code>&lt;link&gt;</code>&nbsp;bên trong cặp thẻ&nbsp;<code>&lt;head&gt;&lt;/head&gt;</code>&nbsp;để trình duyệt tải về tập tin CSS sớm hơn giúp cải thiện tốc độ tải trang so với đặt nó ở cuối trang.</p>
           
-          
-  
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+    
           
           </div>
         </div>

@@ -73,32 +73,32 @@
         <div class="sidebar-menu">
           <h2 class="sidebar-content">C++ cơ bản</h2>
           <a href="#">Trang chủ Css</a>
-          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
-          <a href="">Chèn Mã Css</a>
-          <a href=""> Cú Pháp Css  </a>
-          <a href="">Bộ chọn Css</a>
-          <a href="">Phong Chữ Css</a>
-          <a href="">Màu Sắc Css </a>
-          <a href="">Box Model Css</a>
-          <a href="">Căn Lề</a>
-          <a href="">Đường Viền Css</a>  
-          <a href="">Văn Bản Css </a>
-          <a href="">Phong Nền </a>
-          <a href="">Khoảng Đệm Css</a>
+          <a href="css1.GT.html">Giới thiệu Css</a>
+          <a href="css.2mã chèn.html">Chèn Mã Css</a>
+          <a class="Active" href="css.3cu phap.html"> Cú Pháp Css  </a>
+          <a href="css.4bo chon.html">Bộ chọn Css</a>
+          <a href="css.5phong chu.html">Phong Chữ Css</a>
+          <a href="css.6mau sac.html">Màu Sắc Css </a>
+          <a href="css.7box model.html">Box Model Css</a>
+          <a href="css.8can le.html">Căn Lề</a>
+          <a href="css.9duong vien.html">Đường Viền Css</a>  
+          <a href="css.10van ban.html">Văn Bản Css </a>
+          <a href="css.11phong nen.html">Phong Nền </a>
+          <a href="css.12khoang dem.html">Khoảng Đệm Css</a>
         </div>
       </div>
       <div class="content">
         <div class="content-1">
           <h1 class="content_header">Cú Pháp CSS - CSS Cơ Bản</h1>
           <div class="data">
-            <h3>Cú Pháp CSS - CSS Syntax</h3>
+            <h2>Cú Pháp CSS - CSS Syntax</h2>
             <p>Mã CSS bao gồm một hoặc nhiều&nbsp;<em>quy luật</em>&nbsp;khác nhau:</p>
-          <pre>body {
+          <pre class="pre"><code>body {
             color: #000;
         }
         h1 {
             font-size: 25;
-        }</pre>
+        }</code></pre>
         <p>Đoạn mã CSS ở ví dụ trên có tất cả hai quy luật CSS khác nhau lần lượt áp dụng cho hai phần tử&nbsp;<code>body</code>&nbsp;và&nbsp;<code>h1</code>.</p>
         <p>Mỗi một quy luật CSS bao gồm một hoặc một tập hợp các&nbsp;<em>bộ chọn</em>&nbsp;chứa các&nbsp;<em>khai báo</em>&nbsp;CSS đặt bên trong cặp dấu ngoặc&nbsp;<code>{ }</code>. Trong đó:</p>
          <ul>
@@ -108,7 +108,7 @@
         <img src="/images/css/CU-PHAP-CSS.jpg"width="700" height="381">
         <h2>Bộ Chọn CSS - CSS Selector</h2>
         <p>Bộ chọn CSS được dùng để chọn ra các phần tử CSS để thiết lập trang trí cho chúng:</p>
-          <pre>
+          <pre class="pre"><code>
             p {
               font-size: 100%;
           }
@@ -118,7 +118,7 @@
           .small {
               font-size: 80%;
           }
-          </pre>
+          </code></pre>
           <p>Ở ví dụ trên chúng ta có ba bộ chọn CSS khác nhau:</p>
           <ul>
             <li>Bộ chọn&nbsp;<code>p</code>: Chọn ra tất cả các phần tử&nbsp;<code>p</code>&nbsp;trên trang.</li>
@@ -130,35 +130,35 @@
           <p>Khai báo CSS hay CSS declaration dùng để thiết lập kiểu trang trí cho những phần tử HTML được xác định bởi bộ chọn CSS cho trước.</p>
           <p>Mỗi một khai báo CSS bao gồm&nbsp;<em>thuộc tính</em>&nbsp;CSS kết hợp với&nbsp;<em>giá trị của thuộc tính</em>&nbsp;được ngăn cách nhau bởi dấu&nbsp;<code>:</code>. Mỗi khai báo CSS được đặt trên một dòng và kết thúc bởi dấu&nbsp;<code>;</code>.</p>
           <p>Ví dụ khai báo CSS dưới đây dùng thiết lập màu chữ với giá trị là&nbsp;<code>#000</code>:</p>
-          <pre>color: #000;</pre>
+          <pre class="pre"><code>color: #000;</code></pre>
           <p>Trong đó:</p>
           <ul>
             <li><code>color</code>&nbsp;là thuộc tính CSS.</li>
             <li><code>#000</code>&nbsp;là giá trị áp dụng cho thuộc tính&nbsp;<code>color</code>.</li>
           </ul><p>Với mã CSS được đặt trong cặp thẻ&nbsp;<code>&lt;style&gt;&lt;/style&gt;</code>&nbsp;hoặc trong một file CSS riêng biệt thì các khai báo CSS được đặt bên trong cặp dấu ngoặc&nbsp;<code>{ }</code>. Với mã CSS được đặt trong thẻ mở HTML thì chúng ta không cần cặp dấu&nbsp;<code>{ }</code>&nbsp;này nữa:</p>
-          <pre>
+          <pre class="pre"><code>
             &#60 p style="font-size: 100%">Văn bản với cỡ chữ 100%.&#60 /p>
             &#60 p style="font-size: 120%">Văn bản với cỡ chữ 120%.&#60 /p>
             &#60 p style="font-size: 80%">Văn bản với cỡ chữ 80%.&#60 /p>
-          </pre>
-          <h3>Thuộc Tính CSS - CSS Property</h3>
+          </code></pre>
+          <h2>Thuộc Tính CSS - CSS Property</h2>
           <p>Trong một khai báo CSS, thuộc tính CSS hay CSS property được đặt nằm ở phía tay trái dấu&nbsp;<code>:</code>. Thuộc tính CSS bao gồm các chữ cái in thường và dấu&nbsp;<code>-</code>&nbsp;trong trường hợp thuộc tính có nhiều từ khác nhau.</p>
           <p>Ví dụ một số thuộc tính thường hay sử dụng như&nbsp;<code>color</code>,&nbsp;<code>background-color</code>,&nbsp;<code>font-family</code>,&nbsp;<code>font-size</code>,&nbsp;<code>text-decoration</code>... Chúng ta sẽ tìm hiểu về các thuộc tính này ở các bài học tiếp theo.</p>
-          <h3>Giá Trị Thuộc Tính CSS - CSS Property Value</h3>
+          <h2>Giá Trị Thuộc Tính CSS - CSS Property Value</h2>
           <p>Trong một khai báo CSS, giá trị thuộc tính CSS hay CSS property value được đặt nằm ở phía tay phải dấu&nbsp;<code>:</code>. Giá trị của thuộc tính CSS phụ thuộc vào thuộc tính CSS, mỗi thuộc tính CSS khác nhau sẽ có tương ứng một bộ các giá trị khác nhau. Chúng ta sẽ làm quen với giá trị thuộc tính khi tìm hiểu về các thuộc tính CSS ở các bài học tiếp theo.</p>
           <h2>Chú Thích trong CSS - CSS Comment</h2>
           <p>Chú thích hay comment được sử dụng để thêm giải thích cho một đoạn mã CSS cho trước. Các chú thích CSS được bắt đầu bởi&nbsp;<code>/*</code>&nbsp;và kết thúc bởi&nbsp;<code>*/</code>:</p>
-          <pre>/* Đây là một chú thích CSS */</pre>
+          <pre class="pre"><code>/* Đây là một chú thích CSS */</code></pre>
           <p>Chú thích có thể nằm trên nhiều dòng:</p>
-          <Pre>/*đây là một chú thích CSS
-            dài hơn một dòng */</Pre>
+          <Pre class="pre"><code>/*đây là một chú thích CSS
+            dài hơn một dòng */</code></Pre>
             <p>Các chú thích trong CSS được trình duyệt bỏ qua và do đó đôi khi thay vì phải xoá một đoạn code CSS chúng ta biến chúng thành comment.</p>
             <p>Ví dụ đoạn chú thích dưới đây thực chất chứa một luật CSS mà chúng ta không còn cần tới, tuy nhiên do có thể cần dùng lại luật CSS này thì thay vì xoá đi chúng ta biến nó thành một comment:</p>
-          <pre>/*
+          <pre class="pre"><code>/*
             .small {
                 font-size: 80%;
             }
-            */</pre>
+            */</code></pre>
             <p>Khi cần dùng lại chúng ta chỉ việc xoá các ký tự&nbsp;<code>/*</code>&nbsp;và&nbsp;<code>*/</code>&nbsp;bao quanh luật CSS trên.</p>
     
           

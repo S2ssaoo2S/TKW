@@ -73,18 +73,18 @@
         <div class="sidebar-menu">
           <h2 class="sidebar-content">C++ cơ bản</h2>
           <a href="#">Trang chủ Css</a>
-          <a href="/html/learn/learn_html/1.0.html">Giới thiệu Css</a>
-          <a href="">Chèn Mã Css</a>
-          <a href=""> Cú Pháp Css  </a>
-          <a href="">Bộ chọn Css</a>
-          <a href="">Phong Chữ Css</a>
-          <a href="">Màu Sắc Css </a>
-          <a href="">Box Model Css</a>
-          <a href="">Căn Lề</a>
-          <a href="">Đường Viền Css</a>  
-          <a href="">Văn Bản Css </a>
-          <a href="">Phong Nền </a>
-          <a href="">Khoảng Đệm Css</a>
+          <a href="css1.GT.html">Giới thiệu Css</a>
+          <a href="css.2mã chèn.html">Chèn Mã Css</a>
+          <a href="css.3cu phap.html"> Cú Pháp Css  </a>
+          <a href="css.4bo chon.html">Bộ chọn Css</a>
+          <a class="Active" href="css.5phong chu.html">Phong Chữ Css</a>
+          <a href="css.6mau sac.html">Màu Sắc Css </a>
+          <a href="css.7box model.html">Box Model Css</a>
+          <a href="css.8can le.html">Căn Lề</a>
+          <a href="css.9duong vien.html">Đường Viền Css</a>  
+          <a href="css.10van ban.html">Văn Bản Css </a>
+          <a href="css.11phong nen.html">Phong Nền </a>
+          <a href="css.12khoang dem.html">Khoảng Đệm Css</a>
         </div>
       </div>
       <div class="content">
@@ -107,28 +107,28 @@
             <img src="/images/css/0css-la-gi.jpg"width="700" height="381">
             <h2>Thuộc tính&nbsp;<code>font-family</code></h2>
             <p>Thuộc tính&nbsp;<code>font-family</code>&nbsp;dùng để thiết lập họ phông chữ cho các phần tử trên trang web.</p>
-            <pre>
+            <pre class="pre"><code>
               body {
                 font-family: Arial;
             }
-            </pre>
+            </code></pre>
             <p>Khi quy định phông chữ cho phần tử trên trang web chúng ta nên chọn nhiều hơn một họ phông chữ và thường đi kèm theo một họ chung (generic family). Khi đó nếu như họ phông đầu tiên không được cài đặt trên thiết bị hiển thị trang web thì các phông chữ kế tiếp sẽ được sử dụng.</p>
-          <pre>
+          <pre class="pre"><code>
             body {
               font-family:  Arial, Helvetica, sans-serif ;
           }
-          </pre>
+          </code></pre>
           <p>Trong trường hợp như trên nếu một ký tự nào đó không tồn tại trong phông đầu tiên (Arial) thì phông chữ theo sau nó là Helvetica sẽ được áp dụng. Trong trường hợp mà ngay cả phông thứ 2 cũng không có sẵn thì thì bất kỳ họ phông nào thuộc họ chung&nbsp;<code>sans-serif</code>&nbsp;đang được cài trên thiết bị sẽ được sử dụng.</p>
           <p>Với các họ phông với tên gồm nhiều hơn một từ như&nbsp;<em>Times New Roman</em>&nbsp;thì chúng ta sẽ cần phải đặt tên họ phông này vào bên trong cặp dấu nháy.</p>
           <h2>Cỡ Chữ</h2>
           <p>Sử dụng thuộc tính&nbsp;<code>font-size</code>&nbsp;để quy định kích thước phông chữ.</p>
-          <pre>
+          <pre class="pre"><code>
             body {
               font-size: 14px;
           }
-          </pre>
+          </code></pre>
           <p>Giá trị của thuộc tính&nbsp;<code>font-size</code>&nbsp;có thể sử dụng loại đơn vị tuyệt đối như&nbsp;<code>px</code>&nbsp;(thường dùng),&nbsp;<code>pt</code>&nbsp;hoặc&nbsp;<code>cm</code>... hoặc đơn vị tương đối như&nbsp;<code>%</code>,&nbsp;<code>em</code>,&nbsp;<code>rem</code>...</p>
-          <pre>
+          <pre class="pre"><code>
             body {
               font-size: 14px;
           }
@@ -138,35 +138,35 @@
           .extra-large {
             font-size: 2em;
           }
-          </pre>
+          </code></pre>
           <p>Kích Thước Phông Chữ Theo Đơn Vị "EM"</p>
           <p>Với các đơn vị tương đối thì trình duyệt cũng sẽ quy đổi sang đơn vị tuyệt đối khi hiển thị.</p>
           <h2>Độ Đậm Nhạt</h2>
           <p>Sử dụng thuộc tính&nbsp;<code>font-weight</code>&nbsp;để quy định độ đậm nhạt của chữ. Nó có thể nhận các giá trị như:&nbsp;<code>bold</code>,&nbsp;<code>normal</code>,&nbsp;<code>bolder</code>&nbsp;hoặc&nbsp;<code>lighter</code>. Ví dụ:</p>
-          <pre>
+          <pre class="pre"><code>
             .bold {
               font-weight: bold;
           }
           .normal {
               font-weight: normal;
           }
-          </pre>
+          </code></pre>
           <p>Độ Đậm Của Phông Chữ trong CSS</p>
           <p>Giá trị của thuộc tính&nbsp;<code>font-weight</code>&nbsp;có thể nhận giá trị là số thay vì chữ như trên:</p>
-          <pre>
+          <pre class="pre"><code>
             .bold {
               font-weight: 700;
           }
           .normal {
               font-weight: 400;
           }
-          </pre>
+          </code></pre>
           <h2>Kiểu Chữ</h2>
           <p>Sử dụng thuộc tính&nbsp;<code>font-style</code>&nbsp;để quy định kiểu chữ in nghiêng, in thường hay in đậm... cho phông chữ.</p>
-          <pre>
+          <pre class="pre"><code>
             body {
               font-style: italic;
-          }
+          }</code>
           </pre>
           
           
