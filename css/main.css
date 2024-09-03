@@ -16,8 +16,8 @@
 }
 
 .header .header-top .logo img {
-  width: 100%;
-  height: 40px;
+  width: 80%;
+  height: 64px;
 }
 /* middle header */
 .header .header-top .header-middle {
@@ -124,7 +124,7 @@ opacity: 0.5;
   text-decoration: none;
   color: var(--main-text-color);
 }
-.header .header-top .header-menu a:hover,span:hover {
+.header .header-top .header-menu a:hover, ul span:hover {
   background-color: lightblue;
 }
 .light-mode {

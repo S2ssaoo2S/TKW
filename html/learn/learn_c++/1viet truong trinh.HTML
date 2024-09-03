@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/color.css" />
     <link rel="stylesheet" href="/css/component.css" />
-    <link rel="stylesheet" href="/css/learn/C++.css.CSS">
+    <link rel="stylesheet" href="/css/learn/C++.css.CSS" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
+
     <link rel="icon" href="/images/2.jpg" />
     <script src="/js/main.js"></script>
   </head>
@@ -23,70 +23,96 @@
       <div class="header-top">
         <div class="header-wrapper flex">
           <div class="logo">
-            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+            <a href="/html/index.html"
+              ><img src="/images/2.jpg" alt="Logo"
+            /></a>
           </div>
           <div class="header-middle flex">
             <div class="header-menu">
               <ul class="flex">
                 <li class="tutorial">
-                  <span  href=""
-                    >Tutorial<i 
+                  <span href=""
+                    >Tutorial<i
                       class="fa fa-chevron-down"
                       aria-hidden="true"
                     ></i
                   ></span>
                   <ul class="tutorial-menu">
-                    <li><a href="">CSS</a></li>
-                    <li><a href="">HTML</a></li>
-                    <li><a href="">JavaScript</a></li>
-                    <li><a href="">C++</a></li>
-
+                    <li>
+                      <a href="/html/learn/learn_css/css1.GT.html">CSS</a>
+                    </li>
+                    <li>
+                      <a href="/html/learn/learn_html/1Gioit_thieu_html.html"
+                        >HTML</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/html/learn/learn_js/js.1gioithieu.html"
+                        >JavaScript</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/html/learn/learn_c++/1viet truong trinh.HTML"
+                        >C++</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li><a href="/html/Q&A/hoidap.html">Q&A</a></li>
                 <li>
-                  <div class="light-mode"
-                    ><i
+                  <div class="light-mode">
+                    <i
                       id="light"
                       class="fa fa-toggle-on"
                       aria-hidden="true"
-                    ></i
-                  ></div>
+                    ></i>
+                  </div>
                 </li>
               </ul>
             </div>
             <div class="wrapper-search">
               <form action="get" class="search-form" id="searchForm">
-                <input type="text" name="search" class="search-input" id="searchInput" placeholder="Search..." />
-                <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input
+                  type="text"
+                  name="search"
+                  class="search-input"
+                  id="searchInput"
+                  placeholder="Search..."
+                />
+                <button type="submit" class="search-button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
                 <div class="search-result" id="searchResult">
                   <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
-              </div>
+                </div>
               </form>
             </div>
           </div>
 
           <div class="wrapper-login flex">
-           <div class="da_dang_nhap flex"> 
-        
-            <div ><a class="user-name" class=""></a></div>
-            <div>
-              <img id="avatar" class="avatar" src="" alt="">
-              <div id="user-info" class="user-info">
-                <p id="name"></p>
-                <p id="username"></p>
-                <button id="logout-btn">Đăng xuất</button>
+            <div class="da_dang_nhap flex">
+              <div><a class="user-name" class=""></a></div>
+              <div>
+                <img id="avatar" class="avatar" src="" alt="" />
+                <div id="user-info" class="user-info">
+                  <p id="name"></p>
+                  <p id="username"></p>
+                  <button id="logout-btn">Đăng xuất</button>
+                </div>
               </div>
+            </div>
+            <div class="chua_dang_nhap flex">
+              <div class="login">
+                <button class="btn-login">
+                  <a href="/html/Login_signup/login.html">Log In</a>
+                </button>
               </div>
-          </div>
-         <div class="chua_dang_nhap flex">
-          <div class="login">
-            <button  class="btn-login"><a href="/html/Login_signup/login.html">Log In</a></button>
-          </div>
-          <div class="register">
-            <button class="btn-register"><a href="/html/Login_signup/signup.html">Sign Up</a></button>
-          </div>
-         </div>
+              <div class="register">
+                <button class="btn-register">
+                  <a href="/html/Login_signup/signup.html">Sign Up</a>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -95,12 +121,18 @@
       <div class="sidebar">
         <div class="sidebar-menu">
           <h2 class="sidebar-content">C++ cơ bản</h2>
-          <a href="">Giới thiệu C++</a>
-          <a href="1viet truong trinh.HTML">Viết chương trình đầu tiên</a>
-          <a href="2Cấu trúc cơ bản của một chương trình C++.HTML"> Cấu trúc cơ bản chương trình C++  </a>
+          <a href="/html/learn/learn_c++/1GThtml.html">Giới thiệu C++</a>
+          <a class="active" href="1viet truong trinh.HTML"
+            >Viết chương trình đầu tiên</a
+          >
+          <a href="2Cấu trúc cơ bản của một chương trình C++.HTML">
+            Cấu trúc cơ bản chương trình C++
+          </a>
           <a href="3Lệnh, khối lệnh, từ khóa.HTML">Lệnh,khối lệnh,từ khóa</a>
           <a href="4dung lqdxdl.HTML">Dùng lệnh liên quan tới xuất dữ liệu</a>
-          <a href="5Biến và các kiểu dữ liệu trong C++.HTML">Biến và dữ liệu trong C++</a>
+          <a href="5Biến và các kiểu dữ liệu trong C++.HTML"
+            >Biến và dữ liệu trong C++</a
+          >
           <a href="6nhập và xuất dữ liệu.HTML">nhập và xuất dữ liệu</a>
           <a href="7Hằng số.HTML">Hằng số</a>
           <a href="8 pham vi cua bien.HTML">phạm vi của biến</a>
@@ -109,58 +141,199 @@
         </div>
       </div>
       <div class="content">
+        <div class="nextprev">
+          <a class="left" href="1GThtml.html">❮Previous</a>
+          <a class="right" href="2Cấu trúc cơ bản của một chương trình C++.HTML"
+            >Next ❯</a
+          >
+        </div>
         <div class="content-1">
-          <h1 class="content_header"> Viết Chương Trình Đầu Tiên</h1>
+          <h1 class="content_header">Viết Chương Trình Đầu Tiên</h1>
           <div class="data">
-            <p>Ở các bài trước, chúng ta đã biết về quy trình làm việc để tạo ra một chương trình C++, những công cụ cần thiết và IDE mà chúng ta sẽ sử dụng để phát triển chương trình. Đến đây chắc các bạn cũng đang háo hức muốn bắt tay vào viết một cái gì đó. Trong bài này, chúng ta sẽ cùng viết một chương trình mà bất cứ lập trình viên C++ nào cũng từng trải qua. Một chương trình huyền thoại mang tên <strong>"Hello World".</strong></p>
-            <p>Để bắt đầu viết chương trình, chúng ta cùng mở IDE Visual studio 2015 lên và tạo một project. Tại giao diện <strong>Start Page</strong> của Visual studio, các bạn click chọn <strong>New Project.</strong></p>
-            <img src="/images/C++/C++ TTDT/TTDT0.png" width="700" height="381">
-            <p>Cửa sổ tạo project mới hiện ra, các bạn chọn <strong>Empty project</strong>, đặt tên cho project là <strong>HelloWorld.</strong> Sau đó, ở phần location các bạn có thể chọn đường dẫn thư mục để lưu project này vào.</p>
-            <img src="/images/C++/C++ TTDT/2.png" width="700" height="381">
-            <p>Nhấn chọn OK để hoàn tất việc tạo project mới. Ngay khi Visual studio thiết lập project bạn vừa tạo. Bạn có thể nhìn vào cửa sổ <strong>Solution Explorer</strong> (mặc định là bên trái) để xem cấu trúc tổ chức của một project như thế nào.</p>
-            <img src="/images/C++/C++ TTDT/3 .png" width="700" height="381">
-            <p>Project <strong>HelloWorld</strong> được Visual studio tổ chức dưới dạng cây thư mục để quản lý mã nguồn và tài nguyên. </p>
-            <p>Trong project <strong>HelloWorld</strong>, hiện tại chúng ta quan tâm đến 2 phần chính:</p>
+            <p>
+              Ở các bài trước, chúng ta đã biết về quy trình làm việc để tạo ra
+              một chương trình C++, những công cụ cần thiết và IDE mà chúng ta
+              sẽ sử dụng để phát triển chương trình. Đến đây chắc các bạn cũng
+              đang háo hức muốn bắt tay vào viết một cái gì đó. Trong bài này,
+              chúng ta sẽ cùng viết một chương trình mà bất cứ lập trình viên
+              C++ nào cũng từng trải qua. Một chương trình huyền thoại mang tên
+              <strong>"Hello World".</strong>
+            </p>
+            <p>
+              Để bắt đầu viết chương trình, chúng ta cùng mở IDE Visual studio
+              2015 lên và tạo một project. Tại giao diện
+              <strong>Start Page</strong> của Visual studio, các bạn click chọn
+              <strong>New Project.</strong>
+            </p>
+            <img
+              src="/images/C++/C++ TTDT/TTDT0.png"
+              width="700"
+              height="381"
+            />
+            <p>
+              Cửa sổ tạo project mới hiện ra, các bạn chọn
+              <strong>Empty project</strong>, đặt tên cho project là
+              <strong>HelloWorld.</strong> Sau đó, ở phần location các bạn có
+              thể chọn đường dẫn thư mục để lưu project này vào.
+            </p>
+            <img src="/images/C++/C++ TTDT/2.png" width="700" height="381" />
+            <p>
+              Nhấn chọn OK để hoàn tất việc tạo project mới. Ngay khi Visual
+              studio thiết lập project bạn vừa tạo. Bạn có thể nhìn vào cửa sổ
+              <strong>Solution Explorer</strong> (mặc định là bên trái) để xem
+              cấu trúc tổ chức của một project như thế nào.
+            </p>
+            <img src="/images/C++/C++ TTDT/3 .png" width="700" height="381" />
+            <p>
+              Project <strong>HelloWorld</strong> được Visual studio tổ chức
+              dưới dạng cây thư mục để quản lý mã nguồn và tài nguyên.
+            </p>
+            <p>
+              Trong project <strong>HelloWorld</strong>, hiện tại chúng ta quan
+              tâm đến 2 phần chính:
+            </p>
             <ul>
-              <li>Header Files: dùng để chứa các phần khai báo class, khai báo hàm hoặc phần khai báo một số hằng số được sử dụng cho chương trình. Các file được chứa trong phần Header thường có phần đuôi mở rộng là .h, .hpp.</li>
-              <li>Source Files: là nơi chứa các file định nghĩa các hàm, các class... Các file được đặt trong này thường có dạng .cpp.</li>
-              </ul>
-              <p>Bây giờ chúng ta cùng tạo file chương trình đầu tiên. Các bạn click chuột phải vào tên project ở trong khung <strong>Solution Explorer</strong>, chọn đến dòng <strong>Add</strong> và click chọn <strong>New Item</strong>...</p>
-              <img src="/images/C++/C++ TTDT/4.png" width="700" height="381">
-              <p>Trong cửa sổ <strong>Add New Item</strong>, các bạn chọn loại file cần thêm là C++ File (.cpp), đặt tên file ở textbox Name phía bên dưới. Để tạo một thói quen tốt, file này các bạn đặt tên là main.cpp sau đó click <strong>Add</strong>.</p>
-              <img src="/images/C++/C++ TTDT/5.png" width="700" height="381">
-              <p>Sau khi add file main.cpp xong, cùng nhìn lại phần tổ chức project trong cửa số <strong>Solution Explorer</strong> xem điều gì đang xảy ra. </p><p>Sau khi add file main.cpp xong, cùng nhìn lại phần tổ chức project trong cửa số <strong>Solution Explorer</strong> xem điều gì đang xảy ra. </p>
-              <img src="/images/C++/C++ TTDT/6.png" width="700" height="381">
-              <p>Chúng ta đã có thêm 1 file được đặt sẵn trong phần Source Files. Một file có đuôi mở rộng là .cpp luôn được đặt trong phần này. Phía bên phải là phần soạn thảo mã nguồn cho file main.cpp đã được mở sẵn. Như đã nói ở trên, file đầu tiên cần tạo cho project nên đặt tên là main.cpp để tạo một thói quen tốt, chắc các bạn sẽ thắc mắc và đặt câu hỏi tại sao? </p>
-              <p>Trước hết, chúng ta cùng viết một ít mã lệnh cho <strong>HelloWorld</strong> program.</p>
-              <img src="/images/C++/C++ TTDT/7.png" width="700" height="381">
-              <p>Nhấn tổ hợp phím Ctrl + S để lưu lại những gì bạn đã viết. Ở mức độ hiện tại, mình chỉ yêu cầu các bạn viết theo những gì mình đã viết, chưa yêu cầu các bạn phải hiểu được những dòng mã trên có ý nghĩa gì. Sau khi lưu file main.cpp lại, chúng ta đã có được file mã nguồn C++ đầu tiên. Các bạn có thể muốn xem thử file main.cpp vừa được lưu đang nằm chổ nào. Để xem thư mục gốc của project, các bạn click chuột phải vào tên project HelloWorld trong cửa sổ <strong>Solution Explorer</strong> rồi chọn Open Folder in <strong>File Explorer</strong>.</p>
-              <img src="/images/C++/C++ TTDT/8.png" width="700" height="381">
-              <p>Và chúng ta thấy file main.cpp như trong hình bên dưới.</p>
-              <img src="/images/C++/C++ TTDT/9png.png" width="700" height="381">
-              <p>Quay lại với màn hình làm việc của Visual studio. Các bạn click chuột vào menu item BUILD trên Tool bar, sau đó chọn Build Solution (hoặc nhấn phím F7).</p>
-              <img src="/images/C++/C++ TTDT/10.png" width="700" height="381">
-              <p>Thực hiện bước này, Visual studio sẽ biên dịch file main.cpp của bạn để tạo thành file object .obj, đồng thời liên kết file main.obj tạo thành file chương trình (có đuôi .exe). Chúng ta chuyển qua thư mục gốc của project chứa file main.cpp lúc nãy, double click vào thư mục Debug, chúng ta thấy file main.obj là kết quả của quá trình biên dịch mã nguồn.</p>
-              <img src="/images/C++/C++ TTDT/11.png" width="700" height="381">
-              <p>Quay lui thư mục chứa file main.cpp ban đầu, cùng chuyển lui một thư mục ngoài nữa. Chúng ta lại thấy một thư mục có tên là Debug khác.</p>
-              <img src="/images/C++/C++ TTDT/12.png" width="700" height="381">
-              <p>Vào trong thư mục Debug này, các bạn sẽ thấy file .exe đã được Visual studio tạo ra.</p>
-              <img src="/images/C++/C++ TTDT/13.png" width="700" height="381">
-              <p>Bây giờ, các bạn mở file HelloWorld.exe này bằng cách double click vào nó. Cùng xem kết quả xuất hiện trên màn hình.</p>
-              <img src="/images/C++/C++ TTDT/14.png" width="700" height="381">
-              <p>Như các bạn thấy, trong cửa số Console, chúng ta có một dòng chữ xuất hiện: "Hello World.", và một dòng gợi ý cho người dùng rằng: Hãy nhấn 1 phím bất kì để kết thúc chương trình.</p>
-              <p>Ngoài cách chạy trực tiếp file HelloWorld.exe trong thư mục Debug, các bạn còn có thể chạy chương trình ngay trên màn hình làm việc của Visual studio, bằng cách click chuột phải vào tên project trong cửa sổ Solution Explorer -&gt; Debug -&gt; Start new instance.</p>
-              <img src="/images/C++/C++ TTDT/15.png" width="700" height="381">
-              <p>Và ta được kết quả tương tự khi chạy trực tiếp file HelloWorld.exe</p>
-              <img src="/images/C++/C++ TTDT/16.png" width="700" height="381">
-              <p>Vậy là chúng ta đã viết xong chương trình đầu tiên của khóa học lập trình C++. Bây giờ mình muốn quay lại vấn đề mình đã nói ở trên, đó là tại sao chúng ta lại nên đặt tên file đầu tiên cho project là main.cpp?</p>
-              <p>Để giải thích vấn đề này, mình muốn các bạn nhìn lại mã nguồn của file main.cpp mà các bạn đã viết cùng mình để có cái nhìn tổng quan về cấu trúc của một chương trình C++ cơ bản.</p>
-              <img src="/images/C++/C++ TTDT/17.png" width="700" height="381">
-              <p>Các bạn hãy chú ý đến dòng 6 trong chương trình trên. Chúng ta thấy </p>
-              <pre><code class="hljs language-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></code></pre>
-              <p>Đó là dòng bắt buộc phải có nếu muốn mã nguồn C++ có thể hoạt động được. Main trong tiếng Anh khi dịch ra có nghĩa là chính, quan trọng. Trong ngôn ngữ C++, main là điểm khởi đầu cho một chương trình. Trong một thời điểm, máy tính của chúng ta chỉ có thể thực hiện 1 dòng lệnh. Và ở thời điểm chương trình C++ bắt đầu chạy, nó sẽ tìm tới nơi có khai báo là main để thực hiện mã lệnh ở trong đó.<br>Mã lệnh mà chương trình thực hiện sẽ được đặt trong cặp ngoặc nhọn { và }.<br>Vì thế, cấu trúc chương trình C++ mà bạn cần nhớ sẽ như bên dưới.</p>
-              <img src="/images/C++/C++ TTDT/18.png" width="700" height="381">
-              <pre>Các bạn cần lưu ý, một chương trình C++ chỉ có duy nhất một hàm main.
+              <li>
+                Header Files: dùng để chứa các phần khai báo class, khai báo hàm
+                hoặc phần khai báo một số hằng số được sử dụng cho chương trình.
+                Các file được chứa trong phần Header thường có phần đuôi mở rộng
+                là .h, .hpp.
+              </li>
+              <li>
+                Source Files: là nơi chứa các file định nghĩa các hàm, các
+                class... Các file được đặt trong này thường có dạng .cpp.
+              </li>
+            </ul>
+            <p>
+              Bây giờ chúng ta cùng tạo file chương trình đầu tiên. Các bạn
+              click chuột phải vào tên project ở trong khung
+              <strong>Solution Explorer</strong>, chọn đến dòng
+              <strong>Add</strong> và click chọn <strong>New Item</strong>...
+            </p>
+            <img src="/images/C++/C++ TTDT/4.png" width="700" height="381" />
+            <p>
+              Trong cửa sổ <strong>Add New Item</strong>, các bạn chọn loại file
+              cần thêm là C++ File (.cpp), đặt tên file ở textbox Name phía bên
+              dưới. Để tạo một thói quen tốt, file này các bạn đặt tên là
+              main.cpp sau đó click <strong>Add</strong>.
+            </p>
+            <img src="/images/C++/C++ TTDT/5.png" width="700" height="381" />
+            <p>
+              Sau khi add file main.cpp xong, cùng nhìn lại phần tổ chức project
+              trong cửa số <strong>Solution Explorer</strong> xem điều gì đang
+              xảy ra.
+            </p>
+            <p>
+              Sau khi add file main.cpp xong, cùng nhìn lại phần tổ chức project
+              trong cửa số <strong>Solution Explorer</strong> xem điều gì đang
+              xảy ra.
+            </p>
+            <img src="/images/C++/C++ TTDT/6.png" width="700" height="381" />
+            <p>
+              Chúng ta đã có thêm 1 file được đặt sẵn trong phần Source Files.
+              Một file có đuôi mở rộng là .cpp luôn được đặt trong phần này.
+              Phía bên phải là phần soạn thảo mã nguồn cho file main.cpp đã được
+              mở sẵn. Như đã nói ở trên, file đầu tiên cần tạo cho project nên
+              đặt tên là main.cpp để tạo một thói quen tốt, chắc các bạn sẽ thắc
+              mắc và đặt câu hỏi tại sao?
+            </p>
+            <p>
+              Trước hết, chúng ta cùng viết một ít mã lệnh cho
+              <strong>HelloWorld</strong> program.
+            </p>
+            <img src="/images/C++/C++ TTDT/7.png" width="700" height="381" />
+            <p>
+              Nhấn tổ hợp phím Ctrl + S để lưu lại những gì bạn đã viết. Ở mức
+              độ hiện tại, mình chỉ yêu cầu các bạn viết theo những gì mình đã
+              viết, chưa yêu cầu các bạn phải hiểu được những dòng mã trên có ý
+              nghĩa gì. Sau khi lưu file main.cpp lại, chúng ta đã có được file
+              mã nguồn C++ đầu tiên. Các bạn có thể muốn xem thử file main.cpp
+              vừa được lưu đang nằm chổ nào. Để xem thư mục gốc của project, các
+              bạn click chuột phải vào tên project HelloWorld trong cửa sổ
+              <strong>Solution Explorer</strong> rồi chọn Open Folder in
+              <strong>File Explorer</strong>.
+            </p>
+            <img src="/images/C++/C++ TTDT/8.png" width="700" height="381" />
+            <p>Và chúng ta thấy file main.cpp như trong hình bên dưới.</p>
+            <img src="/images/C++/C++ TTDT/9png.png" width="700" height="381" />
+            <p>
+              Quay lại với màn hình làm việc của Visual studio. Các bạn click
+              chuột vào menu item BUILD trên Tool bar, sau đó chọn Build
+              Solution (hoặc nhấn phím F7).
+            </p>
+            <img src="/images/C++/C++ TTDT/10.png" width="700" height="381" />
+            <p>
+              Thực hiện bước này, Visual studio sẽ biên dịch file main.cpp của
+              bạn để tạo thành file object .obj, đồng thời liên kết file
+              main.obj tạo thành file chương trình (có đuôi .exe). Chúng ta
+              chuyển qua thư mục gốc của project chứa file main.cpp lúc nãy,
+              double click vào thư mục Debug, chúng ta thấy file main.obj là kết
+              quả của quá trình biên dịch mã nguồn.
+            </p>
+            <img src="/images/C++/C++ TTDT/11.png" width="700" height="381" />
+            <p>
+              Quay lui thư mục chứa file main.cpp ban đầu, cùng chuyển lui một
+              thư mục ngoài nữa. Chúng ta lại thấy một thư mục có tên là Debug
+              khác.
+            </p>
+            <img src="/images/C++/C++ TTDT/12.png" width="700" height="381" />
+            <p>
+              Vào trong thư mục Debug này, các bạn sẽ thấy file .exe đã được
+              Visual studio tạo ra.
+            </p>
+            <img src="/images/C++/C++ TTDT/13.png" width="700" height="381" />
+            <p>
+              Bây giờ, các bạn mở file HelloWorld.exe này bằng cách double click
+              vào nó. Cùng xem kết quả xuất hiện trên màn hình.
+            </p>
+            <img src="/images/C++/C++ TTDT/14.png" width="700" height="381" />
+            <p>
+              Như các bạn thấy, trong cửa số Console, chúng ta có một dòng chữ
+              xuất hiện: "Hello World.", và một dòng gợi ý cho người dùng rằng:
+              Hãy nhấn 1 phím bất kì để kết thúc chương trình.
+            </p>
+            <p>
+              Ngoài cách chạy trực tiếp file HelloWorld.exe trong thư mục Debug,
+              các bạn còn có thể chạy chương trình ngay trên màn hình làm việc
+              của Visual studio, bằng cách click chuột phải vào tên project
+              trong cửa sổ Solution Explorer -&gt; Debug -&gt; Start new
+              instance.
+            </p>
+            <img src="/images/C++/C++ TTDT/15.png" width="700" height="381" />
+            <p>
+              Và ta được kết quả tương tự khi chạy trực tiếp file HelloWorld.exe
+            </p>
+            <img src="/images/C++/C++ TTDT/16.png" width="700" height="381" />
+            <p>
+              Vậy là chúng ta đã viết xong chương trình đầu tiên của khóa học
+              lập trình C++. Bây giờ mình muốn quay lại vấn đề mình đã nói ở
+              trên, đó là tại sao chúng ta lại nên đặt tên file đầu tiên cho
+              project là main.cpp?
+            </p>
+            <p>
+              Để giải thích vấn đề này, mình muốn các bạn nhìn lại mã nguồn của
+              file main.cpp mà các bạn đã viết cùng mình để có cái nhìn tổng
+              quan về cấu trúc của một chương trình C++ cơ bản.
+            </p>
+            <img src="/images/C++/C++ TTDT/17.png" width="700" height="381" />
+            <p>
+              Các bạn hãy chú ý đến dòng 6 trong chương trình trên. Chúng ta
+              thấy
+            </p>
+            <pre><code class="hljs language-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></code></pre>
+            <p>
+              Đó là dòng bắt buộc phải có nếu muốn mã nguồn C++ có thể hoạt động
+              được. Main trong tiếng Anh khi dịch ra có nghĩa là chính, quan
+              trọng. Trong ngôn ngữ C++, main là điểm khởi đầu cho một chương
+              trình. Trong một thời điểm, máy tính của chúng ta chỉ có thể thực
+              hiện 1 dòng lệnh. Và ở thời điểm chương trình C++ bắt đầu chạy, nó
+              sẽ tìm tới nơi có khai báo là main để thực hiện mã lệnh ở trong
+              đó.<br />Mã lệnh mà chương trình thực hiện sẽ được đặt trong cặp
+              ngoặc nhọn { và }.<br />Vì thế, cấu trúc chương trình C++ mà bạn
+              cần nhớ sẽ như bên dưới.
+            </p>
+            <img src="/images/C++/C++ TTDT/18.png" width="700" height="381" />
+            <pre>Các bạn cần lưu ý, một chương trình C++ chỉ có duy nhất một hàm main.
 
                 Các bạn sẽ thấy nhiều hàm main có cách khai báo khác nhau. Nhưng với việc
                 
@@ -170,47 +343,79 @@
                 
                 <code >int main{ <br> }</code>
                 </pre>
-                <p>Chương trình của C++ sẽ thực hiện từng dòng lệnh trong cặp ngoặc nhọn { } ở phía sau hàm main một cách <strong>có thứ tự</strong> từ trên xuống dưới. </p>
-                <p>Một chương trình C++ bắt buộc phải có 1 hàm main, thế nên mình khuyên các bạn nên đặt tên file đầu tiên trong chương trình main.cpp, và file này sẽ chứa mã nguồn C++ có hàm main ở trong đó, sau này các bạn làm việc với 1 dự án có nhiều file thì sẽ không bị nhầm lẫn.</p>
-                <p>Ở bài học kế tiếp (trong chương tiếp theo), mình sẽ nói về cấu trúc của một chương trình C++ cơ bản. Hẹn gặp lại các bạn trong bài học sau.</p>
-                <hr>
-           
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+            <p>
+              Chương trình của C++ sẽ thực hiện từng dòng lệnh trong cặp ngoặc
+              nhọn { } ở phía sau hàm main một cách
+              <strong>có thứ tự</strong> từ trên xuống dưới.
+            </p>
+            <p>
+              Một chương trình C++ bắt buộc phải có 1 hàm main, thế nên mình
+              khuyên các bạn nên đặt tên file đầu tiên trong chương trình
+              main.cpp, và file này sẽ chứa mã nguồn C++ có hàm main ở trong đó,
+              sau này các bạn làm việc với 1 dự án có nhiều file thì sẽ không bị
+              nhầm lẫn.
+            </p>
+            <p>
+              Ở bài học kế tiếp (trong chương tiếp theo), mình sẽ nói về cấu
+              trúc của một chương trình C++ cơ bản. Hẹn gặp lại các bạn trong
+              bài học sau.
+            </p>
+            <hr />
           </div>
+          <footer class="footer">
+            <div class="container-footer">
+              <div class="footer-content flex">
+                <div class="footer-info">
+                  <p>Địa chỉ: Khu dân cư, Nhà Bè, Hồ Chí Minh</p>
+                  <p>Email: tuyensinh@ou.edu.vn</p>
+                  <p>Số điện thoại: 028 3836 4748</p>
+                  <div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.056673616353!2d106.6906695!3d10.6754047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1724342311760!5m2!1svi!2s"
+                      width="350"
+                      height="150"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="footer-links flex">
+                  <div>
+                    <span class="footer_header_text">Liên kết</span>
+                    <a class="block" href="/html/index.html">Trang chủ</a>
+                    <a class="block" href="/html/Q&A/hoidap.html"
+                      >Diễn đàn trao đổi</a
+                    >
+                    <a class="block" href="/html/about_us.html">About us</a>
+                  </div>
+                  <div>
+                    <span class="footer_header_text">Sản phẩm</span>
+                    <a
+                      class="block"
+                      href="/html/learn/learn_html/1Gioit_thieu_html.html"
+                      >Học HTML</a
+                    >
+                    <a class="block" href="/html/learn/learn_css/css1.GT.html"
+                      >Học CSS</a
+                    >
+                    <a class="block" href="/html/learn/learn_c++/1GThtml.html"
+                      >Học C++</a
+                    >
+                    <a
+                      class="block"
+                      href="/html/learn/learn_js/js.1gioithieu.html"
+                      >Học Javascript</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2024 Mycode. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </div>

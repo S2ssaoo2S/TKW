@@ -10,7 +10,7 @@ z-index: 1;
   height: 100vh;
 }
 .sidebar-menu{
-  padding-top: 50px;
+  padding-top: 96px;
   width: 100%;
   background-color: var(--sidebar_color);
  
