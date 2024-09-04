@@ -18,11 +18,12 @@
     <script src="/js/Hoidap.js"></script>
   </head>
   <body>
+    
     <header class="header">
       <div class="header-top">
         <div class="header-wrapper flex">
           <div class="logo">
-            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+            <a href="/html/index.html"><img src="/images/2.jpg" alt="Logo" /></a>
           </div>
           <div class="header-middle flex">
             <div class="header-menu">
@@ -35,14 +36,14 @@
                     ></i
                   ></span>
                   <ul class="tutorial-menu">
-                    <li><a href="">CSS</a></li>
-                    <li><a href="">HTML</a></li>
-                    <li><a href="">JavaScript</a></li>
-                    <li><a href="">C++</a></li>
+                    <li><a href="/html/learn/learn_css/css1.GT.html">CSS</a></li>
+                    <li><a href="/html/learn/learn_html/1Gioit_thieu_html.html">HTML</a></li>
+                    <li><a href="/html/learn/learn_js/js.1gioithieu.html">JavaScript</a></li>
+                    <li><a href="/html/learn/learn_c++/1viet truong trinh.HTML">C++</a></li>
 
                   </ul>
                 </li>
-                <li><a href="/html/Q&A/test.html">Q&A</a></li>
+                <li><a href="/html/Q&A/hoidap.html">Q&A</a></li>
                 <li>
                   <div class="light-mode"
                     ><i
@@ -92,7 +93,10 @@
     </header>
 <div class="HOIDAP">
   <h1 class="header-diendan">Diễn đàn hỏi đáp</h1>
-
+  <div id="not-logged-in" class="hidden not-logged-in">
+    <p>Vui lòng đăng nhập để thêm câu hỏi.</p>
+</div>
+   <a class="back" id="back" href="/html/Q&A/hoidap.html">trở lại</a>
   <div class="container" id="question-list">
   </div>
   <div class="answer-list" id="answerContainer">
@@ -107,9 +111,7 @@
       <input class="inp_question" type="text" id="question-input" placeholder="Nhập nội dung câu hỏi..."> <br>
       <button onclick="addQuestion()">Thêm câu hỏi</button>
   </div>
-  <div id="not-logged-in" class="hidden not-logged-in">
-    <p>Vui lòng đăng nhập để thêm câu hỏi.</p>
-</div>
+  
 </div>
   <footer class="footer">
     <div class="container-footer">

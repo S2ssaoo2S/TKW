@@ -8,26 +8,28 @@ body {
   min-height: 600px;
 }
 .container {
-  margin: 0 auto;
-  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
   max-width: 800px;
   padding: 0 20px;
   background-color: aliceblue;
 
 }
-
+.search-input{
+  margin: 0 !important;
+}
 .container h1,input{
-
     margin-top: 16px;
 }
 .avatar-img{
   height: 50px;
   width: 50px;
 }
+.back{
+display: none;
+}
 .question {
   background-color:#f5f9f9;
-  padding: 20px;
-  margin: 20px 0;
   border-radius: 5px;
 }
 .question >p{
@@ -55,10 +57,9 @@ button {
   margin: 0 auto;
 }
 .header-diendan{
-  background-color: var(--bg-lesson_sub);
+  background-color: #e7e9eb;
   display: block;
   text-align: center;
-  margin-top: 16px auto;
   padding: 16px;
   width: 100%;
   font-size: 2rem;

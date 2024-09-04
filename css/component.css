@@ -25,3 +25,23 @@
       opacity: 0;
   }
 }
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+  .header .header-top .header-menu a {
+    padding: 16px 0;
+  }
+  .header .header-middle .header-menu .tutorial>span{
+    padding: 16px 0;
+  }
+  .lesson-right{
+    display: none;
+  }
+  .lesson .lesson-left {
+    width: 100%;
+  }
+  .header-middle{
+    display: block !important;
+  }
+}

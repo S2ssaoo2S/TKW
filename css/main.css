@@ -286,7 +286,9 @@ opacity: 0.5;
 .subnamecolor {
   color: var(--main-text-color);
 }
-
+.header .header-middle{
+  display: flex;
+}
 .header .header-middle .header-menu .tutorial-menu {
   visibility: hidden;
   position: absolute;

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/color.css" />
     <link rel="stylesheet" href="/css/component.css" />
-    <link rel="stylesheet" href="/css/learn/CSS.css copy.CSS">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,46 +22,95 @@
       <div class="header-top">
         <div class="header-wrapper flex">
           <div class="logo">
-            <a href=""><img src="/images/2.jpg" alt="Logo" /></a>
+            <a href="/html/index.html"
+              ><img src="/images/2.jpg" alt="Logo"
+            /></a>
           </div>
           <div class="header-middle flex">
             <div class="header-menu">
               <ul class="flex">
                 <li class="tutorial">
-                  <a href=""
+                  <span href=""
                     >Tutorial<i
                       class="fa fa-chevron-down"
                       aria-hidden="true"
                     ></i
-                  ></a>
+                  ></span>
                   <ul class="tutorial-menu">
-                    <li><a href="">CSS</a></li>
-                    <li><a href="">HTML</a></li>
+                    <li>
+                      <a href="/html/learn/learn_css/css1.GT.html">CSS</a>
+                    </li>
+                    <li>
+                      <a href="/html/learn/learn_html/1Gioit_thieu_html.html"
+                        >HTML</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/html/learn/learn_js/js.1gioithieu.html"
+                        >JavaScript</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/html/learn/learn_c++/1viet truong trinh.HTML"
+                        >C++</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li><a href="">Q&A</a></li>
-                <li><a href=""></a></li>
+                <li><a href="/html/Q&A/hoidap.html">Q&A</a></li>
                 <li>
-                  <a class="light-mode"
-                    ><i class="fa fa-toggle-on" aria-hidden="true"></i
-                  ></a>
+                  <div class="light-mode">
+                    <i
+                      id="light"
+                      class="fa fa-toggle-on"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
                 </li>
               </ul>
             </div>
-            <div class="wrapper-search flex">
-              <form action="get" class="search-form">
-                <input type="text" name="search" class="search-input" />
+            <div class="wrapper-search">
+              <form action="get" class="search-form" id="searchForm">
+                <input
+                  type="text"
+                  name="search"
+                  class="search-input"
+                  id="searchInput"
+                  placeholder="Search..."
+                />
+                <button type="submit" class="search-button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <div class="search-result" id="searchResult">
+                  <!-- Kết quả tìm kiếm sẽ được hiển thị ở đây -->
+                </div>
               </form>
-              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
           </div>
 
           <div class="wrapper-login flex">
-            <div class="login">
-              <button class="btn-login">login</button>
+            <div class="da_dang_nhap flex">
+              <div><a class="user-name" class=""></a></div>
+              <div>
+                <img id="avatar" class="avatar" src="" alt="" />
+                <div id="user-info" class="user-info">
+                  <p id="name"></p>
+                  <p id="username"></p>
+                  <button id="logout-btn">Đăng xuất</button>
+                </div>
+              </div>
             </div>
-            <div class="register">
-              <button class="btn-register">sign in</button>
+            <div class="chua_dang_nhap flex">
+              <div class="login">
+                <button class="btn-login">
+                  <a href="/html/Login_signup/login.html">Log In</a>
+                </button>
+              </div>
+              <div class="register">
+                <button class="btn-register">
+                  <a href="/html/Login_signup/signup.html">Sign Up</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -72,8 +120,7 @@
       <div class="sidebar">
         <div class="sidebar-menu">
           <h2 class="sidebar-content">Css cơ bản</h2>
-          <a href="#">Trang chủ Css</a>
-          <a class="Active" href="css1.GT.html">Giới thiệu Css</a>
+          <a class="active" href="css1.GT.html">Giới thiệu Css</a>
           <a href="css.2mã chèn.html">Chèn Mã Css</a>
           <a href="css.3cu phap.html"> Cú Pháp Css  </a>
           <a href="css.4bo chon.html">Bộ chọn Css</a>
@@ -88,6 +135,12 @@
         </div>
       </div>
       <div class="content">
+        <div class="nextprev">
+          <a class="right" href="css.2mã chèn.html"
+            >Next ❯</a
+          >
+        </div>
+     
         <div class="content-1">
           <h1 class="content_header">CSS Là Gì, Phân Biệt CSS và HTML - CSS Cơ Bản</h1>
           <div class="data">
@@ -156,6 +209,65 @@
           
           
           </div>
+          <div class="nextprev">
+            <a class="right" href="css.2mã chèn.html"
+              >Next ❯</a
+            >
+          </div>
+          <footer class="footer">
+            <div class="container-footer">
+              <div class="footer-content flex">
+                <div class="footer-info">
+                  <p>Địa chỉ: Khu dân cư, Nhà Bè, Hồ Chí Minh</p>
+                  <p>Email: tuyensinh@ou.edu.vn</p>
+                  <p>Số điện thoại: 028 3836 4748</p>
+                  <div>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.056673616353!2d106.6906695!3d10.6754047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1724342311760!5m2!1svi!2s"
+                      width="350"
+                      height="150"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="footer-links flex">
+                  <div>
+                    <span class="footer_header_text">Liên kết</span>
+                    <a class="block" href="/html/index.html">Trang chủ</a>
+                    <a class="block" href="/html/Q&A/hoidap.html"
+                      >Diễn đàn trao đổi</a
+                    >
+                    <a class="block" href="/html/about_us.html">About us</a>
+                  </div>
+                  <div>
+                    <span class="footer_header_text">Sản phẩm</span>
+                    <a
+                      class="block"
+                      href="/html/learn/learn_html/1Gioit_thieu_html.html"
+                      >Học HTML</a
+                    >
+                    <a class="block" href="/html/learn/learn_css/css1.GT.html"
+                      >Học CSS</a
+                    >
+                    <a class="block" href="/html/learn/learn_c++/1GThtml.html"
+                      >Học C++</a
+                    >
+                    <a
+                      class="block"
+                      href="/html/learn/learn_js/js.1gioithieu.html"
+                      >Học Javascript</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>&copy; 2024 Mycode. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </div>

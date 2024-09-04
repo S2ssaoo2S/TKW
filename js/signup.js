@@ -3,7 +3,7 @@ const inputUsernameRegister = document.querySelector(".input-signup-username");
 const inputPasswordRegister = document.querySelector(".input-signup-password");
 const inputConfirmpassword =document.querySelector(".input-signup-Confirmpw")
 const inputname =document.querySelector(".input-signup-name")
-const random = Math.floor(Math.random() * 2) + 1; // Số ngẫu nhiên từ 1 đến 10
+const random = Math.floor(Math.random() * 6) + 1; // Số ngẫu nhiên từ 1 đến 10
 
 const btnRegister = document.querySelector(".signup__signInButton");
 
